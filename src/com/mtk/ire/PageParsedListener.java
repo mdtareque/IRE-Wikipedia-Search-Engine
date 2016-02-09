@@ -8,7 +8,15 @@ public class PageParsedListener implements IPageParsedListener {
 	public void dispatch(List<Page> pages) {
 		// System.out.println("Listener got "+pages.size()+" pages.");
 		for (Page p : pages) {
+			PageProcessor.processPage(p);
+			cnt++;
+			if (cnt % 500 == 0) System.out.println("pages processed so far " + cnt);
 
+		}
+	}
+}
+
+/*
 			// 4615, 4653, 2642, 2792
 			// 1020 , 1495, 724: infobo
 			// 5636 category
@@ -22,3 +30,4 @@ public class PageParsedListener implements IPageParsedListener {
 		}
 	}
 }
+*/

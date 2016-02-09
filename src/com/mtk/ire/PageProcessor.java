@@ -66,7 +66,11 @@ public class PageProcessor {
 //		p.text0 = p.text;
 		p.text = index(p.text.split("(\\P{Alpha}+)|(\\p{Blank})"), id, LOCATION.BODY);
 
-		 writePageToFile(p);
+		if(dict.size() > 100_000) {
+			Indexer.writeIndexToFile();
+			Indexer.words.clear();
+		}
+		writePageToFile(p);
 	}
 
 	private static String getStem(String t) {

@@ -9,8 +9,11 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class Indexer {
+	static int counter=1;
 
 	static Map<String, TreeMap<Long, Indexer.Ocurrences>> words = new HashMap<String, TreeMap<Long, Indexer.Ocurrences>>();
+
+	private static String outfile;
 
 	static class Ocurrences {
 		int bodyCount, titleCount, infoBoxCount, categoryCount, refCount, externalLinkCount;
@@ -56,10 +59,10 @@ public class Indexer {
 		}
 	}
 
-	public static void writeIndexToFile(String indexOutfile) {
+	public static void writeIndexToFile() {
 		BufferedWriter bw = null;
 		try {
-			bw = new BufferedWriter(new FileWriter(indexOutfile));
+			bw = new BufferedWriter(new FileWriter(outfile + counter));
 			Map<String, TreeMap<Long, Indexer.Ocurrences>> ind = words;
 			SortedSet<String> keys = new TreeSet<String>(ind.keySet());
 			for (String k : keys) {
@@ -85,7 +88,8 @@ public class Indexer {
 				 * }
 				 */
 			}
-			System.out.println("Index written to file [" + indexOutfile + "]");
+			System.out.println("Index written to file [" + (outfile +counter)+ "] word-count [" + words.size() + "]");
+			counter++;
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -96,6 +100,10 @@ public class Indexer {
 			}
 		}
 
+	}
+
+	public static void setOutFile(String indexOutfile) {
+		Indexer.outfile = indexOutfile;
 	}
 
 }

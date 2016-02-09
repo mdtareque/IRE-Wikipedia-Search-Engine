@@ -18,7 +18,7 @@ public class IREUtils {
 			BufferedReader br = null;
 			String s;
 			try {
-				br = new BufferedReader(new FileReader("stop-word-list.txt"));
+				br = new BufferedReader(new FileReader(INFO.STOP_WORD_FILE));
 				while ((s = br.readLine()) != null)
 					stopword.add(s);
 			} catch (IOException e) {

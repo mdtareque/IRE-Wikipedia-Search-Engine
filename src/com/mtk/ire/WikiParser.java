@@ -25,7 +25,7 @@ public class WikiParser {
 	static private final String		CATEGORY_STR		= "[[category";
 
 	static private final String		DOUBLE_EQUALS		= "==";
-	static private int				startPos, lastStartPos, endPos, bracketCount, st;
+	static private int				startPos, lastStartPos, endPos, bracketCount, st, indexTmp;
 
 	static private Pattern			p;
 	static private Matcher			m;
@@ -52,6 +52,7 @@ public class WikiParser {
 		citesPattern[10] = Pattern.compile("journal ?=(.*?)(\\||\\})", Pattern.DOTALL);
 		citesPattern[11] = Pattern.compile("author ?=(.*?)(\\||\\})", Pattern.DOTALL);
 		citesPattern[12] = Pattern.compile("work ?=(.*?)(\\||\\})", Pattern.DOTALL);
+		p = Pattern.compile("\\[\\[:?category:(.*?)\\]\\]");
 	}
 
 	private static String removeCite(String text) {
@@ -108,7 +109,7 @@ public class WikiParser {
 		nextEqualTo = nextEqualTo == -1 ? text.length() : nextEqualTo;
 		String refs = text.substring(st, nextEqualTo);
 		refs = refs.replaceAll("(;notes)|(\\{\\{reflist.*?\\}\\})", "");
-		Matcher m = cite.matcher(ref.toString());
+		m = cite.matcher(ref.toString());
 		while (m.find()) {
 			tmp.append(parseCite(m.group(1)));
 		}
@@ -138,7 +139,9 @@ public class WikiParser {
 	}
 
 	String getCategories(String text) {
-		p = Pattern.compile("\\[\\[:?category:(.*?)\\]\\]");
+		indexTmp = text.indexOf("[[Category");
+		if(indexTmp == -1) return "";
+		text = text.substring(indexTmp);
 		m = p.matcher(text);
 		tmp.setLength(0);
 		tmp.trimToSize();
