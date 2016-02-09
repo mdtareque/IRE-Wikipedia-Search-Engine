@@ -8,7 +8,7 @@ public class FileReaderTest {
 	
 	public static void main(String[] args) throws Exception {
 
-		BufferedReader br = new BufferedReader(new FileReader("stop-word-list.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("docs/stop-word-list.txt"));
 		String s;
 		while((s= br.readLine()) != null ) 
 			System.out.println(s);
