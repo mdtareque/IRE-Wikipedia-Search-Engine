@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  *
  */
 public class WikiParser {
-
+	
 	static Pattern					doubleCurly, ref, htmlComment, cite;
 	static private Pattern[]		citesPattern;
 	static private StringBuilder	tmp;

@@ -10,7 +10,10 @@ public class PageParsedListener implements IPageParsedListener {
 		for (Page p : pages) {
 			PageProcessor.processPage(p);
 			cnt++;
-			if (cnt % 500 == 0) System.out.println("pages processed so far " + cnt);
+			if (cnt % 500 == 0) {
+				Log.i("pages processed so far " + cnt + ", last page id " + p.docId, true);
+				
+			}
 
 		}
 	}

@@ -9,6 +9,8 @@ import java.util.TreeMap;
 
 public class PageProcessor {
 
+	static long t1_stripping, t2_category, t3_extLinks, t4_replaceAlls, t5_titel_refs, t6_infobox, t7_body , start;
+	
 	static IREUtils.Stemmer s = new IREUtils.Stemmer();
 	static WikiParser w = new WikiParser();
 	static Set<String> stopWords = IREUtils.StopWords.stopword;
@@ -18,6 +20,9 @@ public class PageProcessor {
 	public static void processPage(Page p) {
 		Long id = p.docId;
 //		p.text0 = p.text;
+		// Part1
+		start = System.currentTimeMillis();
+		
 		p.text = p.text.toLowerCase();
 		
 		String text = p.text;
@@ -28,16 +33,29 @@ public class PageProcessor {
 		text = WikiParser.ref.matcher(text).replaceAll(" ");
 		text = WikiParser.htmlComment.matcher(text).replaceAll(" ");// remove tags
 		p.text = text;
+		t1_stripping += System.currentTimeMillis() - start;
+		// Part2
+		start = System.currentTimeMillis();  
 		
 		// category
 		p.categoriesText = w.getCategories(p.text);
 //		p.categoriesText0 = p.categoriesText; 
 		p.categoriesText = index(p.categoriesText.split(" "), id, LOCATION.CATEGORY);
 		
+		
+		t2_category += System.currentTimeMillis() - start;
+		// Part3
+		start = System.currentTimeMillis();  
+		
+		
 		// external links
 		p.externalLinkText = w.getExternalLinks(p.text);
 //		p.externalLinkText0 = p.externalLinkText;
 		p.externalLinkText = index(p.externalLinkText.split(" "), id, LOCATION.EXTERNAL_LINKS);
+		
+		t3_extLinks += System.currentTimeMillis() - start;
+		start = System.currentTimeMillis();  
+
 		
 		// 	remove tags, remove [[File: and like 380 tags
 		text = text.replaceAll("(</?.*?>)|(&nbsp;)|(\\'+)|(\\[\\[[A-Za-z]+:.*?\\]\\])", " "); 
@@ -46,6 +64,10 @@ public class PageProcessor {
 		text = text.replaceAll("\\[\\[(.*?)\\]\\]", " $1 "); // rest all ignore
 		p.text = text;
 
+		t4_replaceAlls += System.currentTimeMillis() - start;
+		start = System.currentTimeMillis();  
+
+		
 		// title
 		p.title = p.title.replaceAll("([A-Z][^A-Z])", " $1");
 //		p.title0 = p.title;
@@ -56,21 +78,35 @@ public class PageProcessor {
 //		p.referencedText0 = p.referencedText;
 		p.referencedText = index(p.referencedText.split(" "), id, LOCATION.REF);
 
+
+		t5_titel_refs += System.currentTimeMillis() - start;
+		start = System.currentTimeMillis();  
+
+		
 		// infobox
 		p.infoboxesText = w.getInfoBox(p.text);
 //		p.infoboxesText0 = p.infoboxesText;
 		p.infoboxesText = index(p.infoboxesText.split(" "), id, LOCATION.INFOBOX);
 
+
+		t6_infobox += System.currentTimeMillis() - start;
+		start = System.currentTimeMillis();  
+
+		
 		// body
 		p.text = WikiParser.doubleCurly.matcher(p.text).replaceAll(" ");
 //		p.text0 = p.text;
 		p.text = index(p.text.split("(\\P{Alpha}+)|(\\p{Blank})"), id, LOCATION.BODY);
 
-		if(dict.size() > 100_000) {
+
+		t7_body += System.currentTimeMillis() - start;
+
+		
+		if(dict.size() > 1000_000) {
 			Indexer.writeIndexToFile();
 			Indexer.words.clear();
 		}
-		writePageToFile(p);
+//		writePageToFile(p);
 	}
 
 	private static String getStem(String t) {
@@ -146,6 +182,17 @@ public class PageProcessor {
 			}
 		}
 		return sb.toString();
+	}
+	
+	public static void writeStats() {
+		Log.i("Logging combined stats for processing of page parts", true);
+		Log.i("Time for stripping: " + t1_stripping , false);
+		Log.i("Time for category: " + t2_category, false);
+		Log.i("Time for extLinks: " + t3_extLinks, false);
+		Log.i("Time for replaceAll: " + t4_replaceAlls, false);
+		Log.i("Time for title_ref: " + t5_titel_refs, false);
+		Log.i("Time for infobox: " + t6_infobox, false);
+		Log.i("Time for body: " + t7_body, true);
 	}
 
 

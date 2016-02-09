@@ -21,6 +21,7 @@ public class IREUtils {
 				br = new BufferedReader(new FileReader(INFO.STOP_WORD_FILE));
 				while ((s = br.readLine()) != null)
 					stopword.add(s);
+				Log.i(stopword.size() + " stopwords read into memory", false);
 			} catch (IOException e) {
 				e.printStackTrace();
 			} finally {

@@ -27,19 +27,20 @@ public class WikiDumpIndexer {
 			indexInFile = argv[0];
 			indexOutfile = argv[1];
 			Indexer.setOutFile(indexOutfile);
-			System.out.println("Reading wikidump from input file [" + indexInFile + "]");
-			System.out.println("Will write index file to [" +indexOutfile +"<counter>]");
-			
+			Log.i("Reading wikidump from input file [" + indexInFile + "]", true);
+			Log.i("Will write index file to [" +indexOutfile +"<counter>]", true);
+			Log.flush();
 			InputStream xmlInput = new FileInputStream(indexInFile);
 			SAXParser saxParser = factory.newSAXParser();
 			WikiSaxHandler handler = new WikiSaxHandler();
 			saxParser.parse(xmlInput, handler);
-			
+			PageProcessor.writeStats();
 			Indexer.writeIndexToFile(); // residue
 		} catch (Throwable err) {
 			err.printStackTrace();
 		} finally {
-			System.out.println("Runtime " + (System.currentTimeMillis() - start) / 1000 + "s");
+			Log.i("Runtime " + (System.currentTimeMillis() - start) / 1000 + "s", true);
+			Log.close();
 		}
 	}
 }

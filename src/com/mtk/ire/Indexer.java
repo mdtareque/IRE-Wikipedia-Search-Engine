@@ -88,7 +88,7 @@ public class Indexer {
 				 * }
 				 */
 			}
-			System.out.println("Index written to file [" + (outfile +counter)+ "] word-count [" + words.size() + "]");
+			Log.i("Index written to file [" + (outfile +counter)+ "] word-count [" + words.size() + "]", false);
 			counter++;
 		} catch (IOException e) {
 			e.printStackTrace();
