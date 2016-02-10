@@ -17,10 +17,10 @@ public class Indexer {
 
 	static class Ocurrences {
 		int bodyCount, titleCount, infoBoxCount, categoryCount, refCount, externalLinkCount;
-
+		static StringBuilder sb = null; 
 		@Override
 		public String toString() {
-			StringBuilder sb = new StringBuilder();
+			sb = new StringBuilder();
 			if (bodyCount > 0) sb.append("b" + bodyCount);
 			if (titleCount > 0) sb.append("t" + titleCount);
 			if (infoBoxCount > 0) sb.append("i" + infoBoxCount);
@@ -59,15 +59,17 @@ public class Indexer {
 		}
 	}
 
+	static BufferedWriter bw = null;
+	static SortedSet<String> keys = null;
+	static TreeMap<Long, Indexer.Ocurrences> value = null; 
 	public static void writeIndexToFile() {
-		BufferedWriter bw = null;
 		try {
 			bw = new BufferedWriter(new FileWriter(outfile + counter));
 			Map<String, TreeMap<Long, Indexer.Ocurrences>> ind = words;
-			SortedSet<String> keys = new TreeSet<String>(ind.keySet());
+			keys = new TreeSet<String>(ind.keySet());
 			for (String k : keys) {
 				/* Type1 Index */
-				TreeMap<Long, Indexer.Ocurrences> value = ind.get(k);
+				value = ind.get(k);
 				bw.write(k + ":");// + value.size() +":");
 				for (Long id : value.keySet()) {
 					bw.write(id + "" + value.get(id) + "");
@@ -88,7 +90,7 @@ public class Indexer {
 				 * }
 				 */
 			}
-			Log.i("Index written to file [" + (outfile +counter)+ "] word-count [" + words.size() + "]", false);
+			Log.i("Index written to file [" + (outfile +counter)+ "] word-count [" + words.size() + "]");
 			counter++;
 		} catch (IOException e) {
 			e.printStackTrace();

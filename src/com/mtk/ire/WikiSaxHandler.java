@@ -45,8 +45,9 @@ public class WikiSaxHandler extends DefaultHandler {
 		if ("page".equals(qName)) {
 			PageProcessor.processPage(p);
 			counter++;
-			if (counter % 500 == 0) {
-				Log.i("pages processed so far " + counter + ", last page id " + p.docId, true);
+			if (counter % INFO.PRINT_BLOCK == 0) {
+				Log.i("pages processed so far " + counter + ", last page id " + p.docId);
+				Log.flush();
 			}
 
 			/*if (pages.size() >= BUNDLE_SIZE) {
@@ -64,10 +65,10 @@ public class WikiSaxHandler extends DefaultHandler {
 			p.text = tmp.toString();
 		}
 	}
-
+	String value = null;
 	public void characters(char ch[], int start, int length) throws SAXException {
 
-		String value = new String(ch, start, length).trim();
+		value = new String(ch, start, length).trim();
 		if (value.length() == 0) {
 			return;
 		}

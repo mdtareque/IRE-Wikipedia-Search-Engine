@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 public class PageProcessor {
 
-	static long t1_stripping, t2_category, t3_extLinks, t4_replaceAlls, t5_titel_refs, t6_infobox, t7_body_1, t7_body_2 , start;
+	static long t1_stripping_1,t1_stripping_2,t1_stripping_3, t2_category, t3_extLinks, t4_replaceAlls, t5_titel_refs, t6_infobox, t7_body_1, t7_body_2 , start;
 	
 	static IREUtils.Stemmer s = new IREUtils.Stemmer();
 	static WikiParser w = new WikiParser();
@@ -20,23 +20,29 @@ public class PageProcessor {
 	public static void processPage(Page p) {
 		Long id = p.docId;
 		
-		writeTitleFile(p.docId, p.title);
+//		writeTitleFile(p.docId, p.title);
 		
 //		p.text0 = p.text;
 		// Part1
 		start = System.currentTimeMillis();
 		p.text = p.text.toLowerCase();
+		t1_stripping_1 += System.currentTimeMillis() - start;
+		start = System.currentTimeMillis();
 		String text = p.text;
 		text = text.replaceAll("&gt;", ">");
 		text = text.replaceAll("&lt;", "<");
+		
+		t1_stripping_2 += System.currentTimeMillis() - start; start = System.currentTimeMillis();
+		
 		// remove [http: ..] and get data
-		text = text.replaceAll("\\[http:.*? (.*?)\\]", " $1 "); 
-		text = WikiParser.ref.matcher(text).replaceAll(" ");
+		text = text.replaceAll("\\[http:.*? ", " ");
+//		text = text.replaceAll("\\[http:.*? (.*?)\\]", " $1 ");
+		text = text.replaceAll("(<ref>.*?</ref>)|(<!--.*?-->)", " ");
+//		text = WikiParser.removeRefAndHtmlComment(text);
+//		text = WikiParser.ref.matcher(text).replaceAll(" ");
 //		text = WikiParser.htmlComment.matcher(text).replaceAll(" ");// remove tags
 		p.text = text;
-		t1_stripping += System.currentTimeMillis() - start;
-		// Part2
-		start = System.currentTimeMillis();  
+		t1_stripping_3 += System.currentTimeMillis() - start; start = System.currentTimeMillis();  
 		
 		// category
 		p.categoriesText = w.getCategories(p.text);
@@ -44,9 +50,7 @@ public class PageProcessor {
 		p.categoriesText = index(p.categoriesText.split(" "), id, LOCATION.CATEGORY);
 		
 		
-		t2_category += System.currentTimeMillis() - start;
-		// Part3
-		start = System.currentTimeMillis();  
+		t2_category += System.currentTimeMillis() - start; start = System.currentTimeMillis();  
 		
 		
 		// external links
@@ -54,23 +58,22 @@ public class PageProcessor {
 //		p.externalLinkText0 = p.externalLinkText;
 		p.externalLinkText = index(p.externalLinkText.split(" "), id, LOCATION.EXTERNAL_LINKS);
 		
-		t3_extLinks += System.currentTimeMillis() - start;
-		start = System.currentTimeMillis();  
+		t3_extLinks += System.currentTimeMillis() - start; start = System.currentTimeMillis();  
 
 		
 		// 	remove tags, remove [[File: and like 380 tags
-		text = text.replaceAll("(</?.*?>)|(&nbsp;)|(\\'+)|(\\[\\[[A-Za-z]+:.*?\\]\\])", " "); 
+		text = text.replaceAll("(</?.*?>)|(\\'+)", " ");
+//		text = text.replaceAll("(</?.*?>)|(&nbsp;)|(\\'+)|(\\[\\[[A-Za-z]+:.*?\\]\\])", " ");
 //		text = text.replaceAll("\\[\\[([^]]*?)\\|(.*?)\\]\\]", " $2 "); // keep
 		// name from [][link|name]] 
 //		text = text.replaceAll("\\[\\[(.*?)\\]\\]", " $1 "); // rest all ignore
 		p.text = text;
 
-		t4_replaceAlls += System.currentTimeMillis() - start;
-		start = System.currentTimeMillis();  
+		t4_replaceAlls += System.currentTimeMillis() - start; start = System.currentTimeMillis();  
 
 		
 		// title
-		p.title = p.title.replaceAll("([A-Z][^A-Z])", " $1");
+//		p.title = p.title.replaceAll("([A-Z][^A-Z])", " $1");
 //		p.title0 = p.title;
 		p.title = index(p.title.toLowerCase().split("(\\P{Alnum})|(\\p{Blank})"), id, LOCATION.TITLE);
 		
@@ -79,10 +82,7 @@ public class PageProcessor {
 //		p.referencedText0 = p.referencedText;
 		p.referencedText = index(p.referencedText.split(" "), id, LOCATION.REF);
 
-
-		t5_titel_refs += System.currentTimeMillis() - start;
-		start = System.currentTimeMillis();  
-
+		t5_titel_refs += System.currentTimeMillis() - start; start = System.currentTimeMillis();  
 		
 		// infobox
 		p.infoboxesText = w.getInfoBox(p.text);
@@ -90,29 +90,29 @@ public class PageProcessor {
 		p.infoboxesText = index(p.infoboxesText.split(" "), id, LOCATION.INFOBOX);
 
 
-		t6_infobox += System.currentTimeMillis() - start;
-		start = System.currentTimeMillis();  
+		t6_infobox += System.currentTimeMillis() - start; start = System.currentTimeMillis();  
 
 		
 		// body
 		p.text = WikiParser.doubleCurly.matcher(p.text).replaceAll(" ");
-		t7_body_1 += System.currentTimeMillis() - start;
-		start = System.currentTimeMillis();
+		t7_body_1 += System.currentTimeMillis() - start; start = System.currentTimeMillis();
 //		p.text0 = p.text;
-		p.text = index(p.text.split("(\\P{Alpha}+)|(\\p{Blank})"), id, LOCATION.BODY);
+		p.text = p.text.replaceAll("\\P{Alpha}+", " ");
+		p.text = index(p.text.split("\\s+"), id, LOCATION.BODY);
+//		p.text = index(p.text.split("(\\P{Alpha}+)"), id, LOCATION.BODY);
 
 
 		t7_body_2 += System.currentTimeMillis() - start;
 
 		
-		if(dict.size() > 5000_000) {
+		if(dict.size() > INFO.INDEX_SPLIT_BLOCK) {
 			Indexer.writeIndexToFile();
 			Indexer.words.clear();
 		}
 //		writePageToFile(p);
 	}
 
-	static BufferedWriter titles = null;
+	/*static BufferedWriter titles = null;
 	static {
 		try {
 			titles = new BufferedWriter(new FileWriter(INFO.TITLES_FILE));
@@ -128,7 +128,7 @@ public class PageProcessor {
 			e.printStackTrace();
 		}
 	}
-
+*/
 	private static String getStem(String t) {
 		s.reset();
 		s.add(t.toCharArray(), t.length());
@@ -136,8 +136,8 @@ public class PageProcessor {
 		return s.toString();
 	}
 
+	static BufferedWriter bw = null;
 	private static void writePageToFile(Page p) {
-		BufferedWriter bw = null;
 		try {
 //			bw = new BufferedWriter(new FileWriter(System.getProperty("user.home") + "/ind/" + p.docId));
 			bw = new BufferedWriter(new FileWriter(INFO.INDIVIDUAL_FILE_DIR + p.docId));
@@ -169,19 +169,22 @@ public class PageProcessor {
 
 	}
 	
+	static StringBuilder sb = null; 
 	static String index(String[] tokens, long id, LOCATION e) {
 		if(tokens.length == 0) return "";
 		String stemmed;
 		Indexer.Ocurrences oc = null;
-		StringBuilder sb = new StringBuilder();
+		TreeMap<Long, Indexer.Ocurrences> ocl = null;
+		sb = new StringBuilder();
 		for (String t : tokens) {
 			if (t.length() < 3) // skip 0,1,2 length words
 				continue;
 			if (!stopWords.contains(t)) {
 				stemmed = getStem(t);
+				if(stemmed.length() < 3) continue;
 				sb.append(stemmed + " ");
 				if (dict.containsKey(stemmed)) {
-					TreeMap<Long, Indexer.Ocurrences> ocl = dict.get(stemmed);
+					 ocl = dict.get(stemmed);
 					if (ocl.containsKey(id)) {
 						oc = ocl.get(id);
 						Indexer.Ocurrences.updateOccurrentObj(oc, e);
@@ -193,7 +196,7 @@ public class PageProcessor {
 					}
 				} else {
 					// occurrence List
-					TreeMap<Long, Indexer.Ocurrences> ocl = new TreeMap<Long, Indexer.Ocurrences>();
+					ocl = new TreeMap<Long, Indexer.Ocurrences>();
 					oc = new Indexer.Ocurrences();
 					Indexer.Ocurrences.updateOccurrentObj(oc, e);
 					ocl.put(id, oc);
@@ -205,24 +208,28 @@ public class PageProcessor {
 	}
 	
 	public static void writeStats() {
-		Log.i("Logging combined stats for processing of page parts", true);
-		Log.i("Time for stripping: " + t1_stripping , false);
-		Log.i("Time for category: " + t2_category, false);
-		Log.i("Time for extLinks: " + t3_extLinks, false);
-		Log.i("Time for replaceAll: " + t4_replaceAlls, false);
-		Log.i("Time for title_ref: " + t5_titel_refs, false);
-		Log.i("Time for infobox: " + t6_infobox, false);
-		Log.i("Time for body: " + t7_body_1, true);
-		Log.i("Time for body: " + t7_body_2, true);
+		Log.i("Total Pages " + WikiSaxHandler.counter);
+		Log.i("combined stats of page parts (in secs)");
+		Log.i("Time for stripping_1: " + t1_stripping_1/1000);
+		Log.i("Time for stripping_2: " + t1_stripping_2/1000);
+		Log.i("Time for stripping_3: " + t1_stripping_3/1000);
+		Log.i("Time for category   : " + t2_category/1000);
+		Log.i("Time for extLinks   : " + t3_extLinks/1000);
+		Log.i("Time for replaceAll : " + t4_replaceAlls/1000);
+		Log.i("Time for title_ref  : " + t5_titel_refs/1000);
+		Log.i("Time for infobox    : " + t6_infobox/1000);
+		Log.i("Time for body_1     : " + t7_body_1/1000);
+		Log.i("Time for body_2     : " + t7_body_2/1000);
+		
 		
 		// other things to reset
-		try {
+/*		try {
 			titles.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
+*/	}
 
 
 }

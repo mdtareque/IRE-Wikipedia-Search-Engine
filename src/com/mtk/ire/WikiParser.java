@@ -181,4 +181,9 @@ public class WikiParser {
 		return tmp.toString().replaceAll("(\\P{Alpha})", " ").replaceAll("\\p{Blank}", " ");
 	}
 
+/*	public static String removeRefAndHtmlComment(String text) {
+		StringBuilder out = new StringBuilder();
+		return null;
+	}
+*/
 }
