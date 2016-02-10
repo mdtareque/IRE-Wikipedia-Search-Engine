@@ -34,9 +34,15 @@ public class Page {
 	String			externalLinkText;
 	public String	referencedText;
 
+	static String EMPTY_STRING =""; 
+	
 	@Override
 	public String toString() {
 		return docId + " " + title;
+	}
+
+	public void reset() {
+		title = text = categoriesText = infoboxesText = externalLinkText = referencedText = EMPTY_STRING;
 	}
 
 }

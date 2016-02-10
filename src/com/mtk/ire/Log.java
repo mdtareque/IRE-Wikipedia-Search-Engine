@@ -9,7 +9,7 @@ public class Log {
 	static BufferedWriter bw = null;
 	static {
 		try {
-			bw = new BufferedWriter(new FileWriter(INFO.GET_LOG_FILE));
+			bw = new BufferedWriter(new FileWriter(INFO.GET_LOG_FILE, true));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

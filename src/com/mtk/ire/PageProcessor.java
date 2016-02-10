@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 public class PageProcessor {
 
-	static long t1_stripping, t2_category, t3_extLinks, t4_replaceAlls, t5_titel_refs, t6_infobox, t7_body , start;
+	static long t1_stripping, t2_category, t3_extLinks, t4_replaceAlls, t5_titel_refs, t6_infobox, t7_body_1, t7_body_2 , start;
 	
 	static IREUtils.Stemmer s = new IREUtils.Stemmer();
 	static WikiParser w = new WikiParser();
@@ -19,19 +19,20 @@ public class PageProcessor {
 
 	public static void processPage(Page p) {
 		Long id = p.docId;
+		
+		writeTitleFile(p.docId, p.title);
+		
 //		p.text0 = p.text;
 		// Part1
 		start = System.currentTimeMillis();
-		
 		p.text = p.text.toLowerCase();
-		
 		String text = p.text;
 		text = text.replaceAll("&gt;", ">");
 		text = text.replaceAll("&lt;", "<");
 		// remove [http: ..] and get data
 		text = text.replaceAll("\\[http:.*? (.*?)\\]", " $1 "); 
 		text = WikiParser.ref.matcher(text).replaceAll(" ");
-		text = WikiParser.htmlComment.matcher(text).replaceAll(" ");// remove tags
+//		text = WikiParser.htmlComment.matcher(text).replaceAll(" ");// remove tags
 		p.text = text;
 		t1_stripping += System.currentTimeMillis() - start;
 		// Part2
@@ -59,9 +60,9 @@ public class PageProcessor {
 		
 		// 	remove tags, remove [[File: and like 380 tags
 		text = text.replaceAll("(</?.*?>)|(&nbsp;)|(\\'+)|(\\[\\[[A-Za-z]+:.*?\\]\\])", " "); 
-		text = text.replaceAll("\\[\\[([^]]*?)\\|(.*?)\\]\\]", " $2 "); // keep
+//		text = text.replaceAll("\\[\\[([^]]*?)\\|(.*?)\\]\\]", " $2 "); // keep
 		// name from [][link|name]] 
-		text = text.replaceAll("\\[\\[(.*?)\\]\\]", " $1 "); // rest all ignore
+//		text = text.replaceAll("\\[\\[(.*?)\\]\\]", " $1 "); // rest all ignore
 		p.text = text;
 
 		t4_replaceAlls += System.currentTimeMillis() - start;
@@ -95,18 +96,37 @@ public class PageProcessor {
 		
 		// body
 		p.text = WikiParser.doubleCurly.matcher(p.text).replaceAll(" ");
+		t7_body_1 += System.currentTimeMillis() - start;
+		start = System.currentTimeMillis();
 //		p.text0 = p.text;
 		p.text = index(p.text.split("(\\P{Alpha}+)|(\\p{Blank})"), id, LOCATION.BODY);
 
 
-		t7_body += System.currentTimeMillis() - start;
+		t7_body_2 += System.currentTimeMillis() - start;
 
 		
-		if(dict.size() > 1000_000) {
+		if(dict.size() > 5000_000) {
 			Indexer.writeIndexToFile();
 			Indexer.words.clear();
 		}
 //		writePageToFile(p);
+	}
+
+	static BufferedWriter titles = null;
+	static {
+		try {
+			titles = new BufferedWriter(new FileWriter(INFO.TITLES_FILE));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private static void writeTitleFile(long docId, String title) {
+		try {
+			titles.write(docId + " " + title+"\n");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static String getStem(String t) {
@@ -192,7 +212,16 @@ public class PageProcessor {
 		Log.i("Time for replaceAll: " + t4_replaceAlls, false);
 		Log.i("Time for title_ref: " + t5_titel_refs, false);
 		Log.i("Time for infobox: " + t6_infobox, false);
-		Log.i("Time for body: " + t7_body, true);
+		Log.i("Time for body: " + t7_body_1, true);
+		Log.i("Time for body: " + t7_body_2, true);
+		
+		// other things to reset
+		try {
+			titles.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 

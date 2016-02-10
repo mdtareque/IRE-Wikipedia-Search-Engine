@@ -9,5 +9,6 @@ public class INFO {
 	public static final String MINI_100MB_FILE = "docs/wiki-search-small.xml";
 	public static final String STOP_WORD_FILE = "docs/stop-word-list.txt";
 	public static final String GET_LOG_FILE = "/media/mtk/soft/tmp/log.txt";
+	public static final String TITLES_FILE = "/media/mtk/soft/tmp/titles";
 
 }

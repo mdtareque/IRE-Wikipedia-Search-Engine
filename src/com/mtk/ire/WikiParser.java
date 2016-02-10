@@ -33,8 +33,8 @@ public class WikiParser {
 	static {
 		tmp = new StringBuilder();
 		doubleCurly = Pattern.compile("\\{\\{.*?\\}\\}", Pattern.DOTALL);
-		ref = Pattern.compile("<ref>.*?</ref>", Pattern.DOTALL);
-		htmlComment = Pattern.compile("<!--.*?-->", Pattern.DOTALL);
+		ref = Pattern.compile("(<ref>.*?</ref>)|(<!--.*?-->)", Pattern.DOTALL);
+//		htmlComment = Pattern.compile("<!--.*?-->", Pattern.DOTALL);
 		cite = Pattern.compile("\\{\\{ ?cite(.*?)\\}\\}", Pattern.DOTALL);
 		// citeContents: lastName, firstName, title, publisher, place, location,
 		// encyclopedia

@@ -12,7 +12,6 @@ public class PageParsedListener implements IPageParsedListener {
 			cnt++;
 			if (cnt % 500 == 0) {
 				Log.i("pages processed so far " + cnt + ", last page id " + p.docId, true);
-				
 			}
 
 		}
