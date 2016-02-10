@@ -38,7 +38,8 @@ public class WikiDumpIndexer {
 			WikiSaxHandler handler = new WikiSaxHandler();
 			saxParser.parse(xmlInput, handler);
 			PageProcessor.writeStats();
-			Indexer.writeIndexToFile(); // residue
+			if(INFO.WRITE_MAIN_INDEX)
+				Indexer.writeIndexToFile(); // residue
 		} catch (Throwable err) {
 			err.printStackTrace();
 		} finally {

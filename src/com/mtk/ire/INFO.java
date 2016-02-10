@@ -16,5 +16,7 @@ public class INFO {
 	public static final String MAIN_DUMP = "/home/mtk/enwiki-latest-pages-articles.xml";
 	public static final long PRINT_BLOCK = 30000;
 	public static final int INDEX_SPLIT_BLOCK = 30000;
+	public static final boolean WRITE_TITLES = true;
+	public static final boolean WRITE_MAIN_INDEX = true;
 
 }

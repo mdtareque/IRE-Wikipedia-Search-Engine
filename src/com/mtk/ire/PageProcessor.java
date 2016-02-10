@@ -20,8 +20,11 @@ public class PageProcessor {
 	public static void processPage(Page p) {
 		Long id = p.docId;
 		
-//		writeTitleFile(p.docId, p.title);
+		if(INFO.WRITE_TITLES) {
+			writeTitleFile(p.docId, p.title);
+		}
 		
+		if(!INFO.WRITE_MAIN_INDEX) return;
 //		p.text0 = p.text;
 		// Part1
 		start = System.currentTimeMillis();
@@ -109,10 +112,10 @@ public class PageProcessor {
 			Indexer.writeIndexToFile();
 			Indexer.words.clear();
 		}
-//		writePageToFile(p);
+	//		writePageToFile(p);
 	}
 
-	/*static BufferedWriter titles = null;
+	static BufferedWriter titles = null;
 	static {
 		try {
 			titles = new BufferedWriter(new FileWriter(INFO.TITLES_FILE));
@@ -128,7 +131,7 @@ public class PageProcessor {
 			e.printStackTrace();
 		}
 	}
-*/
+
 	private static String getStem(String t) {
 		s.reset();
 		s.add(t.toCharArray(), t.length());
@@ -171,6 +174,7 @@ public class PageProcessor {
 	
 	static StringBuilder sb = null; 
 	static String index(String[] tokens, long id, LOCATION e) {
+//		if(!INFO.WRITE_MAIN_INDEX) return"";
 		if(tokens.length == 0) return "";
 		String stemmed;
 		Indexer.Ocurrences oc = null;
@@ -223,13 +227,15 @@ public class PageProcessor {
 		
 		
 		// other things to reset
-/*		try {
-			titles.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		if(INFO.WRITE_TITLES) {
+			try {
+				titles.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
 		}
-*/	}
+	}
 
 
 }
