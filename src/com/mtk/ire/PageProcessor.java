@@ -108,6 +108,12 @@ public class PageProcessor {
 		t7_body_2 += System.currentTimeMillis() - start;
 
 		
+		long freem = Runtime.getRuntime().freeMemory(); 
+//		System.out.println("Free meomory : " + freem);
+		/*if(freem < INFO.FREE_MEM_THRESHOLD) { // 100 MB
+			Indexer.writeIndexToFile();
+			Indexer.words.clear();
+		}*/
 		if(dict.size() > INFO.INDEX_SPLIT_BLOCK) {
 			Indexer.writeIndexToFile();
 			Indexer.words.clear();

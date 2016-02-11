@@ -1,0 +1,7 @@
+bunzip2 -kbunzip2 -k -c /media/mtk/soft/enwiki-latest-pages-articles.xml.bz2 > enwiki.xml
+
+Total number of pages : 8858260
+Time taken for only SAX Parsing : 41 mins
+
+java -Xms1536m -Xmx1536m -XX:MetaspaceSize=128m -XX:+UseConcMarkSweepGC -XX:+Pri-jar IRE-p2tCommandLineFlags -jar IRE-p2.jar
+

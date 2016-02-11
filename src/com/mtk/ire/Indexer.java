@@ -72,7 +72,7 @@ public class Indexer {
 				value = ind.get(k);
 				bw.write(k + ":");// + value.size() +":");
 				for (Long id : value.keySet()) {
-					bw.write(id + "" + value.get(id) + "");
+					bw.write(id + "-" + value.get(id) + "");
 				}
 				bw.write("\n");
 				/* Type2 Index */
