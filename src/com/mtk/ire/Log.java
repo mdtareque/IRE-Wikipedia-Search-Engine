@@ -15,7 +15,7 @@ public class Log {
 		appStart = System.currentTimeMillis();
 		try {
 			bw = new BufferedWriter(new FileWriter(INFO.GET_LOG_FILE, true));
-			bw.write("\nApp Start Time : " + date.toString());
+			bw.write("\nApp Start Time : " + date.toString()+"\n");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -46,7 +46,7 @@ public class Log {
 
 	public static void close() {
 		Date date = new Date();
-		Log.i("App End time : " + date.toString());
+		Log.i("App End time : " + date.toString()+ "\n");
 		Log.i("Application RunTime " + (System.currentTimeMillis() - appStart));
 		try {
 			bw.close();
