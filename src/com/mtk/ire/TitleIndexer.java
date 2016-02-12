@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.channels.SeekableByteChannel;
@@ -187,6 +188,7 @@ public class TitleIndexer {
 		System.out.println("Secondary index size " + secondaryIndex.size());
 	}
 
+	// get bytes positions
 	public static void read(String[] args) throws Exception {
 		String file = "/home/mtk/Downloads/dc/titles-prod.txt";
 		BufferedReader br = new BufferedReader(new FileReader(file));
@@ -212,6 +214,7 @@ public class TitleIndexer {
 
 	}
 
+	// from tutorial
 	public static void seek(String[] args) {
 		// The path we are going to open - the file containing the acrostic
 		// Path acrostic = Paths.get(System.getProperty("user.home"),
@@ -276,7 +279,9 @@ public class TitleIndexer {
 		// index();
 //		readIndex();
 		
+		/*long start = System.currentTimeMillis();
 		createPrimaryIndex();
+		System.out.println("time to read primaryIndex " + (System.currentTimeMillis() - start));
 		
 		int[] i = {10, 12, 18, 23};
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -285,7 +290,66 @@ public class TitleIndexer {
 			if(i1 ==0)break;
 			System.out.println("readTitle " + i1);
 			readTitleBySeek(i1);
+		}*/
+		
+		
+		// 1. Read 2nd index
+		// 2. put primaryIndex2.txt, secIndex2.txt, justTitles2.txt in some folder
+		// 3. get title by id
+		/*
+		long start = System.currentTimeMillis();
+		create2ndIndexOnTitles();
+		System.out.println("time to create secIndex " + (System.currentTimeMillis() - start));
+		 */
+		
+		long start2 = System.currentTimeMillis();
+		TreeMap<Long, Long> secIndex = read2ndIndex();
+		System.out.println("time to read secIndex " + (System.currentTimeMillis() - start2));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		while(true) {
+			int i1 = Integer.parseInt(br.readLine());
+			if(i1 ==0)break;
+			System.out.println("readTitle " + i1);
+			readTitleBySeek(i1, secIndex);
 		}
+	}
+	
+	static TreeMap<Long, Long> read2ndIndex() throws Exception {
+		String f= "/home/mtk/Downloads/dc/secIndex2.txt";
+		BufferedReader br = new BufferedReader(new FileReader(f));
+		String t = null;
+		long  id, seekPos, i=0;
+		TreeMap<Long, Long> secIndex = new TreeMap<Long, Long>();
+		while ((t = br.readLine()) != null) {
+			id = Long.parseLong(t.split("-")[0]);
+			seekPos = Long.parseLong(t.split("-")[1]);
+			secIndex.put(id, seekPos);
+			i++;
+		}
+		System.out.println("SecIndex size " + secIndex.size());
+		return secIndex;
+	}
+	static void create2ndIndexOnTitles() throws Exception {	
+		String f= "/home/mtk/Downloads/dc/primaryIndex2.txt";
+		String secOut = "/home/mtk/Downloads/dc/secIndex2.txt";
+		BufferedWriter sibw = new BufferedWriter(new FileWriter(secOut)); // secondary index bw
+		BufferedReader br = new BufferedReader(new FileReader(f));
+		String t = null;
+		long i=0;
+		Long bytes = 0L, id ;
+		Charset utf8 = Charset.forName("UTF-8");
+		StringBuilder sb = new StringBuilder();
+		while ((t = br.readLine()) != null) {
+			sb.setLength(0);
+			sb.trimToSize();
+			id = Long.parseLong(t.split("-")[0]);
+			if(i%400 == 0)
+				sibw.write(id + "-" + bytes + "\n");
+			bytes += t.getBytes(utf8).length + 1; // - id.toString().getBytes().length - 1;
+			i++;
+		}
+		br.close();
+		sibw.close();
 	}
 	static TreeMap<Long, Long> getPrimaryIndex(String f) throws Exception {
 		BufferedReader br = new BufferedReader(new FileReader(f));
@@ -301,12 +365,22 @@ public class TitleIndexer {
 		return priIndex;
 	}
 	
-	static void readTitleBySeek(long id) throws Exception {
-		String primaryIndexFile = "/home/mtk/Downloads/dc/primaryIndex2.txt";
-		
-		TreeMap<Long, Long> primaryIndex = getPrimaryIndex(primaryIndexFile);
-		Long firstSeekPos = primaryIndex.get(id);
+	static void readTitleBySeek(long id, TreeMap<Long, Long> secIndex) throws Exception {
+		Long firstSeekPos = secIndex.floorEntry(id).getValue(), nextSeekPos;
 		System.out.println("firstSeekPos " + firstSeekPos);
+		String primIndexFile = "/home/mtk/Downloads/dc/primaryIndex2.txt";
+		RandomAccessFile raf = new RandomAccessFile(primIndexFile, "r");
+		raf.seek(firstSeekPos);
+		String tmp;
+		while(true) {
+			tmp = raf.readLine();
+			System.out.println(tmp);
+			if( Long.parseLong(tmp.split("-")[0]) == id ) {
+				nextSeekPos = Long.parseLong(tmp.split("-")[1]);
+				System.out.println("Got " + nextSeekPos + " nextSeekPos from secondary index");
+				break;
+			}
+		}
 		
 		String titles = "/home/mtk/Downloads/dc/justTitles2.txt";
 		Path file = Paths.get(titles);
@@ -314,15 +388,15 @@ public class TitleIndexer {
 		String encoding = System.getProperty("file.encoding");
 		try (SeekableByteChannel sbc = Files.newByteChannel(file, EnumSet.of(READ))) {
 
-			System.out.println("\n\nchecking for position : " + id);
-			sbc.position(firstSeekPos);
+//			System.out.println("\n\nchecking for position : " + id);
+			sbc.position(nextSeekPos);
 			sbc.read(buff);
 			buff.flip();
 			CharBuffer ans = Charset.forName(encoding).decode(buff);
 			buff.rewind();
 			String res = ans.toString();
 			buff.clear();
-			System.out.println("res is " + res + ".");
+//			System.out.println("res is " + res + ".");
 			System.out.println(res.substring(0, res.indexOf('\n')));
 		
 		} catch (IOException ioe) {
