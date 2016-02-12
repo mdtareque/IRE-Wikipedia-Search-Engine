@@ -9,7 +9,7 @@ if [ $# -ne 0 ]; then
 fi
 
 echo git commit -m "`echo $commit_msg`"
-git commit -m "`echo $commit_msg`"
+git commit # -m "`echo $commit_msg`"
 
 echo git push -u origin master
 git push -u origin master
