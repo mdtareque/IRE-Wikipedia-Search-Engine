@@ -13,16 +13,18 @@ import java.util.PriorityQueue;
 
 /**
  * 
- * TODO:
+ * DONE:
  * 1. remove useless words like all composed on only 1 distinct character
  * 2. remove useless words like all composed on only 2 distinct character and length > 4
+ * 
+ * TODO: truncate posting list
  * 
  * @author mtk
  *
  */
 public class ExtMergeSort {
 
-	static int NUM_FILES=26;
+	static int NUM_FILES=2;
 	static String ROOT_DIR="/media/mtk/soft/tmp/main/dev-split/";
 	
 	static class FileWord {
@@ -57,20 +59,76 @@ public class ExtMergeSort {
 	static class Page {
 		Long did;
 		String pos;
+		int tf;
+		int[] counts = new int[6]; // title, body, category, extLinks, references, infobox
+		
 		public Page(Long d, String list) {
 			did = d;
 			pos = list;
-		}
-	}
-	static class DocIdSorter implements Comparator<Page>{
-
-		@Override
-		public int compare(Page o1, Page o2) {
-			if(o1.did > o2.did) return 1;
-			else return -1;
+			calculateTf();
 		}
 		
+		private void calculateTf() {
+			int num, j, i;
+			for(i=0; i<pos.length();i++) {
+				if( Character.isLetter(pos.charAt(i)) ) {
+					num =0;
+					j=i+1;
+					while( j< pos.length() && Character.isDigit(pos.charAt(j))  )
+						num = num*10 + Character.getNumericValue(pos.charAt(j++));
+					switch(pos.charAt(i)) {
+					case 'b': counts[0] = num; break;
+					case 'c': counts[1] = num; break;
+					case 'e': counts[2] = num; break;
+					case 'i': counts[3] = num; break;
+					case 'r': counts[4] = num; break;
+					case 't': counts[5] = num; break;
+					}
+					
+					i=j+1;
+				}
+			}
+			int total=0;
+			for(i=0; i<6; i++)
+				total += counts[i];
+			this.tf = total;
+		}
 	}
+	static class TfIdSorter implements Comparator<Page> {
+		public int compare(Page o1, Page o2) {
+			if(o1.tf < o2.tf) return 1;
+			else if(o1.tf > o2.tf) return -1;
+			return 0;
+		}
+	}
+	
+	static String getSortedByTf(String pos) {
+		List<Page> p = new ArrayList<Page>();
+		String[] tokens = pos.split(";");
+		Long d;
+		String list = "";
+		for(String t: tokens) {
+			d = Long.parseLong(t.split("-")[0]);
+			list = t.split("-") [1];
+			p.add(new Page(d, list));
+		}
+		Collections.sort(p, new TfIdSorter());
+		StringBuilder sb = new StringBuilder();
+		for(Page page: p) {
+//			sb.append(page.did + "-" + page.pos+";"); // normal
+			sb.append(page.did + page.pos+";"); // size reduced
+		}
+		sb.deleteCharAt(sb.length()-1);
+		return sb.toString();
+	}
+	static class DocIdSorter implements Comparator<Page>{
+		public int compare(Page o1, Page o2) {
+			if(o1.did > o2.did) return 1;
+			else if(o1.did > o2.did) return -1;
+			else return 0;
+		}
+	}
+
 	static String getSortedByDocId(String pos) {
 		List<Page> p = new ArrayList<Page>();
 		String[] tokens = pos.split(";");
@@ -84,7 +142,8 @@ public class ExtMergeSort {
 		Collections.sort(p, new DocIdSorter());
 		StringBuilder sb = new StringBuilder();
 		for(Page page: p) {
-			sb.append(page.did + "-" + page.pos+";");
+//			sb.append(page.did + "-" + page.pos+";"); // normal
+			sb.append(page.did + page.pos+";"); // size reduced
 		}
 		sb.deleteCharAt(sb.length()-1);
 		return sb.toString();
@@ -97,6 +156,7 @@ public class ExtMergeSort {
 			size=2;
 		}// special last merge
 		System.out.println("Size of BufferedReader " + size);
+		
 		BufferedReader[] br = new BufferedReader[size];
 		Comparator<FileWord> cmp = new FileWordComparator();
         PriorityQueue<FileWord> pq =  new PriorityQueue<FileWord>(2*NUM_FILES, cmp);
@@ -108,12 +168,18 @@ public class ExtMergeSort {
 		
 		System.out.println("Initialized all FileWords and pq");
 		FileWord fwRemoved = null;
-		String word, tmp;
+		String word, tmp, longestPostingWord = null;
 		int done=0;
 		FileWord next;
 		StringBuilder sb = new StringBuilder();
 //		BufferedWriter bw = new BufferedWriter(new FileWriter("/media/mtk/soft/tmp/main/dev-split/merged-no-sort"));
-		BufferedWriter bw = new BufferedWriter(new FileWriter("/media/mtk/soft/tmp/main/dev-split/merged-sorted-byDocId"));
+//		BufferedWriter bw = new BufferedWriter(new FileWriter("/media/mtk/soft/tmp/main/dev-split/merged-sorted-byDocId"));
+//		BufferedWriter bw = new BufferedWriter(new FileWriter("/media/mtk/soft/tmp/main/dev-split/merged-sorted-byTf"));
+//		BufferedWriter bw = new BufferedWriter(new FileWriter("/media/mtk/soft/tmp/main/dev-split/merged-sorted-byTf-RemoveUselessWords"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("/media/mtk/soft/tmp/main/dev-split/merged-sorted-byTf-RemoveUselessWords-sizeReduced"));
+		
+		long longestPostingList = 0;
+		
 		while(true) {
 			sb.setLength(0);
 			sb.trimToSize();
@@ -148,10 +214,14 @@ public class ExtMergeSort {
 				else
 					break;
 			} while( true );
-//			System.out.println(getSortedByDocId(sb.toString())); 
-			bw.write(word + ":" + getSortedByDocId(sb.toString()) + "\n");
+			if(sb.length() > longestPostingList) { 
+				longestPostingList = sb.length();
+				longestPostingWord = word;
+			}
+//			System.out.println(getSortedByDocId(sb.toString()));
+			if(!isUselessWord(word))
+				bw.write(word + ":" + getSortedByTf(sb.toString()) + "\n");
 //			bw.write(word + ":" + sb.toString() + "\n");
-//			if(pq.size() < 2) break;
 			if(done == NUM_FILES) break;
 			
 		}
@@ -162,6 +232,7 @@ public class ExtMergeSort {
 				bw.write(next.w + ":" + next.posting +"\n");
 			}
 		}
+		System.out.println("longestPostingList "  + longestPostingList + " for " + longestPostingWord);
 		bw.close();
 		for(int i=0; i<NUM_FILES; i++) {
 			br[i].close();
@@ -169,6 +240,23 @@ public class ExtMergeSort {
 		System.out.println("done");
 	}
 	
+	private static boolean isUselessWord(String w) {
+		int[] map = new int[26];
+		int i;
+		for(i=0; i<w.length() ; i++) {
+			if(Character.isLetter(w.charAt(i)))
+				map[w.charAt(i) - 'a']++;
+		}
+		int unique=0;
+		for(i=0; i<26; i++) {
+			if(map[i] > 0) unique++;
+		}
+		if(unique < 3 && w.length()> 5) return true;
+		if(unique == 1) return true;
+		return false;
+	}
+
+
 	public static void main(String[] args) throws Exception{
 		externalMergeSort(1, 26);
 		/*externalMergeSort(1, 512);
