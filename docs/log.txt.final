@@ -1,0 +1,2023 @@
+
+App Start Time : Thu Feb 11 14:06:57 IST 2016
+Reading wikidump from input file [/home/mtk/enwiki-latest-pages-articles.xml]
+Will write index file to [/media/mtk/soft/tmp/main/prod/i<counter>]
+331 stopwords read into memory
+Reading configuration values from ire.config
+INDEX_SPLIT_BLOCK 100000 PRINT_BLOCK 20000
+Index written to file [/media/mtk/soft/tmp/main/prod/i1] word-count [100051]
+Index written to file [/media/mtk/soft/tmp/main/prod/i2] word-count [100205]
+Index written to file [/media/mtk/soft/tmp/main/prod/i3] word-count [100033]
+Index written to file [/media/mtk/soft/tmp/main/prod/i4] word-count [100069]
+Index written to file [/media/mtk/soft/tmp/main/prod/i5] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i6] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i7] word-count [100049]
+Index written to file [/media/mtk/soft/tmp/main/prod/i8] word-count [100032]
+Index written to file [/media/mtk/soft/tmp/main/prod/i9] word-count [100069]
+Index written to file [/media/mtk/soft/tmp/main/prod/i10] word-count [100076]
+Index written to file [/media/mtk/soft/tmp/main/prod/i11] word-count [100033]
+Index written to file [/media/mtk/soft/tmp/main/prod/i12] word-count [100042]
+pages processed so far 20000, last page id 30503
+Index written to file [/media/mtk/soft/tmp/main/prod/i13] word-count [100042]
+Index written to file [/media/mtk/soft/tmp/main/prod/i14] word-count [100304]
+Index written to file [/media/mtk/soft/tmp/main/prod/i15] word-count [100078]
+Index written to file [/media/mtk/soft/tmp/main/prod/i16] word-count [100016]
+Index written to file [/media/mtk/soft/tmp/main/prod/i17] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i18] word-count [100099]
+Index written to file [/media/mtk/soft/tmp/main/prod/i19] word-count [100058]
+Index written to file [/media/mtk/soft/tmp/main/prod/i20] word-count [100090]
+Index written to file [/media/mtk/soft/tmp/main/prod/i21] word-count [100074]
+pages processed so far 40000, last page id 59484
+Index written to file [/media/mtk/soft/tmp/main/prod/i22] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i23] word-count [100016]
+Index written to file [/media/mtk/soft/tmp/main/prod/i24] word-count [100069]
+Index written to file [/media/mtk/soft/tmp/main/prod/i25] word-count [100155]
+Index written to file [/media/mtk/soft/tmp/main/prod/i26] word-count [100019]
+Index written to file [/media/mtk/soft/tmp/main/prod/i27] word-count [100255]
+pages processed so far 60000, last page id 90170
+Index written to file [/media/mtk/soft/tmp/main/prod/i28] word-count [100044]
+Index written to file [/media/mtk/soft/tmp/main/prod/i29] word-count [100143]
+Index written to file [/media/mtk/soft/tmp/main/prod/i30] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i31] word-count [100004]
+pages processed so far 80000, last page id 115609
+Index written to file [/media/mtk/soft/tmp/main/prod/i32] word-count [100001]
+pages processed so far 100000, last page id 136437
+Index written to file [/media/mtk/soft/tmp/main/prod/i33] word-count [100011]
+Index written to file [/media/mtk/soft/tmp/main/prod/i34] word-count [100024]
+Index written to file [/media/mtk/soft/tmp/main/prod/i35] word-count [100023]
+Index written to file [/media/mtk/soft/tmp/main/prod/i36] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i37] word-count [100036]
+Index written to file [/media/mtk/soft/tmp/main/prod/i38] word-count [100001]
+pages processed so far 120000, last page id 165312
+Index written to file [/media/mtk/soft/tmp/main/prod/i39] word-count [100037]
+Index written to file [/media/mtk/soft/tmp/main/prod/i40] word-count [100014]
+Index written to file [/media/mtk/soft/tmp/main/prod/i41] word-count [100026]
+Index written to file [/media/mtk/soft/tmp/main/prod/i42] word-count [100084]
+Index written to file [/media/mtk/soft/tmp/main/prod/i43] word-count [100065]
+Index written to file [/media/mtk/soft/tmp/main/prod/i44] word-count [100034]
+pages processed so far 140000, last page id 197974
+Index written to file [/media/mtk/soft/tmp/main/prod/i45] word-count [100100]
+Index written to file [/media/mtk/soft/tmp/main/prod/i46] word-count [100090]
+Index written to file [/media/mtk/soft/tmp/main/prod/i47] word-count [100027]
+Index written to file [/media/mtk/soft/tmp/main/prod/i48] word-count [100022]
+Index written to file [/media/mtk/soft/tmp/main/prod/i49] word-count [100127]
+Index written to file [/media/mtk/soft/tmp/main/prod/i50] word-count [100004]
+pages processed so far 160000, last page id 232359
+Index written to file [/media/mtk/soft/tmp/main/prod/i51] word-count [100091]
+Index written to file [/media/mtk/soft/tmp/main/prod/i52] word-count [100070]
+Index written to file [/media/mtk/soft/tmp/main/prod/i53] word-count [100047]
+Index written to file [/media/mtk/soft/tmp/main/prod/i54] word-count [100019]
+Index written to file [/media/mtk/soft/tmp/main/prod/i55] word-count [100014]
+pages processed so far 180000, last page id 265854
+Index written to file [/media/mtk/soft/tmp/main/prod/i56] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i57] word-count [100101]
+Index written to file [/media/mtk/soft/tmp/main/prod/i58] word-count [100069]
+Index written to file [/media/mtk/soft/tmp/main/prod/i59] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i60] word-count [100084]
+pages processed so far 200000, last page id 307694
+Index written to file [/media/mtk/soft/tmp/main/prod/i61] word-count [100071]
+Index written to file [/media/mtk/soft/tmp/main/prod/i62] word-count [100467]
+Index written to file [/media/mtk/soft/tmp/main/prod/i63] word-count [100022]
+Index written to file [/media/mtk/soft/tmp/main/prod/i64] word-count [100036]
+Index written to file [/media/mtk/soft/tmp/main/prod/i65] word-count [100028]
+pages processed so far 220000, last page id 341814
+Index written to file [/media/mtk/soft/tmp/main/prod/i66] word-count [100098]
+Index written to file [/media/mtk/soft/tmp/main/prod/i67] word-count [100031]
+Index written to file [/media/mtk/soft/tmp/main/prod/i68] word-count [100029]
+Index written to file [/media/mtk/soft/tmp/main/prod/i69] word-count [100255]
+Index written to file [/media/mtk/soft/tmp/main/prod/i70] word-count [100015]
+pages processed so far 240000, last page id 376664
+Index written to file [/media/mtk/soft/tmp/main/prod/i71] word-count [100031]
+Index written to file [/media/mtk/soft/tmp/main/prod/i72] word-count [100014]
+Index written to file [/media/mtk/soft/tmp/main/prod/i73] word-count [100024]
+Index written to file [/media/mtk/soft/tmp/main/prod/i74] word-count [100043]
+Index written to file [/media/mtk/soft/tmp/main/prod/i75] word-count [100134]
+pages processed so far 260000, last page id 411964
+Index written to file [/media/mtk/soft/tmp/main/prod/i76] word-count [100029]
+Index written to file [/media/mtk/soft/tmp/main/prod/i77] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i78] word-count [100175]
+Index written to file [/media/mtk/soft/tmp/main/prod/i79] word-count [100050]
+pages processed so far 280000, last page id 445472
+Index written to file [/media/mtk/soft/tmp/main/prod/i80] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i81] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i82] word-count [100033]
+Index written to file [/media/mtk/soft/tmp/main/prod/i83] word-count [100037]
+pages processed so far 300000, last page id 481077
+Index written to file [/media/mtk/soft/tmp/main/prod/i84] word-count [100038]
+Index written to file [/media/mtk/soft/tmp/main/prod/i85] word-count [100073]
+Index written to file [/media/mtk/soft/tmp/main/prod/i86] word-count [100468]
+Index written to file [/media/mtk/soft/tmp/main/prod/i87] word-count [100038]
+pages processed so far 320000, last page id 515183
+Index written to file [/media/mtk/soft/tmp/main/prod/i88] word-count [100078]
+Index written to file [/media/mtk/soft/tmp/main/prod/i89] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i90] word-count [100046]
+pages processed so far 340000, last page id 549609
+Index written to file [/media/mtk/soft/tmp/main/prod/i91] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i92] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i93] word-count [100003]
+pages processed so far 360000, last page id 586648
+Index written to file [/media/mtk/soft/tmp/main/prod/i94] word-count [100016]
+Index written to file [/media/mtk/soft/tmp/main/prod/i95] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i96] word-count [100028]
+Index written to file [/media/mtk/soft/tmp/main/prod/i97] word-count [100002]
+pages processed so far 380000, last page id 622179
+Index written to file [/media/mtk/soft/tmp/main/prod/i98] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i99] word-count [100224]
+Index written to file [/media/mtk/soft/tmp/main/prod/i100] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i101] word-count [100005]
+pages processed so far 400000, last page id 658720
+Index written to file [/media/mtk/soft/tmp/main/prod/i102] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i103] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i104] word-count [100040]
+pages processed so far 420000, last page id 697823
+Index written to file [/media/mtk/soft/tmp/main/prod/i105] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i106] word-count [100552]
+Index written to file [/media/mtk/soft/tmp/main/prod/i107] word-count [100024]
+pages processed so far 440000, last page id 735284
+Index written to file [/media/mtk/soft/tmp/main/prod/i108] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i109] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i110] word-count [100045]
+pages processed so far 460000, last page id 769919
+Index written to file [/media/mtk/soft/tmp/main/prod/i111] word-count [100012]
+pages processed so far 480000, last page id 797609
+Index written to file [/media/mtk/soft/tmp/main/prod/i112] word-count [100024]
+pages processed so far 500000, last page id 824037
+Index written to file [/media/mtk/soft/tmp/main/prod/i113] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i114] word-count [100120]
+pages processed so far 520000, last page id 854291
+Index written to file [/media/mtk/soft/tmp/main/prod/i115] word-count [100014]
+Index written to file [/media/mtk/soft/tmp/main/prod/i116] word-count [100017]
+Index written to file [/media/mtk/soft/tmp/main/prod/i117] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i118] word-count [101505]
+pages processed so far 540000, last page id 890151
+Index written to file [/media/mtk/soft/tmp/main/prod/i119] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i120] word-count [100076]
+Index written to file [/media/mtk/soft/tmp/main/prod/i121] word-count [100001]
+pages processed so far 560000, last page id 925530
+Index written to file [/media/mtk/soft/tmp/main/prod/i122] word-count [100252]
+Index written to file [/media/mtk/soft/tmp/main/prod/i123] word-count [100006]
+pages processed so far 580000, last page id 961187
+Index written to file [/media/mtk/soft/tmp/main/prod/i124] word-count [100037]
+Index written to file [/media/mtk/soft/tmp/main/prod/i125] word-count [100108]
+Index written to file [/media/mtk/soft/tmp/main/prod/i126] word-count [100051]
+Index written to file [/media/mtk/soft/tmp/main/prod/i127] word-count [100001]
+pages processed so far 600000, last page id 999797
+Index written to file [/media/mtk/soft/tmp/main/prod/i128] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i129] word-count [100036]
+pages processed so far 620000, last page id 1036544
+Index written to file [/media/mtk/soft/tmp/main/prod/i130] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i131] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i132] word-count [100072]
+pages processed so far 640000, last page id 1074890
+Index written to file [/media/mtk/soft/tmp/main/prod/i133] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i134] word-count [100049]
+Index written to file [/media/mtk/soft/tmp/main/prod/i135] word-count [100021]
+pages processed so far 660000, last page id 1113009
+Index written to file [/media/mtk/soft/tmp/main/prod/i136] word-count [100084]
+Index written to file [/media/mtk/soft/tmp/main/prod/i137] word-count [100083]
+Index written to file [/media/mtk/soft/tmp/main/prod/i138] word-count [100004]
+pages processed so far 680000, last page id 1151308
+Index written to file [/media/mtk/soft/tmp/main/prod/i139] word-count [100081]
+Index written to file [/media/mtk/soft/tmp/main/prod/i140] word-count [100019]
+pages processed so far 700000, last page id 1189647
+Index written to file [/media/mtk/soft/tmp/main/prod/i141] word-count [100094]
+Index written to file [/media/mtk/soft/tmp/main/prod/i142] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i143] word-count [100094]
+pages processed so far 720000, last page id 1228031
+Index written to file [/media/mtk/soft/tmp/main/prod/i144] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i145] word-count [100043]
+Index written to file [/media/mtk/soft/tmp/main/prod/i146] word-count [100026]
+pages processed so far 740000, last page id 1267285
+Index written to file [/media/mtk/soft/tmp/main/prod/i147] word-count [100032]
+Index written to file [/media/mtk/soft/tmp/main/prod/i148] word-count [100010]
+pages processed so far 760000, last page id 1303560
+Index written to file [/media/mtk/soft/tmp/main/prod/i149] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i150] word-count [100002]
+pages processed so far 780000, last page id 1336784
+Index written to file [/media/mtk/soft/tmp/main/prod/i151] word-count [100079]
+Index written to file [/media/mtk/soft/tmp/main/prod/i152] word-count [100011]
+pages processed so far 800000, last page id 1381710
+Index written to file [/media/mtk/soft/tmp/main/prod/i153] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i154] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i155] word-count [100020]
+pages processed so far 820000, last page id 1426371
+Index written to file [/media/mtk/soft/tmp/main/prod/i156] word-count [100054]
+Index written to file [/media/mtk/soft/tmp/main/prod/i157] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i158] word-count [100010]
+pages processed so far 840000, last page id 1467858
+Index written to file [/media/mtk/soft/tmp/main/prod/i159] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i160] word-count [100002]
+pages processed so far 860000, last page id 1514374
+Index written to file [/media/mtk/soft/tmp/main/prod/i161] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i162] word-count [100033]
+Index written to file [/media/mtk/soft/tmp/main/prod/i163] word-count [100006]
+pages processed so far 880000, last page id 1561358
+Index written to file [/media/mtk/soft/tmp/main/prod/i164] word-count [100017]
+Index written to file [/media/mtk/soft/tmp/main/prod/i165] word-count [100023]
+Index written to file [/media/mtk/soft/tmp/main/prod/i166] word-count [100100]
+pages processed so far 900000, last page id 1602506
+Index written to file [/media/mtk/soft/tmp/main/prod/i167] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i168] word-count [100002]
+pages processed so far 920000, last page id 1643692
+Index written to file [/media/mtk/soft/tmp/main/prod/i169] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i170] word-count [100110]
+pages processed so far 940000, last page id 1683568
+Index written to file [/media/mtk/soft/tmp/main/prod/i171] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i172] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i173] word-count [100009]
+pages processed so far 960000, last page id 1724240
+Index written to file [/media/mtk/soft/tmp/main/prod/i174] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i175] word-count [100018]
+pages processed so far 980000, last page id 1765130
+Index written to file [/media/mtk/soft/tmp/main/prod/i176] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i177] word-count [100008]
+pages processed so far 1000000, last page id 1805737
+Index written to file [/media/mtk/soft/tmp/main/prod/i178] word-count [100094]
+Index written to file [/media/mtk/soft/tmp/main/prod/i179] word-count [100026]
+Index written to file [/media/mtk/soft/tmp/main/prod/i180] word-count [100009]
+pages processed so far 1020000, last page id 1844796
+Index written to file [/media/mtk/soft/tmp/main/prod/i181] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i182] word-count [100003]
+pages processed so far 1040000, last page id 1888042
+Index written to file [/media/mtk/soft/tmp/main/prod/i183] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i184] word-count [100017]
+Index written to file [/media/mtk/soft/tmp/main/prod/i185] word-count [100005]
+pages processed so far 1060000, last page id 1929989
+Index written to file [/media/mtk/soft/tmp/main/prod/i186] word-count [100039]
+Index written to file [/media/mtk/soft/tmp/main/prod/i187] word-count [100068]
+pages processed so far 1080000, last page id 1973049
+Index written to file [/media/mtk/soft/tmp/main/prod/i188] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i189] word-count [100002]
+pages processed so far 1100000, last page id 2013353
+Index written to file [/media/mtk/soft/tmp/main/prod/i190] word-count [100130]
+Index written to file [/media/mtk/soft/tmp/main/prod/i191] word-count [100004]
+pages processed so far 1120000, last page id 2051202
+Index written to file [/media/mtk/soft/tmp/main/prod/i192] word-count [100025]
+Index written to file [/media/mtk/soft/tmp/main/prod/i193] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i194] word-count [100071]
+pages processed so far 1140000, last page id 2094619
+Index written to file [/media/mtk/soft/tmp/main/prod/i195] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i196] word-count [100005]
+pages processed so far 1160000, last page id 2134725
+Index written to file [/media/mtk/soft/tmp/main/prod/i197] word-count [100106]
+Index written to file [/media/mtk/soft/tmp/main/prod/i198] word-count [100029]
+pages processed so far 1180000, last page id 2174207
+Index written to file [/media/mtk/soft/tmp/main/prod/i199] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i200] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i201] word-count [100075]
+pages processed so far 1200000, last page id 2217280
+Index written to file [/media/mtk/soft/tmp/main/prod/i202] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i203] word-count [100077]
+pages processed so far 1220000, last page id 2260286
+Index written to file [/media/mtk/soft/tmp/main/prod/i204] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i205] word-count [100001]
+pages processed so far 1240000, last page id 2302914
+Index written to file [/media/mtk/soft/tmp/main/prod/i206] word-count [100083]
+Index written to file [/media/mtk/soft/tmp/main/prod/i207] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i208] word-count [100002]
+pages processed so far 1260000, last page id 2345875
+Index written to file [/media/mtk/soft/tmp/main/prod/i209] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i210] word-count [100003]
+pages processed so far 1280000, last page id 2390475
+Index written to file [/media/mtk/soft/tmp/main/prod/i211] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i212] word-count [100001]
+pages processed so far 1300000, last page id 2433048
+Index written to file [/media/mtk/soft/tmp/main/prod/i213] word-count [100011]
+Index written to file [/media/mtk/soft/tmp/main/prod/i214] word-count [100040]
+pages processed so far 1320000, last page id 2477156
+Index written to file [/media/mtk/soft/tmp/main/prod/i215] word-count [100085]
+Index written to file [/media/mtk/soft/tmp/main/prod/i216] word-count [100005]
+pages processed so far 1340000, last page id 2521789
+Index written to file [/media/mtk/soft/tmp/main/prod/i217] word-count [100243]
+Index written to file [/media/mtk/soft/tmp/main/prod/i218] word-count [100020]
+pages processed so far 1360000, last page id 2571278
+Index written to file [/media/mtk/soft/tmp/main/prod/i219] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i220] word-count [100007]
+pages processed so far 1380000, last page id 2614791
+Index written to file [/media/mtk/soft/tmp/main/prod/i221] word-count [100040]
+Index written to file [/media/mtk/soft/tmp/main/prod/i222] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i223] word-count [100011]
+pages processed so far 1400000, last page id 2660833
+Index written to file [/media/mtk/soft/tmp/main/prod/i224] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i225] word-count [100006]
+pages processed so far 1420000, last page id 2707660
+Index written to file [/media/mtk/soft/tmp/main/prod/i226] word-count [100119]
+pages processed so far 1440000, last page id 2747059
+Index written to file [/media/mtk/soft/tmp/main/prod/i227] word-count [100079]
+pages processed so far 1460000, last page id 2780714
+Index written to file [/media/mtk/soft/tmp/main/prod/i228] word-count [100065]
+Index written to file [/media/mtk/soft/tmp/main/prod/i229] word-count [100001]
+pages processed so far 1480000, last page id 2822356
+Index written to file [/media/mtk/soft/tmp/main/prod/i230] word-count [100271]
+Index written to file [/media/mtk/soft/tmp/main/prod/i231] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i232] word-count [100007]
+pages processed so far 1500000, last page id 2869625
+Index written to file [/media/mtk/soft/tmp/main/prod/i233] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i234] word-count [100012]
+pages processed so far 1520000, last page id 2918503
+Index written to file [/media/mtk/soft/tmp/main/prod/i235] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i236] word-count [100111]
+pages processed so far 1540000, last page id 2970716
+Index written to file [/media/mtk/soft/tmp/main/prod/i237] word-count [100028]
+Index written to file [/media/mtk/soft/tmp/main/prod/i238] word-count [100009]
+pages processed so far 1560000, last page id 3021992
+Index written to file [/media/mtk/soft/tmp/main/prod/i239] word-count [100070]
+Index written to file [/media/mtk/soft/tmp/main/prod/i240] word-count [100002]
+pages processed so far 1580000, last page id 3069216
+Index written to file [/media/mtk/soft/tmp/main/prod/i241] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i242] word-count [100006]
+pages processed so far 1600000, last page id 3116544
+Index written to file [/media/mtk/soft/tmp/main/prod/i243] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i244] word-count [100010]
+pages processed so far 1620000, last page id 3165957
+Index written to file [/media/mtk/soft/tmp/main/prod/i245] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i246] word-count [100008]
+pages processed so far 1640000, last page id 3213700
+Index written to file [/media/mtk/soft/tmp/main/prod/i247] word-count [100044]
+Index written to file [/media/mtk/soft/tmp/main/prod/i248] word-count [100039]
+pages processed so far 1660000, last page id 3260400
+Index written to file [/media/mtk/soft/tmp/main/prod/i249] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i250] word-count [100453]
+pages processed so far 1680000, last page id 3311284
+Index written to file [/media/mtk/soft/tmp/main/prod/i251] word-count [100011]
+Index written to file [/media/mtk/soft/tmp/main/prod/i252] word-count [100022]
+pages processed so far 1700000, last page id 3365103
+Index written to file [/media/mtk/soft/tmp/main/prod/i253] word-count [100016]
+Index written to file [/media/mtk/soft/tmp/main/prod/i254] word-count [100001]
+pages processed so far 1720000, last page id 3421538
+Index written to file [/media/mtk/soft/tmp/main/prod/i255] word-count [100041]
+Index written to file [/media/mtk/soft/tmp/main/prod/i256] word-count [101473]
+pages processed so far 1740000, last page id 3475847
+Index written to file [/media/mtk/soft/tmp/main/prod/i257] word-count [100142]
+Index written to file [/media/mtk/soft/tmp/main/prod/i258] word-count [100035]
+pages processed so far 1760000, last page id 3525396
+Index written to file [/media/mtk/soft/tmp/main/prod/i259] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i260] word-count [100038]
+pages processed so far 1780000, last page id 3570599
+Index written to file [/media/mtk/soft/tmp/main/prod/i261] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i262] word-count [100003]
+pages processed so far 1800000, last page id 3619397
+Index written to file [/media/mtk/soft/tmp/main/prod/i263] word-count [100084]
+Index written to file [/media/mtk/soft/tmp/main/prod/i264] word-count [100059]
+pages processed so far 1820000, last page id 3666863
+Index written to file [/media/mtk/soft/tmp/main/prod/i265] word-count [100264]
+Index written to file [/media/mtk/soft/tmp/main/prod/i266] word-count [100001]
+pages processed so far 1840000, last page id 3719011
+Index written to file [/media/mtk/soft/tmp/main/prod/i267] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i268] word-count [100194]
+pages processed so far 1860000, last page id 3770067
+Index written to file [/media/mtk/soft/tmp/main/prod/i269] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i270] word-count [100021]
+pages processed so far 1880000, last page id 3827490
+Index written to file [/media/mtk/soft/tmp/main/prod/i271] word-count [100120]
+Index written to file [/media/mtk/soft/tmp/main/prod/i272] word-count [100008]
+pages processed so far 1900000, last page id 3880252
+Index written to file [/media/mtk/soft/tmp/main/prod/i273] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i274] word-count [100014]
+pages processed so far 1920000, last page id 3938475
+Index written to file [/media/mtk/soft/tmp/main/prod/i275] word-count [100014]
+Index written to file [/media/mtk/soft/tmp/main/prod/i276] word-count [100007]
+pages processed so far 1940000, last page id 3994210
+Index written to file [/media/mtk/soft/tmp/main/prod/i277] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i278] word-count [100002]
+pages processed so far 1960000, last page id 4050863
+Index written to file [/media/mtk/soft/tmp/main/prod/i279] word-count [100025]
+Index written to file [/media/mtk/soft/tmp/main/prod/i280] word-count [100028]
+pages processed so far 1980000, last page id 4107855
+Index written to file [/media/mtk/soft/tmp/main/prod/i281] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i282] word-count [100017]
+pages processed so far 2000000, last page id 4162053
+Index written to file [/media/mtk/soft/tmp/main/prod/i283] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i284] word-count [100003]
+pages processed so far 2020000, last page id 4219421
+Index written to file [/media/mtk/soft/tmp/main/prod/i285] word-count [100062]
+Index written to file [/media/mtk/soft/tmp/main/prod/i286] word-count [100031]
+pages processed so far 2040000, last page id 4274179
+Index written to file [/media/mtk/soft/tmp/main/prod/i287] word-count [100144]
+Index written to file [/media/mtk/soft/tmp/main/prod/i288] word-count [100251]
+pages processed so far 2060000, last page id 4329746
+Index written to file [/media/mtk/soft/tmp/main/prod/i289] word-count [100029]
+Index written to file [/media/mtk/soft/tmp/main/prod/i290] word-count [100030]
+pages processed so far 2080000, last page id 4386056
+Index written to file [/media/mtk/soft/tmp/main/prod/i291] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i292] word-count [100031]
+pages processed so far 2100000, last page id 4442680
+Index written to file [/media/mtk/soft/tmp/main/prod/i293] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i294] word-count [100007]
+pages processed so far 2120000, last page id 4498480
+Index written to file [/media/mtk/soft/tmp/main/prod/i295] word-count [100008]
+pages processed so far 2140000, last page id 4555767
+Index written to file [/media/mtk/soft/tmp/main/prod/i296] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i297] word-count [100039]
+pages processed so far 2160000, last page id 4609455
+Index written to file [/media/mtk/soft/tmp/main/prod/i298] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i299] word-count [100174]
+pages processed so far 2180000, last page id 4667943
+Index written to file [/media/mtk/soft/tmp/main/prod/i300] word-count [100224]
+Index written to file [/media/mtk/soft/tmp/main/prod/i301] word-count [100074]
+pages processed so far 2200000, last page id 4726785
+Index written to file [/media/mtk/soft/tmp/main/prod/i302] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i303] word-count [100063]
+pages processed so far 2220000, last page id 4784620
+Index written to file [/media/mtk/soft/tmp/main/prod/i304] word-count [100043]
+Index written to file [/media/mtk/soft/tmp/main/prod/i305] word-count [100003]
+pages processed so far 2240000, last page id 4853026
+Index written to file [/media/mtk/soft/tmp/main/prod/i306] word-count [100007]
+pages processed so far 2260000, last page id 4911965
+Index written to file [/media/mtk/soft/tmp/main/prod/i307] word-count [100037]
+Index written to file [/media/mtk/soft/tmp/main/prod/i308] word-count [100023]
+pages processed so far 2280000, last page id 4967874
+Index written to file [/media/mtk/soft/tmp/main/prod/i309] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i310] word-count [100004]
+pages processed so far 2300000, last page id 5026188
+Index written to file [/media/mtk/soft/tmp/main/prod/i311] word-count [100004]
+pages processed so far 2320000, last page id 5084138
+Index written to file [/media/mtk/soft/tmp/main/prod/i312] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i313] word-count [100002]
+pages processed so far 2340000, last page id 5142512
+Index written to file [/media/mtk/soft/tmp/main/prod/i314] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i315] word-count [101037]
+pages processed so far 2360000, last page id 5201341
+Index written to file [/media/mtk/soft/tmp/main/prod/i316] word-count [100038]
+pages processed so far 2380000, last page id 5262942
+Index written to file [/media/mtk/soft/tmp/main/prod/i317] word-count [100014]
+Index written to file [/media/mtk/soft/tmp/main/prod/i318] word-count [100002]
+pages processed so far 2400000, last page id 5319076
+Index written to file [/media/mtk/soft/tmp/main/prod/i319] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i320] word-count [103971]
+pages processed so far 2420000, last page id 5378239
+Index written to file [/media/mtk/soft/tmp/main/prod/i321] word-count [100090]
+Index written to file [/media/mtk/soft/tmp/main/prod/i322] word-count [100029]
+pages processed so far 2440000, last page id 5432764
+Index written to file [/media/mtk/soft/tmp/main/prod/i323] word-count [100032]
+pages processed so far 2460000, last page id 5493464
+Index written to file [/media/mtk/soft/tmp/main/prod/i324] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i325] word-count [100001]
+pages processed so far 2480000, last page id 5546405
+Index written to file [/media/mtk/soft/tmp/main/prod/i326] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i327] word-count [100017]
+pages processed so far 2500000, last page id 5600523
+Index written to file [/media/mtk/soft/tmp/main/prod/i328] word-count [100014]
+Index written to file [/media/mtk/soft/tmp/main/prod/i329] word-count [100033]
+pages processed so far 2520000, last page id 5654302
+Index written to file [/media/mtk/soft/tmp/main/prod/i330] word-count [100025]
+Index written to file [/media/mtk/soft/tmp/main/prod/i331] word-count [100032]
+pages processed so far 2540000, last page id 5710776
+Index written to file [/media/mtk/soft/tmp/main/prod/i332] word-count [100098]
+pages processed so far 2560000, last page id 5766191
+Index written to file [/media/mtk/soft/tmp/main/prod/i333] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i334] word-count [100055]
+pages processed so far 2580000, last page id 5816061
+Index written to file [/media/mtk/soft/tmp/main/prod/i335] word-count [100016]
+Index written to file [/media/mtk/soft/tmp/main/prod/i336] word-count [100006]
+pages processed so far 2600000, last page id 5867902
+Index written to file [/media/mtk/soft/tmp/main/prod/i337] word-count [100019]
+Index written to file [/media/mtk/soft/tmp/main/prod/i338] word-count [100003]
+pages processed so far 2620000, last page id 5923677
+Index written to file [/media/mtk/soft/tmp/main/prod/i339] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i340] word-count [100014]
+pages processed so far 2640000, last page id 5980057
+Index written to file [/media/mtk/soft/tmp/main/prod/i341] word-count [100035]
+Index written to file [/media/mtk/soft/tmp/main/prod/i342] word-count [100007]
+pages processed so far 2660000, last page id 6036702
+Index written to file [/media/mtk/soft/tmp/main/prod/i343] word-count [100008]
+pages processed so far 2680000, last page id 6093289
+Index written to file [/media/mtk/soft/tmp/main/prod/i344] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i345] word-count [100001]
+pages processed so far 2700000, last page id 6150961
+Index written to file [/media/mtk/soft/tmp/main/prod/i346] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i347] word-count [100164]
+pages processed so far 2720000, last page id 6208819
+Index written to file [/media/mtk/soft/tmp/main/prod/i348] word-count [100051]
+pages processed so far 2740000, last page id 6269443
+Index written to file [/media/mtk/soft/tmp/main/prod/i349] word-count [100048]
+Index written to file [/media/mtk/soft/tmp/main/prod/i350] word-count [100474]
+pages processed so far 2760000, last page id 6339331
+Index written to file [/media/mtk/soft/tmp/main/prod/i351] word-count [100016]
+Index written to file [/media/mtk/soft/tmp/main/prod/i352] word-count [100028]
+pages processed so far 2780000, last page id 6422966
+Index written to file [/media/mtk/soft/tmp/main/prod/i353] word-count [100216]
+Index written to file [/media/mtk/soft/tmp/main/prod/i354] word-count [100001]
+pages processed so far 2800000, last page id 6502982
+Index written to file [/media/mtk/soft/tmp/main/prod/i355] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i356] word-count [100004]
+pages processed so far 2820000, last page id 6574746
+Index written to file [/media/mtk/soft/tmp/main/prod/i357] word-count [100077]
+pages processed so far 2840000, last page id 6654909
+Index written to file [/media/mtk/soft/tmp/main/prod/i358] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i359] word-count [100003]
+pages processed so far 2860000, last page id 6723142
+Index written to file [/media/mtk/soft/tmp/main/prod/i360] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i361] word-count [100023]
+pages processed so far 2880000, last page id 6785772
+Index written to file [/media/mtk/soft/tmp/main/prod/i362] word-count [100014]
+pages processed so far 2900000, last page id 6843929
+Index written to file [/media/mtk/soft/tmp/main/prod/i363] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i364] word-count [100001]
+pages processed so far 2920000, last page id 6905903
+Index written to file [/media/mtk/soft/tmp/main/prod/i365] word-count [100034]
+Index written to file [/media/mtk/soft/tmp/main/prod/i366] word-count [100012]
+pages processed so far 2940000, last page id 6969385
+Index written to file [/media/mtk/soft/tmp/main/prod/i367] word-count [100016]
+pages processed so far 2960000, last page id 7036295
+Index written to file [/media/mtk/soft/tmp/main/prod/i368] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i369] word-count [100009]
+pages processed so far 2980000, last page id 7111739
+Index written to file [/media/mtk/soft/tmp/main/prod/i370] word-count [100032]
+Index written to file [/media/mtk/soft/tmp/main/prod/i371] word-count [100002]
+pages processed so far 3000000, last page id 7174899
+Index written to file [/media/mtk/soft/tmp/main/prod/i372] word-count [100103]
+pages processed so far 3020000, last page id 7229335
+Index written to file [/media/mtk/soft/tmp/main/prod/i373] word-count [100943]
+pages processed so far 3040000, last page id 7286629
+Index written to file [/media/mtk/soft/tmp/main/prod/i374] word-count [100027]
+Index written to file [/media/mtk/soft/tmp/main/prod/i375] word-count [100098]
+pages processed so far 3060000, last page id 7356544
+Index written to file [/media/mtk/soft/tmp/main/prod/i376] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i377] word-count [100014]
+pages processed so far 3080000, last page id 7423486
+Index written to file [/media/mtk/soft/tmp/main/prod/i378] word-count [100003]
+pages processed so far 3100000, last page id 7487170
+Index written to file [/media/mtk/soft/tmp/main/prod/i379] word-count [100259]
+Index written to file [/media/mtk/soft/tmp/main/prod/i380] word-count [100018]
+pages processed so far 3120000, last page id 7559996
+Index written to file [/media/mtk/soft/tmp/main/prod/i381] word-count [100003]
+pages processed so far 3140000, last page id 7632801
+Index written to file [/media/mtk/soft/tmp/main/prod/i382] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i383] word-count [100006]
+pages processed so far 3160000, last page id 7702906
+Index written to file [/media/mtk/soft/tmp/main/prod/i384] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i385] word-count [100038]
+pages processed so far 3180000, last page id 7773588
+Index written to file [/media/mtk/soft/tmp/main/prod/i386] word-count [100001]
+pages processed so far 3200000, last page id 7847406
+Index written to file [/media/mtk/soft/tmp/main/prod/i387] word-count [100023]
+Index written to file [/media/mtk/soft/tmp/main/prod/i388] word-count [100024]
+pages processed so far 3220000, last page id 7911474
+Index written to file [/media/mtk/soft/tmp/main/prod/i389] word-count [100169]
+Index written to file [/media/mtk/soft/tmp/main/prod/i390] word-count [100029]
+pages processed so far 3240000, last page id 7977569
+Index written to file [/media/mtk/soft/tmp/main/prod/i391] word-count [100038]
+pages processed so far 3260000, last page id 8040649
+Index written to file [/media/mtk/soft/tmp/main/prod/i392] word-count [100129]
+Index written to file [/media/mtk/soft/tmp/main/prod/i393] word-count [100002]
+pages processed so far 3280000, last page id 8110476
+Index written to file [/media/mtk/soft/tmp/main/prod/i394] word-count [100047]
+pages processed so far 3300000, last page id 8174251
+Index written to file [/media/mtk/soft/tmp/main/prod/i395] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i396] word-count [100010]
+pages processed so far 3320000, last page id 8247194
+Index written to file [/media/mtk/soft/tmp/main/prod/i397] word-count [100010]
+pages processed so far 3340000, last page id 8319448
+Index written to file [/media/mtk/soft/tmp/main/prod/i398] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i399] word-count [101253]
+pages processed so far 3360000, last page id 8375629
+Index written to file [/media/mtk/soft/tmp/main/prod/i400] word-count [100125]
+pages processed so far 3380000, last page id 8449495
+Index written to file [/media/mtk/soft/tmp/main/prod/i401] word-count [100022]
+Index written to file [/media/mtk/soft/tmp/main/prod/i402] word-count [100019]
+pages processed so far 3400000, last page id 8511141
+Index written to file [/media/mtk/soft/tmp/main/prod/i403] word-count [100045]
+pages processed so far 3420000, last page id 8580319
+Index written to file [/media/mtk/soft/tmp/main/prod/i404] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i405] word-count [100013]
+pages processed so far 3440000, last page id 8644340
+Index written to file [/media/mtk/soft/tmp/main/prod/i406] word-count [100004]
+pages processed so far 3460000, last page id 8706418
+Index written to file [/media/mtk/soft/tmp/main/prod/i407] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i408] word-count [100001]
+pages processed so far 3480000, last page id 8776562
+Index written to file [/media/mtk/soft/tmp/main/prod/i409] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i410] word-count [100002]
+pages processed so far 3500000, last page id 8849173
+Index written to file [/media/mtk/soft/tmp/main/prod/i411] word-count [100036]
+pages processed so far 3520000, last page id 8919355
+Index written to file [/media/mtk/soft/tmp/main/prod/i412] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i413] word-count [100116]
+pages processed so far 3540000, last page id 8986007
+Index written to file [/media/mtk/soft/tmp/main/prod/i414] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i415] word-count [100142]
+pages processed so far 3560000, last page id 9052080
+Index written to file [/media/mtk/soft/tmp/main/prod/i416] word-count [100041]
+pages processed so far 3580000, last page id 9126236
+Index written to file [/media/mtk/soft/tmp/main/prod/i417] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i418] word-count [100047]
+pages processed so far 3600000, last page id 9208231
+Index written to file [/media/mtk/soft/tmp/main/prod/i419] word-count [101213]
+pages processed so far 3620000, last page id 9290936
+Index written to file [/media/mtk/soft/tmp/main/prod/i420] word-count [100088]
+Index written to file [/media/mtk/soft/tmp/main/prod/i421] word-count [100004]
+pages processed so far 3640000, last page id 9369280
+Index written to file [/media/mtk/soft/tmp/main/prod/i422] word-count [100019]
+pages processed so far 3660000, last page id 9445587
+Index written to file [/media/mtk/soft/tmp/main/prod/i423] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i424] word-count [100001]
+pages processed so far 3680000, last page id 9514142
+Index written to file [/media/mtk/soft/tmp/main/prod/i425] word-count [100003]
+pages processed so far 3700000, last page id 9586824
+Index written to file [/media/mtk/soft/tmp/main/prod/i426] word-count [100082]
+Index written to file [/media/mtk/soft/tmp/main/prod/i427] word-count [100066]
+pages processed so far 3720000, last page id 9664277
+Index written to file [/media/mtk/soft/tmp/main/prod/i428] word-count [100001]
+pages processed so far 3740000, last page id 9747006
+Index written to file [/media/mtk/soft/tmp/main/prod/i429] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i430] word-count [100001]
+pages processed so far 3760000, last page id 9834423
+Index written to file [/media/mtk/soft/tmp/main/prod/i431] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i432] word-count [100219]
+pages processed so far 3780000, last page id 9916276
+Index written to file [/media/mtk/soft/tmp/main/prod/i433] word-count [100003]
+pages processed so far 3800000, last page id 9998182
+Index written to file [/media/mtk/soft/tmp/main/prod/i434] word-count [100008]
+Index written to file [/media/mtk/soft/tmp/main/prod/i435] word-count [100006]
+pages processed so far 3820000, last page id 10076449
+Index written to file [/media/mtk/soft/tmp/main/prod/i436] word-count [100146]
+Index written to file [/media/mtk/soft/tmp/main/prod/i437] word-count [100024]
+pages processed so far 3840000, last page id 10154746
+Index written to file [/media/mtk/soft/tmp/main/prod/i438] word-count [100011]
+pages processed so far 3860000, last page id 10235295
+Index written to file [/media/mtk/soft/tmp/main/prod/i439] word-count [100011]
+Index written to file [/media/mtk/soft/tmp/main/prod/i440] word-count [100018]
+pages processed so far 3880000, last page id 10325477
+Index written to file [/media/mtk/soft/tmp/main/prod/i441] word-count [100007]
+pages processed so far 3900000, last page id 10414863
+Index written to file [/media/mtk/soft/tmp/main/prod/i442] word-count [100062]
+Index written to file [/media/mtk/soft/tmp/main/prod/i443] word-count [100009]
+pages processed so far 3920000, last page id 10492067
+Index written to file [/media/mtk/soft/tmp/main/prod/i444] word-count [100047]
+Index written to file [/media/mtk/soft/tmp/main/prod/i445] word-count [100422]
+pages processed so far 3940000, last page id 10575865
+Index written to file [/media/mtk/soft/tmp/main/prod/i446] word-count [100034]
+pages processed so far 3960000, last page id 10667519
+Index written to file [/media/mtk/soft/tmp/main/prod/i447] word-count [100017]
+Index written to file [/media/mtk/soft/tmp/main/prod/i448] word-count [100024]
+pages processed so far 3980000, last page id 10759902
+Index written to file [/media/mtk/soft/tmp/main/prod/i449] word-count [100010]
+pages processed so far 4000000, last page id 10844236
+Index written to file [/media/mtk/soft/tmp/main/prod/i450] word-count [100029]
+Index written to file [/media/mtk/soft/tmp/main/prod/i451] word-count [100002]
+pages processed so far 4020000, last page id 10925121
+Index written to file [/media/mtk/soft/tmp/main/prod/i452] word-count [100026]
+Index written to file [/media/mtk/soft/tmp/main/prod/i453] word-count [100005]
+pages processed so far 4040000, last page id 11000736
+Index written to file [/media/mtk/soft/tmp/main/prod/i454] word-count [100005]
+pages processed so far 4060000, last page id 11078653
+Index written to file [/media/mtk/soft/tmp/main/prod/i455] word-count [100020]
+Index written to file [/media/mtk/soft/tmp/main/prod/i456] word-count [100057]
+pages processed so far 4080000, last page id 11156989
+Index written to file [/media/mtk/soft/tmp/main/prod/i457] word-count [100021]
+pages processed so far 4100000, last page id 11231553
+Index written to file [/media/mtk/soft/tmp/main/prod/i458] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i459] word-count [100466]
+pages processed so far 4120000, last page id 11304053
+Index written to file [/media/mtk/soft/tmp/main/prod/i460] word-count [100026]
+pages processed so far 4140000, last page id 11376653
+Index written to file [/media/mtk/soft/tmp/main/prod/i461] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i462] word-count [100003]
+pages processed so far 4160000, last page id 11453866
+Index written to file [/media/mtk/soft/tmp/main/prod/i463] word-count [100089]
+pages processed so far 4180000, last page id 11524054
+Index written to file [/media/mtk/soft/tmp/main/prod/i464] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i465] word-count [100125]
+pages processed so far 4200000, last page id 11590023
+Index written to file [/media/mtk/soft/tmp/main/prod/i466] word-count [100005]
+pages processed so far 4220000, last page id 11667241
+Index written to file [/media/mtk/soft/tmp/main/prod/i467] word-count [100008]
+pages processed so far 4240000, last page id 11721362
+Index written to file [/media/mtk/soft/tmp/main/prod/i468] word-count [100004]
+pages processed so far 4260000, last page id 11775652
+Index written to file [/media/mtk/soft/tmp/main/prod/i469] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i470] word-count [100008]
+pages processed so far 4280000, last page id 11834730
+Index written to file [/media/mtk/soft/tmp/main/prod/i471] word-count [100251]
+pages processed so far 4300000, last page id 11905060
+Index written to file [/media/mtk/soft/tmp/main/prod/i472] word-count [100047]
+Index written to file [/media/mtk/soft/tmp/main/prod/i473] word-count [100123]
+pages processed so far 4320000, last page id 11969923
+Index written to file [/media/mtk/soft/tmp/main/prod/i474] word-count [100100]
+pages processed so far 4340000, last page id 12038979
+Index written to file [/media/mtk/soft/tmp/main/prod/i475] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i476] word-count [100010]
+pages processed so far 4360000, last page id 12107810
+Index written to file [/media/mtk/soft/tmp/main/prod/i477] word-count [100003]
+pages processed so far 4380000, last page id 12172146
+Index written to file [/media/mtk/soft/tmp/main/prod/i478] word-count [100030]
+pages processed so far 4400000, last page id 12222569
+Index written to file [/media/mtk/soft/tmp/main/prod/i479] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i480] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i481] word-count [100015]
+pages processed so far 4420000, last page id 12284002
+Index written to file [/media/mtk/soft/tmp/main/prod/i482] word-count [100083]
+pages processed so far 4440000, last page id 12351818
+Index written to file [/media/mtk/soft/tmp/main/prod/i483] word-count [100010]
+pages processed so far 4460000, last page id 12404783
+Index written to file [/media/mtk/soft/tmp/main/prod/i484] word-count [100065]
+Index written to file [/media/mtk/soft/tmp/main/prod/i485] word-count [100007]
+pages processed so far 4480000, last page id 12455779
+Index written to file [/media/mtk/soft/tmp/main/prod/i486] word-count [100012]
+pages processed so far 4500000, last page id 12506687
+Index written to file [/media/mtk/soft/tmp/main/prod/i487] word-count [100002]
+pages processed so far 4520000, last page id 12562312
+Index written to file [/media/mtk/soft/tmp/main/prod/i488] word-count [100013]
+pages processed so far 4540000, last page id 12622025
+Index written to file [/media/mtk/soft/tmp/main/prod/i489] word-count [100001]
+pages processed so far 4560000, last page id 12682305
+Index written to file [/media/mtk/soft/tmp/main/prod/i490] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i491] word-count [100585]
+pages processed so far 4580000, last page id 12745587
+Index written to file [/media/mtk/soft/tmp/main/prod/i492] word-count [100006]
+pages processed so far 4600000, last page id 12808421
+Index written to file [/media/mtk/soft/tmp/main/prod/i493] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i494] word-count [100004]
+pages processed so far 4620000, last page id 12867922
+Index written to file [/media/mtk/soft/tmp/main/prod/i495] word-count [100001]
+pages processed so far 4640000, last page id 12922127
+Index written to file [/media/mtk/soft/tmp/main/prod/i496] word-count [100001]
+pages processed so far 4660000, last page id 12987071
+Index written to file [/media/mtk/soft/tmp/main/prod/i497] word-count [100033]
+Index written to file [/media/mtk/soft/tmp/main/prod/i498] word-count [100016]
+pages processed so far 4680000, last page id 13054390
+Index written to file [/media/mtk/soft/tmp/main/prod/i499] word-count [100005]
+pages processed so far 4700000, last page id 13121984
+Index written to file [/media/mtk/soft/tmp/main/prod/i500] word-count [100051]
+Index written to file [/media/mtk/soft/tmp/main/prod/i501] word-count [100011]
+pages processed so far 4720000, last page id 13174341
+Index written to file [/media/mtk/soft/tmp/main/prod/i502] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i503] word-count [100019]
+pages processed so far 4740000, last page id 13237596
+Index written to file [/media/mtk/soft/tmp/main/prod/i504] word-count [100093]
+pages processed so far 4760000, last page id 13306208
+Index written to file [/media/mtk/soft/tmp/main/prod/i505] word-count [100026]
+Index written to file [/media/mtk/soft/tmp/main/prod/i506] word-count [100582]
+pages processed so far 4780000, last page id 13380592
+Index written to file [/media/mtk/soft/tmp/main/prod/i507] word-count [100005]
+pages processed so far 4800000, last page id 13450458
+Index written to file [/media/mtk/soft/tmp/main/prod/i508] word-count [100307]
+pages processed so far 4820000, last page id 13519218
+Index written to file [/media/mtk/soft/tmp/main/prod/i509] word-count [100046]
+Index written to file [/media/mtk/soft/tmp/main/prod/i510] word-count [100018]
+pages processed so far 4840000, last page id 13587280
+Index written to file [/media/mtk/soft/tmp/main/prod/i511] word-count [100007]
+pages processed so far 4860000, last page id 13641836
+Index written to file [/media/mtk/soft/tmp/main/prod/i512] word-count [100259]
+pages processed so far 4880000, last page id 13710379
+Index written to file [/media/mtk/soft/tmp/main/prod/i513] word-count [100150]
+Index written to file [/media/mtk/soft/tmp/main/prod/i514] word-count [100454]
+pages processed so far 4900000, last page id 13779783
+Index written to file [/media/mtk/soft/tmp/main/prod/i515] word-count [100017]
+pages processed so far 4920000, last page id 13851153
+Index written to file [/media/mtk/soft/tmp/main/prod/i516] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i517] word-count [100014]
+pages processed so far 4940000, last page id 13926505
+Index written to file [/media/mtk/soft/tmp/main/prod/i518] word-count [100229]
+Index written to file [/media/mtk/soft/tmp/main/prod/i519] word-count [100207]
+pages processed so far 4960000, last page id 13999045
+Index written to file [/media/mtk/soft/tmp/main/prod/i520] word-count [100003]
+pages processed so far 4980000, last page id 14056676
+Index written to file [/media/mtk/soft/tmp/main/prod/i521] word-count [100005]
+pages processed so far 5000000, last page id 14129938
+Index written to file [/media/mtk/soft/tmp/main/prod/i522] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i523] word-count [100016]
+pages processed so far 5020000, last page id 14207572
+Index written to file [/media/mtk/soft/tmp/main/prod/i524] word-count [100045]
+pages processed so far 5040000, last page id 14270934
+Index written to file [/media/mtk/soft/tmp/main/prod/i525] word-count [100011]
+Index written to file [/media/mtk/soft/tmp/main/prod/i526] word-count [100005]
+pages processed so far 5060000, last page id 14339195
+pages processed so far 5080000, last page id 14382318
+Index written to file [/media/mtk/soft/tmp/main/prod/i527] word-count [100014]
+pages processed so far 5100000, last page id 14430687
+Index written to file [/media/mtk/soft/tmp/main/prod/i528] word-count [100022]
+Index written to file [/media/mtk/soft/tmp/main/prod/i529] word-count [100005]
+pages processed so far 5120000, last page id 14498989
+Index written to file [/media/mtk/soft/tmp/main/prod/i530] word-count [100009]
+pages processed so far 5140000, last page id 14565533
+Index written to file [/media/mtk/soft/tmp/main/prod/i531] word-count [100813]
+Index written to file [/media/mtk/soft/tmp/main/prod/i532] word-count [100169]
+pages processed so far 5160000, last page id 14634809
+Index written to file [/media/mtk/soft/tmp/main/prod/i533] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i534] word-count [100003]
+pages processed so far 5180000, last page id 14703522
+Index written to file [/media/mtk/soft/tmp/main/prod/i535] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i536] word-count [100264]
+Index written to file [/media/mtk/soft/tmp/main/prod/i537] word-count [101129]
+pages processed so far 5200000, last page id 14762717
+Index written to file [/media/mtk/soft/tmp/main/prod/i538] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i539] word-count [100070]
+pages processed so far 5220000, last page id 14819026
+Index written to file [/media/mtk/soft/tmp/main/prod/i540] word-count [100020]
+pages processed so far 5240000, last page id 14869765
+Index written to file [/media/mtk/soft/tmp/main/prod/i541] word-count [100001]
+pages processed so far 5260000, last page id 14920963
+Index written to file [/media/mtk/soft/tmp/main/prod/i542] word-count [100022]
+pages processed so far 5280000, last page id 14974071
+Index written to file [/media/mtk/soft/tmp/main/prod/i543] word-count [100010]
+pages processed so far 5300000, last page id 15029308
+Index written to file [/media/mtk/soft/tmp/main/prod/i544] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i545] word-count [100011]
+pages processed so far 5320000, last page id 15084726
+Index written to file [/media/mtk/soft/tmp/main/prod/i546] word-count [100005]
+pages processed so far 5340000, last page id 15154091
+Index written to file [/media/mtk/soft/tmp/main/prod/i547] word-count [100015]
+pages processed so far 5360000, last page id 15215676
+Index written to file [/media/mtk/soft/tmp/main/prod/i548] word-count [100029]
+Index written to file [/media/mtk/soft/tmp/main/prod/i549] word-count [100031]
+pages processed so far 5380000, last page id 15300945
+Index written to file [/media/mtk/soft/tmp/main/prod/i550] word-count [100011]
+pages processed so far 5400000, last page id 15356309
+Index written to file [/media/mtk/soft/tmp/main/prod/i551] word-count [100066]
+pages processed so far 5420000, last page id 15426269
+Index written to file [/media/mtk/soft/tmp/main/prod/i552] word-count [100012]
+pages processed so far 5440000, last page id 15484038
+Index written to file [/media/mtk/soft/tmp/main/prod/i553] word-count [100004]
+pages processed so far 5460000, last page id 15547445
+Index written to file [/media/mtk/soft/tmp/main/prod/i554] word-count [100095]
+Index written to file [/media/mtk/soft/tmp/main/prod/i555] word-count [100023]
+pages processed so far 5480000, last page id 15604410
+Index written to file [/media/mtk/soft/tmp/main/prod/i556] word-count [100006]
+pages processed so far 5500000, last page id 15677006
+Index written to file [/media/mtk/soft/tmp/main/prod/i557] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i558] word-count [100001]
+pages processed so far 5520000, last page id 15748099
+Index written to file [/media/mtk/soft/tmp/main/prod/i559] word-count [100001]
+pages processed so far 5540000, last page id 15805216
+Index written to file [/media/mtk/soft/tmp/main/prod/i560] word-count [100014]
+pages processed so far 5560000, last page id 15864496
+Index written to file [/media/mtk/soft/tmp/main/prod/i561] word-count [100003]
+pages processed so far 5580000, last page id 15922184
+Index written to file [/media/mtk/soft/tmp/main/prod/i562] word-count [100004]
+pages processed so far 5600000, last page id 15999307
+Index written to file [/media/mtk/soft/tmp/main/prod/i563] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i564] word-count [100040]
+pages processed so far 5620000, last page id 16068812
+Index written to file [/media/mtk/soft/tmp/main/prod/i565] word-count [100005]
+pages processed so far 5640000, last page id 16166289
+Index written to file [/media/mtk/soft/tmp/main/prod/i566] word-count [100236]
+pages processed so far 5660000, last page id 16221677
+Index written to file [/media/mtk/soft/tmp/main/prod/i567] word-count [100012]
+pages processed so far 5680000, last page id 16279798
+Index written to file [/media/mtk/soft/tmp/main/prod/i568] word-count [100128]
+pages processed so far 5700000, last page id 16323607
+Index written to file [/media/mtk/soft/tmp/main/prod/i569] word-count [100025]
+pages processed so far 5720000, last page id 16373003
+Index written to file [/media/mtk/soft/tmp/main/prod/i570] word-count [100002]
+pages processed so far 5740000, last page id 16406951
+pages processed so far 5760000, last page id 16441209
+Index written to file [/media/mtk/soft/tmp/main/prod/i571] word-count [139949]
+pages processed so far 5780000, last page id 16476990
+Index written to file [/media/mtk/soft/tmp/main/prod/i572] word-count [100057]
+pages processed so far 5800000, last page id 16509579
+pages processed so far 5820000, last page id 16543924
+Index written to file [/media/mtk/soft/tmp/main/prod/i573] word-count [100001]
+pages processed so far 5840000, last page id 16586390
+Index written to file [/media/mtk/soft/tmp/main/prod/i574] word-count [100002]
+pages processed so far 5860000, last page id 16633112
+Index written to file [/media/mtk/soft/tmp/main/prod/i575] word-count [100474]
+pages processed so far 5880000, last page id 16698110
+Index written to file [/media/mtk/soft/tmp/main/prod/i576] word-count [100006]
+pages processed so far 5900000, last page id 16776114
+Index written to file [/media/mtk/soft/tmp/main/prod/i577] word-count [100049]
+Index written to file [/media/mtk/soft/tmp/main/prod/i578] word-count [100049]
+pages processed so far 5920000, last page id 16843478
+Index written to file [/media/mtk/soft/tmp/main/prod/i579] word-count [100002]
+pages processed so far 5940000, last page id 16916361
+Index written to file [/media/mtk/soft/tmp/main/prod/i580] word-count [100034]
+Index written to file [/media/mtk/soft/tmp/main/prod/i581] word-count [100003]
+pages processed so far 5960000, last page id 16989444
+Index written to file [/media/mtk/soft/tmp/main/prod/i582] word-count [100008]
+pages processed so far 5980000, last page id 17066671
+Index written to file [/media/mtk/soft/tmp/main/prod/i583] word-count [100008]
+pages processed so far 6000000, last page id 17147740
+Index written to file [/media/mtk/soft/tmp/main/prod/i584] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i585] word-count [100013]
+pages processed so far 6020000, last page id 17223850
+Index written to file [/media/mtk/soft/tmp/main/prod/i586] word-count [100003]
+pages processed so far 6040000, last page id 17301399
+Index written to file [/media/mtk/soft/tmp/main/prod/i587] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i588] word-count [100037]
+pages processed so far 6060000, last page id 17377095
+Index written to file [/media/mtk/soft/tmp/main/prod/i589] word-count [100023]
+pages processed so far 6080000, last page id 17456465
+Index written to file [/media/mtk/soft/tmp/main/prod/i590] word-count [100120]
+pages processed so far 6100000, last page id 17540632
+Index written to file [/media/mtk/soft/tmp/main/prod/i591] word-count [100025]
+Index written to file [/media/mtk/soft/tmp/main/prod/i592] word-count [100102]
+pages processed so far 6120000, last page id 17614512
+Index written to file [/media/mtk/soft/tmp/main/prod/i593] word-count [100162]
+pages processed so far 6140000, last page id 17689282
+Index written to file [/media/mtk/soft/tmp/main/prod/i594] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i595] word-count [100002]
+pages processed so far 6160000, last page id 17766080
+Index written to file [/media/mtk/soft/tmp/main/prod/i596] word-count [100012]
+pages processed so far 6180000, last page id 17844440
+Index written to file [/media/mtk/soft/tmp/main/prod/i597] word-count [100021]
+pages processed so far 6200000, last page id 17914939
+Index written to file [/media/mtk/soft/tmp/main/prod/i598] word-count [100028]
+Index written to file [/media/mtk/soft/tmp/main/prod/i599] word-count [100274]
+pages processed so far 6220000, last page id 17988460
+Index written to file [/media/mtk/soft/tmp/main/prod/i600] word-count [100049]
+pages processed so far 6240000, last page id 18054169
+Index written to file [/media/mtk/soft/tmp/main/prod/i601] word-count [100034]
+pages processed so far 6260000, last page id 18131507
+Index written to file [/media/mtk/soft/tmp/main/prod/i602] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i603] word-count [100067]
+pages processed so far 6280000, last page id 18204710
+Index written to file [/media/mtk/soft/tmp/main/prod/i604] word-count [100001]
+pages processed so far 6300000, last page id 18284163
+Index written to file [/media/mtk/soft/tmp/main/prod/i605] word-count [101274]
+pages processed so far 6320000, last page id 18344727
+Index written to file [/media/mtk/soft/tmp/main/prod/i606] word-count [100047]
+pages processed so far 6340000, last page id 18392411
+Index written to file [/media/mtk/soft/tmp/main/prod/i607] word-count [100020]
+pages processed so far 6360000, last page id 18451662
+Index written to file [/media/mtk/soft/tmp/main/prod/i608] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i609] word-count [100006]
+pages processed so far 6380000, last page id 18512707
+Index written to file [/media/mtk/soft/tmp/main/prod/i610] word-count [100017]
+pages processed so far 6400000, last page id 18571455
+Index written to file [/media/mtk/soft/tmp/main/prod/i611] word-count [100004]
+pages processed so far 6420000, last page id 18630244
+Index written to file [/media/mtk/soft/tmp/main/prod/i612] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i613] word-count [100011]
+pages processed so far 6440000, last page id 18686219
+Index written to file [/media/mtk/soft/tmp/main/prod/i614] word-count [100002]
+pages processed so far 6460000, last page id 18746869
+Index written to file [/media/mtk/soft/tmp/main/prod/i615] word-count [100004]
+pages processed so far 6480000, last page id 18801057
+Index written to file [/media/mtk/soft/tmp/main/prod/i616] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i617] word-count [100009]
+pages processed so far 6500000, last page id 18866568
+Index written to file [/media/mtk/soft/tmp/main/prod/i618] word-count [100001]
+pages processed so far 6520000, last page id 18922088
+Index written to file [/media/mtk/soft/tmp/main/prod/i619] word-count [100001]
+pages processed so far 6540000, last page id 18977258
+Index written to file [/media/mtk/soft/tmp/main/prod/i620] word-count [100033]
+pages processed so far 6560000, last page id 19031640
+Index written to file [/media/mtk/soft/tmp/main/prod/i621] word-count [100002]
+pages processed so far 6580000, last page id 19091220
+Index written to file [/media/mtk/soft/tmp/main/prod/i622] word-count [100008]
+pages processed so far 6600000, last page id 19158730
+Index written to file [/media/mtk/soft/tmp/main/prod/i623] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i624] word-count [100003]
+pages processed so far 6620000, last page id 19235204
+Index written to file [/media/mtk/soft/tmp/main/prod/i625] word-count [100008]
+pages processed so far 6640000, last page id 19312093
+Index written to file [/media/mtk/soft/tmp/main/prod/i626] word-count [100344]
+Index written to file [/media/mtk/soft/tmp/main/prod/i627] word-count [100002]
+pages processed so far 6660000, last page id 19387267
+Index written to file [/media/mtk/soft/tmp/main/prod/i628] word-count [100020]
+pages processed so far 6680000, last page id 19460473
+Index written to file [/media/mtk/soft/tmp/main/prod/i629] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i630] word-count [100005]
+pages processed so far 6700000, last page id 19525985
+Index written to file [/media/mtk/soft/tmp/main/prod/i631] word-count [100011]
+pages processed so far 6720000, last page id 19584705
+Index written to file [/media/mtk/soft/tmp/main/prod/i632] word-count [100003]
+pages processed so far 6740000, last page id 19640211
+pages processed so far 6760000, last page id 19687833
+Index written to file [/media/mtk/soft/tmp/main/prod/i633] word-count [100028]
+pages processed so far 6780000, last page id 19736618
+Index written to file [/media/mtk/soft/tmp/main/prod/i634] word-count [100127]
+pages processed so far 6800000, last page id 19800255
+Index written to file [/media/mtk/soft/tmp/main/prod/i635] word-count [100017]
+pages processed so far 6820000, last page id 19859780
+Index written to file [/media/mtk/soft/tmp/main/prod/i636] word-count [100002]
+pages processed so far 6840000, last page id 19924595
+Index written to file [/media/mtk/soft/tmp/main/prod/i637] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i638] word-count [100008]
+pages processed so far 6860000, last page id 19988593
+Index written to file [/media/mtk/soft/tmp/main/prod/i639] word-count [100033]
+pages processed so far 6880000, last page id 20059058
+Index written to file [/media/mtk/soft/tmp/main/prod/i640] word-count [100001]
+pages processed so far 6900000, last page id 20135739
+Index written to file [/media/mtk/soft/tmp/main/prod/i641] word-count [100014]
+pages processed so far 6920000, last page id 20208838
+Index written to file [/media/mtk/soft/tmp/main/prod/i642] word-count [100013]
+Index written to file [/media/mtk/soft/tmp/main/prod/i643] word-count [100021]
+pages processed so far 6940000, last page id 20296129
+Index written to file [/media/mtk/soft/tmp/main/prod/i644] word-count [100034]
+pages processed so far 6960000, last page id 20386406
+Index written to file [/media/mtk/soft/tmp/main/prod/i645] word-count [100012]
+pages processed so far 6980000, last page id 20489572
+Index written to file [/media/mtk/soft/tmp/main/prod/i646] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i647] word-count [100014]
+pages processed so far 7000000, last page id 20567971
+Index written to file [/media/mtk/soft/tmp/main/prod/i648] word-count [100293]
+pages processed so far 7020000, last page id 20638401
+Index written to file [/media/mtk/soft/tmp/main/prod/i649] word-count [100001]
+pages processed so far 7040000, last page id 20696454
+Index written to file [/media/mtk/soft/tmp/main/prod/i650] word-count [100002]
+pages processed so far 7060000, last page id 20762534
+Index written to file [/media/mtk/soft/tmp/main/prod/i651] word-count [100011]
+Index written to file [/media/mtk/soft/tmp/main/prod/i652] word-count [100001]
+pages processed so far 7080000, last page id 20828092
+Index written to file [/media/mtk/soft/tmp/main/prod/i653] word-count [100013]
+pages processed so far 7100000, last page id 20890907
+Index written to file [/media/mtk/soft/tmp/main/prod/i654] word-count [100117]
+Index written to file [/media/mtk/soft/tmp/main/prod/i655] word-count [100006]
+pages processed so far 7120000, last page id 20953422
+Index written to file [/media/mtk/soft/tmp/main/prod/i656] word-count [100030]
+pages processed so far 7140000, last page id 21015842
+Index written to file [/media/mtk/soft/tmp/main/prod/i657] word-count [100005]
+pages processed so far 7160000, last page id 21083942
+Index written to file [/media/mtk/soft/tmp/main/prod/i658] word-count [100027]
+Index written to file [/media/mtk/soft/tmp/main/prod/i659] word-count [100032]
+pages processed so far 7180000, last page id 21152401
+Index written to file [/media/mtk/soft/tmp/main/prod/i660] word-count [100009]
+pages processed so far 7200000, last page id 21221632
+Index written to file [/media/mtk/soft/tmp/main/prod/i661] word-count [100430]
+pages processed so far 7220000, last page id 21290002
+Index written to file [/media/mtk/soft/tmp/main/prod/i662] word-count [100006]
+pages processed so far 7240000, last page id 21357643
+Index written to file [/media/mtk/soft/tmp/main/prod/i663] word-count [100286]
+Index written to file [/media/mtk/soft/tmp/main/prod/i664] word-count [100003]
+pages processed so far 7260000, last page id 21426762
+Index written to file [/media/mtk/soft/tmp/main/prod/i665] word-count [100163]
+pages processed so far 7280000, last page id 21491865
+Index written to file [/media/mtk/soft/tmp/main/prod/i666] word-count [101359]
+pages processed so far 7300000, last page id 21553769
+Index written to file [/media/mtk/soft/tmp/main/prod/i667] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i668] word-count [100027]
+pages processed so far 7320000, last page id 21620142
+Index written to file [/media/mtk/soft/tmp/main/prod/i669] word-count [100001]
+pages processed so far 7340000, last page id 21684953
+Index written to file [/media/mtk/soft/tmp/main/prod/i670] word-count [100001]
+pages processed so far 7360000, last page id 21752484
+Index written to file [/media/mtk/soft/tmp/main/prod/i671] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i672] word-count [100011]
+pages processed so far 7380000, last page id 21821416
+Index written to file [/media/mtk/soft/tmp/main/prod/i673] word-count [100272]
+pages processed so far 7400000, last page id 21877817
+Index written to file [/media/mtk/soft/tmp/main/prod/i674] word-count [100014]
+pages processed so far 7420000, last page id 21943080
+Index written to file [/media/mtk/soft/tmp/main/prod/i675] word-count [100001]
+pages processed so far 7440000, last page id 22014652
+Index written to file [/media/mtk/soft/tmp/main/prod/i676] word-count [101082]
+pages processed so far 7460000, last page id 22080857
+Index written to file [/media/mtk/soft/tmp/main/prod/i677] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i678] word-count [100005]
+pages processed so far 7480000, last page id 22148883
+Index written to file [/media/mtk/soft/tmp/main/prod/i679] word-count [100008]
+pages processed so far 7500000, last page id 22206866
+Index written to file [/media/mtk/soft/tmp/main/prod/i680] word-count [100009]
+pages processed so far 7520000, last page id 22260963
+Index written to file [/media/mtk/soft/tmp/main/prod/i681] word-count [100027]
+pages processed so far 7540000, last page id 22320605
+Index written to file [/media/mtk/soft/tmp/main/prod/i682] word-count [100052]
+Index written to file [/media/mtk/soft/tmp/main/prod/i683] word-count [100137]
+pages processed so far 7560000, last page id 22386892
+Index written to file [/media/mtk/soft/tmp/main/prod/i684] word-count [100002]
+pages processed so far 7580000, last page id 22439668
+Index written to file [/media/mtk/soft/tmp/main/prod/i685] word-count [100009]
+pages processed so far 7600000, last page id 22498881
+Index written to file [/media/mtk/soft/tmp/main/prod/i686] word-count [100020]
+pages processed so far 7620000, last page id 22562120
+Index written to file [/media/mtk/soft/tmp/main/prod/i687] word-count [100038]
+Index written to file [/media/mtk/soft/tmp/main/prod/i688] word-count [100015]
+pages processed so far 7640000, last page id 22627096
+Index written to file [/media/mtk/soft/tmp/main/prod/i689] word-count [100001]
+pages processed so far 7660000, last page id 22690885
+Index written to file [/media/mtk/soft/tmp/main/prod/i690] word-count [100047]
+pages processed so far 7680000, last page id 22756041
+Index written to file [/media/mtk/soft/tmp/main/prod/i691] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i692] word-count [100003]
+pages processed so far 7700000, last page id 22822407
+Index written to file [/media/mtk/soft/tmp/main/prod/i693] word-count [100019]
+pages processed so far 7720000, last page id 22890056
+Index written to file [/media/mtk/soft/tmp/main/prod/i694] word-count [100002]
+pages processed so far 7740000, last page id 22966327
+Index written to file [/media/mtk/soft/tmp/main/prod/i695] word-count [100005]
+pages processed so far 7760000, last page id 23028134
+Index written to file [/media/mtk/soft/tmp/main/prod/i696] word-count [100042]
+Index written to file [/media/mtk/soft/tmp/main/prod/i697] word-count [100008]
+pages processed so far 7780000, last page id 23108696
+Index written to file [/media/mtk/soft/tmp/main/prod/i698] word-count [100003]
+pages processed so far 7800000, last page id 23167871
+Index written to file [/media/mtk/soft/tmp/main/prod/i699] word-count [100001]
+pages processed so far 7820000, last page id 23223403
+Index written to file [/media/mtk/soft/tmp/main/prod/i700] word-count [100539]
+pages processed so far 7840000, last page id 23281338
+Index written to file [/media/mtk/soft/tmp/main/prod/i701] word-count [100030]
+pages processed so far 7860000, last page id 23326209
+Index written to file [/media/mtk/soft/tmp/main/prod/i702] word-count [100062]
+pages processed so far 7880000, last page id 23355707
+pages processed so far 7900000, last page id 23391943
+Index written to file [/media/mtk/soft/tmp/main/prod/i703] word-count [100161]
+Index written to file [/media/mtk/soft/tmp/main/prod/i704] word-count [100078]
+pages processed so far 7920000, last page id 23447642
+Index written to file [/media/mtk/soft/tmp/main/prod/i705] word-count [100113]
+pages processed so far 7940000, last page id 23503103
+Index written to file [/media/mtk/soft/tmp/main/prod/i706] word-count [100071]
+pages processed so far 7960000, last page id 23556105
+Index written to file [/media/mtk/soft/tmp/main/prod/i707] word-count [100003]
+pages processed so far 7980000, last page id 23604818
+Index written to file [/media/mtk/soft/tmp/main/prod/i708] word-count [100032]
+Index written to file [/media/mtk/soft/tmp/main/prod/i709] word-count [100562]
+Index written to file [/media/mtk/soft/tmp/main/prod/i710] word-count [100002]
+pages processed so far 8000000, last page id 23655352
+Index written to file [/media/mtk/soft/tmp/main/prod/i711] word-count [100073]
+pages processed so far 8020000, last page id 23713745
+Index written to file [/media/mtk/soft/tmp/main/prod/i712] word-count [100003]
+pages processed so far 8040000, last page id 23773714
+Index written to file [/media/mtk/soft/tmp/main/prod/i713] word-count [100037]
+Index written to file [/media/mtk/soft/tmp/main/prod/i714] word-count [100002]
+pages processed so far 8060000, last page id 23828959
+Index written to file [/media/mtk/soft/tmp/main/prod/i715] word-count [100017]
+pages processed so far 8080000, last page id 23888211
+Index written to file [/media/mtk/soft/tmp/main/prod/i716] word-count [100001]
+pages processed so far 8100000, last page id 23945925
+Index written to file [/media/mtk/soft/tmp/main/prod/i717] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i718] word-count [100029]
+pages processed so far 8120000, last page id 23996639
+Index written to file [/media/mtk/soft/tmp/main/prod/i719] word-count [100192]
+pages processed so far 8140000, last page id 24050715
+Index written to file [/media/mtk/soft/tmp/main/prod/i720] word-count [100001]
+pages processed so far 8160000, last page id 24104775
+Index written to file [/media/mtk/soft/tmp/main/prod/i721] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i722] word-count [100003]
+pages processed so far 8180000, last page id 24158174
+Index written to file [/media/mtk/soft/tmp/main/prod/i723] word-count [100013]
+pages processed so far 8200000, last page id 24216507
+Index written to file [/media/mtk/soft/tmp/main/prod/i724] word-count [100095]
+pages processed so far 8220000, last page id 24287494
+Index written to file [/media/mtk/soft/tmp/main/prod/i725] word-count [100091]
+Index written to file [/media/mtk/soft/tmp/main/prod/i726] word-count [100019]
+pages processed so far 8240000, last page id 24349732
+Index written to file [/media/mtk/soft/tmp/main/prod/i727] word-count [100006]
+pages processed so far 8260000, last page id 24412957
+Index written to file [/media/mtk/soft/tmp/main/prod/i728] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i729] word-count [100018]
+pages processed so far 8280000, last page id 24476588
+Index written to file [/media/mtk/soft/tmp/main/prod/i730] word-count [100052]
+pages processed so far 8300000, last page id 24536174
+Index written to file [/media/mtk/soft/tmp/main/prod/i731] word-count [100021]
+pages processed so far 8320000, last page id 24600459
+Index written to file [/media/mtk/soft/tmp/main/prod/i732] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i733] word-count [100219]
+pages processed so far 8340000, last page id 24665433
+Index written to file [/media/mtk/soft/tmp/main/prod/i734] word-count [100021]
+pages processed so far 8360000, last page id 24730907
+Index written to file [/media/mtk/soft/tmp/main/prod/i735] word-count [100009]
+pages processed so far 8380000, last page id 24798724
+Index written to file [/media/mtk/soft/tmp/main/prod/i736] word-count [100018]
+Index written to file [/media/mtk/soft/tmp/main/prod/i737] word-count [100048]
+pages processed so far 8400000, last page id 24876646
+Index written to file [/media/mtk/soft/tmp/main/prod/i738] word-count [100205]
+pages processed so far 8420000, last page id 24944171
+Index written to file [/media/mtk/soft/tmp/main/prod/i739] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i740] word-count [100011]
+pages processed so far 8440000, last page id 25012436
+Index written to file [/media/mtk/soft/tmp/main/prod/i741] word-count [100004]
+pages processed so far 8460000, last page id 25081470
+Index written to file [/media/mtk/soft/tmp/main/prod/i742] word-count [100038]
+Index written to file [/media/mtk/soft/tmp/main/prod/i743] word-count [100013]
+pages processed so far 8480000, last page id 25147914
+Index written to file [/media/mtk/soft/tmp/main/prod/i744] word-count [100050]
+pages processed so far 8500000, last page id 25211148
+Index written to file [/media/mtk/soft/tmp/main/prod/i745] word-count [100041]
+pages processed so far 8520000, last page id 25272706
+Index written to file [/media/mtk/soft/tmp/main/prod/i746] word-count [100017]
+pages processed so far 8540000, last page id 25343239
+Index written to file [/media/mtk/soft/tmp/main/prod/i747] word-count [100039]
+Index written to file [/media/mtk/soft/tmp/main/prod/i748] word-count [100046]
+pages processed so far 8560000, last page id 25413766
+Index written to file [/media/mtk/soft/tmp/main/prod/i749] word-count [100100]
+pages processed so far 8580000, last page id 25479678
+Index written to file [/media/mtk/soft/tmp/main/prod/i750] word-count [100006]
+pages processed so far 8600000, last page id 25542118
+Index written to file [/media/mtk/soft/tmp/main/prod/i751] word-count [100001]
+pages processed so far 8620000, last page id 25597857
+Index written to file [/media/mtk/soft/tmp/main/prod/i752] word-count [100013]
+pages processed so far 8640000, last page id 25650558
+Index written to file [/media/mtk/soft/tmp/main/prod/i753] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i754] word-count [100021]
+pages processed so far 8660000, last page id 25711398
+Index written to file [/media/mtk/soft/tmp/main/prod/i755] word-count [100020]
+pages processed so far 8680000, last page id 25776326
+Index written to file [/media/mtk/soft/tmp/main/prod/i756] word-count [100089]
+pages processed so far 8700000, last page id 25845443
+Index written to file [/media/mtk/soft/tmp/main/prod/i757] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i758] word-count [100002]
+pages processed so far 8720000, last page id 25914558
+Index written to file [/media/mtk/soft/tmp/main/prod/i759] word-count [100042]
+pages processed so far 8740000, last page id 25984046
+Index written to file [/media/mtk/soft/tmp/main/prod/i760] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i761] word-count [100002]
+pages processed so far 8760000, last page id 26054539
+Index written to file [/media/mtk/soft/tmp/main/prod/i762] word-count [100010]
+pages processed so far 8780000, last page id 26122493
+Index written to file [/media/mtk/soft/tmp/main/prod/i763] word-count [100008]
+pages processed so far 8800000, last page id 26192684
+Index written to file [/media/mtk/soft/tmp/main/prod/i764] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i765] word-count [100006]
+pages processed so far 8820000, last page id 26264500
+Index written to file [/media/mtk/soft/tmp/main/prod/i766] word-count [100177]
+pages processed so far 8840000, last page id 26332296
+Index written to file [/media/mtk/soft/tmp/main/prod/i767] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i768] word-count [100217]
+pages processed so far 8860000, last page id 26399760
+Index written to file [/media/mtk/soft/tmp/main/prod/i769] word-count [100016]
+pages processed so far 8880000, last page id 26470772
+Index written to file [/media/mtk/soft/tmp/main/prod/i770] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i771] word-count [100020]
+pages processed so far 8900000, last page id 26547314
+Index written to file [/media/mtk/soft/tmp/main/prod/i772] word-count [100003]
+pages processed so far 8920000, last page id 26617267
+Index written to file [/media/mtk/soft/tmp/main/prod/i773] word-count [100021]
+Index written to file [/media/mtk/soft/tmp/main/prod/i774] word-count [100634]
+pages processed so far 8940000, last page id 26698031
+Index written to file [/media/mtk/soft/tmp/main/prod/i775] word-count [100005]
+pages processed so far 8960000, last page id 26769765
+Index written to file [/media/mtk/soft/tmp/main/prod/i776] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i777] word-count [100002]
+pages processed so far 8980000, last page id 26834711
+Index written to file [/media/mtk/soft/tmp/main/prod/i778] word-count [100004]
+pages processed so far 9000000, last page id 26902076
+Index written to file [/media/mtk/soft/tmp/main/prod/i779] word-count [100001]
+pages processed so far 9020000, last page id 26972674
+Index written to file [/media/mtk/soft/tmp/main/prod/i780] word-count [100003]
+pages processed so far 9040000, last page id 27022020
+Index written to file [/media/mtk/soft/tmp/main/prod/i781] word-count [100171]
+pages processed so far 9060000, last page id 27065756
+Index written to file [/media/mtk/soft/tmp/main/prod/i782] word-count [100334]
+pages processed so far 9080000, last page id 27125820
+Index written to file [/media/mtk/soft/tmp/main/prod/i783] word-count [106847]
+Index written to file [/media/mtk/soft/tmp/main/prod/i784] word-count [100001]
+pages processed so far 9100000, last page id 27185036
+Index written to file [/media/mtk/soft/tmp/main/prod/i785] word-count [100002]
+pages processed so far 9120000, last page id 27255604
+Index written to file [/media/mtk/soft/tmp/main/prod/i786] word-count [100001]
+pages processed so far 9140000, last page id 27320563
+Index written to file [/media/mtk/soft/tmp/main/prod/i787] word-count [100018]
+pages processed so far 9160000, last page id 27388888
+Index written to file [/media/mtk/soft/tmp/main/prod/i788] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i789] word-count [100012]
+pages processed so far 9180000, last page id 27449089
+Index written to file [/media/mtk/soft/tmp/main/prod/i790] word-count [100002]
+pages processed so far 9200000, last page id 27517459
+pages processed so far 9220000, last page id 27548660
+Index written to file [/media/mtk/soft/tmp/main/prod/i791] word-count [100026]
+Index written to file [/media/mtk/soft/tmp/main/prod/i792] word-count [100022]
+pages processed so far 9240000, last page id 27609173
+Index written to file [/media/mtk/soft/tmp/main/prod/i793] word-count [100003]
+pages processed so far 9260000, last page id 27663511
+Index written to file [/media/mtk/soft/tmp/main/prod/i794] word-count [100001]
+pages processed so far 9280000, last page id 27722540
+Index written to file [/media/mtk/soft/tmp/main/prod/i795] word-count [100001]
+pages processed so far 9300000, last page id 27785805
+Index written to file [/media/mtk/soft/tmp/main/prod/i796] word-count [100002]
+pages processed so far 9320000, last page id 27833626
+Index written to file [/media/mtk/soft/tmp/main/prod/i797] word-count [100008]
+pages processed so far 9340000, last page id 27881730
+Index written to file [/media/mtk/soft/tmp/main/prod/i798] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i799] word-count [100017]
+pages processed so far 9360000, last page id 27944571
+Index written to file [/media/mtk/soft/tmp/main/prod/i800] word-count [100044]
+pages processed so far 9380000, last page id 28003055
+Index written to file [/media/mtk/soft/tmp/main/prod/i801] word-count [100001]
+pages processed so far 9400000, last page id 28063207
+Index written to file [/media/mtk/soft/tmp/main/prod/i802] word-count [100005]
+pages processed so far 9420000, last page id 28124454
+Index written to file [/media/mtk/soft/tmp/main/prod/i803] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i804] word-count [100001]
+pages processed so far 9440000, last page id 28182461
+Index written to file [/media/mtk/soft/tmp/main/prod/i805] word-count [100008]
+pages processed so far 9460000, last page id 28243573
+Index written to file [/media/mtk/soft/tmp/main/prod/i806] word-count [100001]
+pages processed so far 9480000, last page id 28303347
+Index written to file [/media/mtk/soft/tmp/main/prod/i807] word-count [100028]
+pages processed so far 9500000, last page id 28362207
+Index written to file [/media/mtk/soft/tmp/main/prod/i808] word-count [100010]
+pages processed so far 9520000, last page id 28410799
+Index written to file [/media/mtk/soft/tmp/main/prod/i809] word-count [100028]
+pages processed so far 9540000, last page id 28451164
+pages processed so far 9560000, last page id 28485066
+Index written to file [/media/mtk/soft/tmp/main/prod/i810] word-count [100070]
+pages processed so far 9580000, last page id 28524595
+pages processed so far 9600000, last page id 28570451
+Index written to file [/media/mtk/soft/tmp/main/prod/i811] word-count [100011]
+pages processed so far 9620000, last page id 28610792
+Index written to file [/media/mtk/soft/tmp/main/prod/i812] word-count [100094]
+pages processed so far 9640000, last page id 28666052
+Index written to file [/media/mtk/soft/tmp/main/prod/i813] word-count [100011]
+pages processed so far 9660000, last page id 28740215
+Index written to file [/media/mtk/soft/tmp/main/prod/i814] word-count [100509]
+Index written to file [/media/mtk/soft/tmp/main/prod/i815] word-count [100161]
+pages processed so far 9680000, last page id 28809425
+Index written to file [/media/mtk/soft/tmp/main/prod/i816] word-count [100115]
+pages processed so far 9700000, last page id 28869130
+Index written to file [/media/mtk/soft/tmp/main/prod/i817] word-count [100037]
+pages processed so far 9720000, last page id 28928897
+Index written to file [/media/mtk/soft/tmp/main/prod/i818] word-count [100029]
+Index written to file [/media/mtk/soft/tmp/main/prod/i819] word-count [100023]
+pages processed so far 9740000, last page id 28995278
+Index written to file [/media/mtk/soft/tmp/main/prod/i820] word-count [100017]
+pages processed so far 9760000, last page id 29075959
+Index written to file [/media/mtk/soft/tmp/main/prod/i821] word-count [100126]
+pages processed so far 9780000, last page id 29168195
+Index written to file [/media/mtk/soft/tmp/main/prod/i822] word-count [100002]
+pages processed so far 9800000, last page id 29250769
+Index written to file [/media/mtk/soft/tmp/main/prod/i823] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i824] word-count [100049]
+pages processed so far 9820000, last page id 29333698
+Index written to file [/media/mtk/soft/tmp/main/prod/i825] word-count [100017]
+pages processed so far 9840000, last page id 29405153
+Index written to file [/media/mtk/soft/tmp/main/prod/i826] word-count [100038]
+pages processed so far 9860000, last page id 29472596
+Index written to file [/media/mtk/soft/tmp/main/prod/i827] word-count [100083]
+pages processed so far 9880000, last page id 29535348
+Index written to file [/media/mtk/soft/tmp/main/prod/i828] word-count [100012]
+pages processed so far 9900000, last page id 29591972
+Index written to file [/media/mtk/soft/tmp/main/prod/i829] word-count [100002]
+pages processed so far 9920000, last page id 29655757
+Index written to file [/media/mtk/soft/tmp/main/prod/i830] word-count [100028]
+pages processed so far 9940000, last page id 29707476
+Index written to file [/media/mtk/soft/tmp/main/prod/i831] word-count [100001]
+pages processed so far 9960000, last page id 29765545
+Index written to file [/media/mtk/soft/tmp/main/prod/i832] word-count [100001]
+pages processed so far 9980000, last page id 29814981
+pages processed so far 10000000, last page id 29853276
+Index written to file [/media/mtk/soft/tmp/main/prod/i833] word-count [100002]
+pages processed so far 10020000, last page id 29889566
+pages processed so far 10040000, last page id 29929373
+Index written to file [/media/mtk/soft/tmp/main/prod/i834] word-count [100024]
+pages processed so far 10060000, last page id 29979592
+Index written to file [/media/mtk/soft/tmp/main/prod/i835] word-count [100050]
+pages processed so far 10080000, last page id 30033358
+Index written to file [/media/mtk/soft/tmp/main/prod/i836] word-count [100013]
+pages processed so far 10100000, last page id 30101984
+Index written to file [/media/mtk/soft/tmp/main/prod/i837] word-count [100130]
+pages processed so far 10120000, last page id 30172364
+Index written to file [/media/mtk/soft/tmp/main/prod/i838] word-count [100084]
+Index written to file [/media/mtk/soft/tmp/main/prod/i839] word-count [100007]
+pages processed so far 10140000, last page id 30243361
+Index written to file [/media/mtk/soft/tmp/main/prod/i840] word-count [100002]
+pages processed so far 10160000, last page id 30299876
+Index written to file [/media/mtk/soft/tmp/main/prod/i841] word-count [100015]
+pages processed so far 10180000, last page id 30388854
+Index written to file [/media/mtk/soft/tmp/main/prod/i842] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i843] word-count [100015]
+pages processed so far 10200000, last page id 30472603
+Index written to file [/media/mtk/soft/tmp/main/prod/i844] word-count [100025]
+pages processed so far 10220000, last page id 30534274
+Index written to file [/media/mtk/soft/tmp/main/prod/i845] word-count [100010]
+pages processed so far 10240000, last page id 30625902
+Index written to file [/media/mtk/soft/tmp/main/prod/i846] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i847] word-count [100026]
+pages processed so far 10260000, last page id 30693790
+Index written to file [/media/mtk/soft/tmp/main/prod/i848] word-count [100134]
+pages processed so far 10280000, last page id 30760562
+Index written to file [/media/mtk/soft/tmp/main/prod/i849] word-count [100178]
+pages processed so far 10300000, last page id 30821259
+Index written to file [/media/mtk/soft/tmp/main/prod/i850] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i851] word-count [100010]
+pages processed so far 10320000, last page id 30869198
+Index written to file [/media/mtk/soft/tmp/main/prod/i852] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i853] word-count [100024]
+pages processed so far 10340000, last page id 30944087
+Index written to file [/media/mtk/soft/tmp/main/prod/i854] word-count [100399]
+pages processed so far 10360000, last page id 31003543
+Index written to file [/media/mtk/soft/tmp/main/prod/i855] word-count [100001]
+pages processed so far 10380000, last page id 31065654
+Index written to file [/media/mtk/soft/tmp/main/prod/i856] word-count [100031]
+Index written to file [/media/mtk/soft/tmp/main/prod/i857] word-count [100220]
+pages processed so far 10400000, last page id 31127087
+Index written to file [/media/mtk/soft/tmp/main/prod/i858] word-count [100002]
+pages processed so far 10420000, last page id 31186543
+Index written to file [/media/mtk/soft/tmp/main/prod/i859] word-count [100145]
+pages processed so far 10440000, last page id 31247281
+Index written to file [/media/mtk/soft/tmp/main/prod/i860] word-count [100327]
+pages processed so far 10460000, last page id 31307106
+Index written to file [/media/mtk/soft/tmp/main/prod/i861] word-count [100012]
+Index written to file [/media/mtk/soft/tmp/main/prod/i862] word-count [100001]
+pages processed so far 10480000, last page id 31366968
+Index written to file [/media/mtk/soft/tmp/main/prod/i863] word-count [100002]
+pages processed so far 10500000, last page id 31406388
+Index written to file [/media/mtk/soft/tmp/main/prod/i864] word-count [100003]
+pages processed so far 10520000, last page id 31456100
+Index written to file [/media/mtk/soft/tmp/main/prod/i865] word-count [100132]
+pages processed so far 10540000, last page id 31517160
+Index written to file [/media/mtk/soft/tmp/main/prod/i866] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i867] word-count [100007]
+pages processed so far 10560000, last page id 31575874
+Index written to file [/media/mtk/soft/tmp/main/prod/i868] word-count [100559]
+pages processed so far 10580000, last page id 31633881
+Index written to file [/media/mtk/soft/tmp/main/prod/i869] word-count [100024]
+Index written to file [/media/mtk/soft/tmp/main/prod/i870] word-count [100111]
+pages processed so far 10600000, last page id 31695253
+Index written to file [/media/mtk/soft/tmp/main/prod/i871] word-count [100001]
+pages processed so far 10620000, last page id 31757635
+Index written to file [/media/mtk/soft/tmp/main/prod/i872] word-count [100005]
+pages processed so far 10640000, last page id 31820780
+Index written to file [/media/mtk/soft/tmp/main/prod/i873] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i874] word-count [100018]
+pages processed so far 10660000, last page id 31879884
+Index written to file [/media/mtk/soft/tmp/main/prod/i875] word-count [100005]
+pages processed so far 10680000, last page id 31945864
+Index written to file [/media/mtk/soft/tmp/main/prod/i876] word-count [100002]
+pages processed so far 10700000, last page id 32006072
+Index written to file [/media/mtk/soft/tmp/main/prod/i877] word-count [100013]
+pages processed so far 10720000, last page id 32065075
+Index written to file [/media/mtk/soft/tmp/main/prod/i878] word-count [100001]
+pages processed so far 10740000, last page id 32125673
+Index written to file [/media/mtk/soft/tmp/main/prod/i879] word-count [100052]
+Index written to file [/media/mtk/soft/tmp/main/prod/i880] word-count [100001]
+pages processed so far 10760000, last page id 32192503
+Index written to file [/media/mtk/soft/tmp/main/prod/i881] word-count [100001]
+pages processed so far 10780000, last page id 32237339
+Index written to file [/media/mtk/soft/tmp/main/prod/i882] word-count [100001]
+pages processed so far 10800000, last page id 32303087
+Index written to file [/media/mtk/soft/tmp/main/prod/i883] word-count [100001]
+pages processed so far 10820000, last page id 32361499
+Index written to file [/media/mtk/soft/tmp/main/prod/i884] word-count [100149]
+pages processed so far 10840000, last page id 32428228
+Index written to file [/media/mtk/soft/tmp/main/prod/i885] word-count [101214]
+Index written to file [/media/mtk/soft/tmp/main/prod/i886] word-count [102712]
+pages processed so far 10860000, last page id 32484045
+Index written to file [/media/mtk/soft/tmp/main/prod/i887] word-count [100002]
+pages processed so far 10880000, last page id 32544025
+Index written to file [/media/mtk/soft/tmp/main/prod/i888] word-count [100002]
+pages processed so far 10900000, last page id 32603270
+Index written to file [/media/mtk/soft/tmp/main/prod/i889] word-count [100014]
+pages processed so far 10920000, last page id 32660144
+Index written to file [/media/mtk/soft/tmp/main/prod/i890] word-count [102434]
+Index written to file [/media/mtk/soft/tmp/main/prod/i891] word-count [100054]
+pages processed so far 10940000, last page id 32722329
+Index written to file [/media/mtk/soft/tmp/main/prod/i892] word-count [100027]
+pages processed so far 10960000, last page id 32780381
+Index written to file [/media/mtk/soft/tmp/main/prod/i893] word-count [100008]
+pages processed so far 10980000, last page id 32841577
+Index written to file [/media/mtk/soft/tmp/main/prod/i894] word-count [100050]
+Index written to file [/media/mtk/soft/tmp/main/prod/i895] word-count [100560]
+pages processed so far 11000000, last page id 32900022
+Index written to file [/media/mtk/soft/tmp/main/prod/i896] word-count [100025]
+pages processed so far 11020000, last page id 32962542
+Index written to file [/media/mtk/soft/tmp/main/prod/i897] word-count [100010]
+pages processed so far 11040000, last page id 33020758
+Index written to file [/media/mtk/soft/tmp/main/prod/i898] word-count [100034]
+pages processed so far 11060000, last page id 33082644
+Index written to file [/media/mtk/soft/tmp/main/prod/i899] word-count [100065]
+pages processed so far 11080000, last page id 33143965
+Index written to file [/media/mtk/soft/tmp/main/prod/i900] word-count [100033]
+pages processed so far 11100000, last page id 33205287
+Index written to file [/media/mtk/soft/tmp/main/prod/i901] word-count [100036]
+pages processed so far 11120000, last page id 33267241
+Index written to file [/media/mtk/soft/tmp/main/prod/i902] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i903] word-count [100029]
+pages processed so far 11140000, last page id 33325869
+Index written to file [/media/mtk/soft/tmp/main/prod/i904] word-count [100005]
+pages processed so far 11160000, last page id 33388114
+Index written to file [/media/mtk/soft/tmp/main/prod/i905] word-count [100003]
+pages processed so far 11180000, last page id 33452827
+Index written to file [/media/mtk/soft/tmp/main/prod/i906] word-count [100010]
+pages processed so far 11200000, last page id 33507708
+Index written to file [/media/mtk/soft/tmp/main/prod/i907] word-count [100116]
+pages processed so far 11220000, last page id 33569334
+Index written to file [/media/mtk/soft/tmp/main/prod/i908] word-count [100019]
+pages processed so far 11240000, last page id 33635747
+Index written to file [/media/mtk/soft/tmp/main/prod/i909] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i910] word-count [100001]
+pages processed so far 11260000, last page id 33695061
+Index written to file [/media/mtk/soft/tmp/main/prod/i911] word-count [100270]
+pages processed so far 11280000, last page id 33765697
+Index written to file [/media/mtk/soft/tmp/main/prod/i912] word-count [100001]
+pages processed so far 11300000, last page id 33831303
+Index written to file [/media/mtk/soft/tmp/main/prod/i913] word-count [100006]
+pages processed so far 11320000, last page id 33892291
+Index written to file [/media/mtk/soft/tmp/main/prod/i914] word-count [100265]
+pages processed so far 11340000, last page id 33953865
+Index written to file [/media/mtk/soft/tmp/main/prod/i915] word-count [100120]
+Index written to file [/media/mtk/soft/tmp/main/prod/i916] word-count [100310]
+pages processed so far 11360000, last page id 34020521
+Index written to file [/media/mtk/soft/tmp/main/prod/i917] word-count [100005]
+pages processed so far 11380000, last page id 34080620
+Index written to file [/media/mtk/soft/tmp/main/prod/i918] word-count [100020]
+pages processed so far 11400000, last page id 34159963
+Index written to file [/media/mtk/soft/tmp/main/prod/i919] word-count [100014]
+pages processed so far 11420000, last page id 34216837
+Index written to file [/media/mtk/soft/tmp/main/prod/i920] word-count [100060]
+pages processed so far 11440000, last page id 34272896
+Index written to file [/media/mtk/soft/tmp/main/prod/i921] word-count [100131]
+pages processed so far 11460000, last page id 34334094
+Index written to file [/media/mtk/soft/tmp/main/prod/i922] word-count [100002]
+pages processed so far 11480000, last page id 34397351
+Index written to file [/media/mtk/soft/tmp/main/prod/i923] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i924] word-count [100012]
+pages processed so far 11500000, last page id 34462927
+Index written to file [/media/mtk/soft/tmp/main/prod/i925] word-count [100002]
+pages processed so far 11520000, last page id 34528334
+Index written to file [/media/mtk/soft/tmp/main/prod/i926] word-count [100168]
+pages processed so far 11540000, last page id 34590569
+Index written to file [/media/mtk/soft/tmp/main/prod/i927] word-count [100001]
+pages processed so far 11560000, last page id 34636343
+Index written to file [/media/mtk/soft/tmp/main/prod/i928] word-count [100007]
+pages processed so far 11580000, last page id 34692098
+Index written to file [/media/mtk/soft/tmp/main/prod/i929] word-count [100002]
+pages processed so far 11600000, last page id 34748490
+Index written to file [/media/mtk/soft/tmp/main/prod/i930] word-count [100133]
+pages processed so far 11620000, last page id 34805996
+Index written to file [/media/mtk/soft/tmp/main/prod/i931] word-count [100002]
+pages processed so far 11640000, last page id 34852284
+Index written to file [/media/mtk/soft/tmp/main/prod/i932] word-count [100034]
+pages processed so far 11660000, last page id 34906639
+Index written to file [/media/mtk/soft/tmp/main/prod/i933] word-count [100007]
+pages processed so far 11680000, last page id 34973598
+Index written to file [/media/mtk/soft/tmp/main/prod/i934] word-count [100028]
+pages processed so far 11700000, last page id 35036714
+Index written to file [/media/mtk/soft/tmp/main/prod/i935] word-count [100091]
+Index written to file [/media/mtk/soft/tmp/main/prod/i936] word-count [100052]
+pages processed so far 11720000, last page id 35115387
+Index written to file [/media/mtk/soft/tmp/main/prod/i937] word-count [100619]
+pages processed so far 11740000, last page id 35199704
+Index written to file [/media/mtk/soft/tmp/main/prod/i938] word-count [100006]
+pages processed so far 11760000, last page id 35264335
+Index written to file [/media/mtk/soft/tmp/main/prod/i939] word-count [100002]
+pages processed so far 11780000, last page id 35324346
+Index written to file [/media/mtk/soft/tmp/main/prod/i940] word-count [100002]
+pages processed so far 11800000, last page id 35434331
+Index written to file [/media/mtk/soft/tmp/main/prod/i941] word-count [100002]
+pages processed so far 11820000, last page id 35518801
+Index written to file [/media/mtk/soft/tmp/main/prod/i942] word-count [100072]
+pages processed so far 11840000, last page id 35582308
+Index written to file [/media/mtk/soft/tmp/main/prod/i943] word-count [100226]
+Index written to file [/media/mtk/soft/tmp/main/prod/i944] word-count [100006]
+pages processed so far 11860000, last page id 35647622
+Index written to file [/media/mtk/soft/tmp/main/prod/i945] word-count [100408]
+pages processed so far 11880000, last page id 35720824
+Index written to file [/media/mtk/soft/tmp/main/prod/i946] word-count [100001]
+pages processed so far 11900000, last page id 35786115
+Index written to file [/media/mtk/soft/tmp/main/prod/i947] word-count [100010]
+Index written to file [/media/mtk/soft/tmp/main/prod/i948] word-count [100003]
+pages processed so far 11920000, last page id 35853550
+Index written to file [/media/mtk/soft/tmp/main/prod/i949] word-count [100180]
+pages processed so far 11940000, last page id 35910748
+Index written to file [/media/mtk/soft/tmp/main/prod/i950] word-count [100001]
+pages processed so far 11960000, last page id 35965658
+Index written to file [/media/mtk/soft/tmp/main/prod/i951] word-count [100017]
+pages processed so far 11980000, last page id 36017086
+Index written to file [/media/mtk/soft/tmp/main/prod/i952] word-count [100002]
+pages processed so far 12000000, last page id 36068204
+Index written to file [/media/mtk/soft/tmp/main/prod/i953] word-count [100003]
+pages processed so far 12020000, last page id 36127052
+Index written to file [/media/mtk/soft/tmp/main/prod/i954] word-count [100001]
+pages processed so far 12040000, last page id 36183760
+Index written to file [/media/mtk/soft/tmp/main/prod/i955] word-count [100019]
+pages processed so far 12060000, last page id 36237397
+Index written to file [/media/mtk/soft/tmp/main/prod/i956] word-count [100003]
+pages processed so far 12080000, last page id 36292873
+Index written to file [/media/mtk/soft/tmp/main/prod/i957] word-count [100088]
+pages processed so far 12100000, last page id 36348129
+Index written to file [/media/mtk/soft/tmp/main/prod/i958] word-count [100003]
+pages processed so far 12120000, last page id 36399517
+Index written to file [/media/mtk/soft/tmp/main/prod/i959] word-count [100004]
+pages processed so far 12140000, last page id 36469597
+Index written to file [/media/mtk/soft/tmp/main/prod/i960] word-count [100008]
+pages processed so far 12160000, last page id 36530081
+Index written to file [/media/mtk/soft/tmp/main/prod/i961] word-count [100011]
+pages processed so far 12180000, last page id 36585075
+Index written to file [/media/mtk/soft/tmp/main/prod/i962] word-count [100001]
+pages processed so far 12200000, last page id 36636139
+Index written to file [/media/mtk/soft/tmp/main/prod/i963] word-count [100003]
+pages processed so far 12220000, last page id 36687159
+Index written to file [/media/mtk/soft/tmp/main/prod/i964] word-count [100001]
+pages processed so far 12240000, last page id 36742159
+Index written to file [/media/mtk/soft/tmp/main/prod/i965] word-count [100069]
+pages processed so far 12260000, last page id 36795156
+Index written to file [/media/mtk/soft/tmp/main/prod/i966] word-count [100003]
+pages processed so far 12280000, last page id 36853282
+Index written to file [/media/mtk/soft/tmp/main/prod/i967] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i968] word-count [100004]
+pages processed so far 12300000, last page id 36910437
+Index written to file [/media/mtk/soft/tmp/main/prod/i969] word-count [100015]
+pages processed so far 12320000, last page id 36968831
+Index written to file [/media/mtk/soft/tmp/main/prod/i970] word-count [100046]
+pages processed so far 12340000, last page id 37028487
+Index written to file [/media/mtk/soft/tmp/main/prod/i971] word-count [100001]
+pages processed so far 12360000, last page id 37084260
+Index written to file [/media/mtk/soft/tmp/main/prod/i972] word-count [100002]
+pages processed so far 12380000, last page id 37140955
+Index written to file [/media/mtk/soft/tmp/main/prod/i973] word-count [100002]
+pages processed so far 12400000, last page id 37215498
+Index written to file [/media/mtk/soft/tmp/main/prod/i974] word-count [100032]
+pages processed so far 12420000, last page id 37283390
+Index written to file [/media/mtk/soft/tmp/main/prod/i975] word-count [100012]
+pages processed so far 12440000, last page id 37342738
+pages processed so far 12460000, last page id 37380506
+Index written to file [/media/mtk/soft/tmp/main/prod/i976] word-count [100073]
+pages processed so far 12480000, last page id 37436103
+Index written to file [/media/mtk/soft/tmp/main/prod/i977] word-count [100016]
+pages processed so far 12500000, last page id 37502351
+Index written to file [/media/mtk/soft/tmp/main/prod/i978] word-count [100039]
+Index written to file [/media/mtk/soft/tmp/main/prod/i979] word-count [100014]
+pages processed so far 12520000, last page id 37560666
+Index written to file [/media/mtk/soft/tmp/main/prod/i980] word-count [100024]
+pages processed so far 12540000, last page id 37621124
+Index written to file [/media/mtk/soft/tmp/main/prod/i981] word-count [100002]
+pages processed so far 12560000, last page id 37681219
+Index written to file [/media/mtk/soft/tmp/main/prod/i982] word-count [100028]
+pages processed so far 12580000, last page id 37743150
+Index written to file [/media/mtk/soft/tmp/main/prod/i983] word-count [100002]
+pages processed so far 12600000, last page id 37808715
+Index written to file [/media/mtk/soft/tmp/main/prod/i984] word-count [100003]
+pages processed so far 12620000, last page id 37868283
+Index written to file [/media/mtk/soft/tmp/main/prod/i985] word-count [100008]
+pages processed so far 12640000, last page id 37928865
+Index written to file [/media/mtk/soft/tmp/main/prod/i986] word-count [100016]
+pages processed so far 12660000, last page id 37990410
+Index written to file [/media/mtk/soft/tmp/main/prod/i987] word-count [100015]
+pages processed so far 12680000, last page id 38045452
+Index written to file [/media/mtk/soft/tmp/main/prod/i988] word-count [100025]
+pages processed so far 12700000, last page id 38097136
+Index written to file [/media/mtk/soft/tmp/main/prod/i989] word-count [100020]
+pages processed so far 12720000, last page id 38141926
+Index written to file [/media/mtk/soft/tmp/main/prod/i990] word-count [100005]
+pages processed so far 12740000, last page id 38196061
+Index written to file [/media/mtk/soft/tmp/main/prod/i991] word-count [100003]
+pages processed so far 12760000, last page id 38251419
+Index written to file [/media/mtk/soft/tmp/main/prod/i992] word-count [100023]
+Index written to file [/media/mtk/soft/tmp/main/prod/i993] word-count [100006]
+pages processed so far 12780000, last page id 38307955
+Index written to file [/media/mtk/soft/tmp/main/prod/i994] word-count [100549]
+pages processed so far 12800000, last page id 38367013
+Index written to file [/media/mtk/soft/tmp/main/prod/i995] word-count [100017]
+pages processed so far 12820000, last page id 38426160
+Index written to file [/media/mtk/soft/tmp/main/prod/i996] word-count [100001]
+pages processed so far 12840000, last page id 38486395
+Index written to file [/media/mtk/soft/tmp/main/prod/i997] word-count [100010]
+pages processed so far 12860000, last page id 38543975
+Index written to file [/media/mtk/soft/tmp/main/prod/i998] word-count [100009]
+pages processed so far 12880000, last page id 38606841
+Index written to file [/media/mtk/soft/tmp/main/prod/i999] word-count [100001]
+pages processed so far 12900000, last page id 38657339
+Index written to file [/media/mtk/soft/tmp/main/prod/i1000] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1001] word-count [100002]
+pages processed so far 12920000, last page id 38719191
+Index written to file [/media/mtk/soft/tmp/main/prod/i1002] word-count [100039]
+pages processed so far 12940000, last page id 38779468
+Index written to file [/media/mtk/soft/tmp/main/prod/i1003] word-count [100018]
+pages processed so far 12960000, last page id 38834211
+Index written to file [/media/mtk/soft/tmp/main/prod/i1004] word-count [100001]
+pages processed so far 12980000, last page id 38886452
+pages processed so far 13000000, last page id 38935695
+Index written to file [/media/mtk/soft/tmp/main/prod/i1005] word-count [100120]
+pages processed so far 13020000, last page id 38987568
+Index written to file [/media/mtk/soft/tmp/main/prod/i1006] word-count [100001]
+pages processed so far 13040000, last page id 39039485
+Index written to file [/media/mtk/soft/tmp/main/prod/i1007] word-count [100010]
+pages processed so far 13060000, last page id 39095762
+Index written to file [/media/mtk/soft/tmp/main/prod/i1008] word-count [100001]
+pages processed so far 13080000, last page id 39151149
+Index written to file [/media/mtk/soft/tmp/main/prod/i1009] word-count [100176]
+pages processed so far 13100000, last page id 39206881
+Index written to file [/media/mtk/soft/tmp/main/prod/i1010] word-count [100004]
+pages processed so far 13120000, last page id 39260987
+Index written to file [/media/mtk/soft/tmp/main/prod/i1011] word-count [100448]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1012] word-count [100031]
+pages processed so far 13140000, last page id 39321189
+Index written to file [/media/mtk/soft/tmp/main/prod/i1013] word-count [100010]
+pages processed so far 13160000, last page id 39383246
+Index written to file [/media/mtk/soft/tmp/main/prod/i1014] word-count [100003]
+pages processed so far 13180000, last page id 39444826
+Index written to file [/media/mtk/soft/tmp/main/prod/i1015] word-count [100009]
+pages processed so far 13200000, last page id 39502101
+Index written to file [/media/mtk/soft/tmp/main/prod/i1016] word-count [100010]
+pages processed so far 13220000, last page id 39560905
+Index written to file [/media/mtk/soft/tmp/main/prod/i1017] word-count [100017]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1018] word-count [100001]
+pages processed so far 13240000, last page id 39623027
+Index written to file [/media/mtk/soft/tmp/main/prod/i1019] word-count [100006]
+pages processed so far 13260000, last page id 39682403
+Index written to file [/media/mtk/soft/tmp/main/prod/i1020] word-count [100299]
+pages processed so far 13280000, last page id 39741335
+Index written to file [/media/mtk/soft/tmp/main/prod/i1021] word-count [100007]
+pages processed so far 13300000, last page id 39798120
+Index written to file [/media/mtk/soft/tmp/main/prod/i1022] word-count [100001]
+pages processed so far 13320000, last page id 39857561
+Index written to file [/media/mtk/soft/tmp/main/prod/i1023] word-count [100012]
+pages processed so far 13340000, last page id 39927278
+Index written to file [/media/mtk/soft/tmp/main/prod/i1024] word-count [100003]
+pages processed so far 13360000, last page id 39991291
+Index written to file [/media/mtk/soft/tmp/main/prod/i1025] word-count [100021]
+pages processed so far 13380000, last page id 40055320
+Index written to file [/media/mtk/soft/tmp/main/prod/i1026] word-count [100150]
+pages processed so far 13400000, last page id 40118509
+Index written to file [/media/mtk/soft/tmp/main/prod/i1027] word-count [100006]
+pages processed so far 13420000, last page id 40173384
+Index written to file [/media/mtk/soft/tmp/main/prod/i1028] word-count [100304]
+pages processed so far 13440000, last page id 40230113
+Index written to file [/media/mtk/soft/tmp/main/prod/i1029] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1030] word-count [100008]
+pages processed so far 13460000, last page id 40289455
+pages processed so far 13480000, last page id 40354032
+Index written to file [/media/mtk/soft/tmp/main/prod/i1031] word-count [100007]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1032] word-count [100001]
+pages processed so far 13500000, last page id 40416998
+Index written to file [/media/mtk/soft/tmp/main/prod/i1033] word-count [100015]
+pages processed so far 13520000, last page id 40474504
+Index written to file [/media/mtk/soft/tmp/main/prod/i1034] word-count [100158]
+pages processed so far 13540000, last page id 40526916
+Index written to file [/media/mtk/soft/tmp/main/prod/i1035] word-count [100003]
+pages processed so far 13560000, last page id 40588854
+Index written to file [/media/mtk/soft/tmp/main/prod/i1036] word-count [100008]
+pages processed so far 13580000, last page id 40645684
+Index written to file [/media/mtk/soft/tmp/main/prod/i1037] word-count [100004]
+pages processed so far 13600000, last page id 40704389
+Index written to file [/media/mtk/soft/tmp/main/prod/i1038] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1039] word-count [100002]
+pages processed so far 13620000, last page id 40760656
+Index written to file [/media/mtk/soft/tmp/main/prod/i1040] word-count [100064]
+pages processed so far 13640000, last page id 40818349
+Index written to file [/media/mtk/soft/tmp/main/prod/i1041] word-count [100043]
+pages processed so far 13660000, last page id 40874824
+Index written to file [/media/mtk/soft/tmp/main/prod/i1042] word-count [100001]
+pages processed so far 13680000, last page id 40933088
+Index written to file [/media/mtk/soft/tmp/main/prod/i1043] word-count [100002]
+pages processed so far 13700000, last page id 40999386
+Index written to file [/media/mtk/soft/tmp/main/prod/i1044] word-count [100028]
+pages processed so far 13720000, last page id 41073335
+Index written to file [/media/mtk/soft/tmp/main/prod/i1045] word-count [100081]
+pages processed so far 13740000, last page id 41134645
+Index written to file [/media/mtk/soft/tmp/main/prod/i1046] word-count [100003]
+pages processed so far 13760000, last page id 41199018
+Index written to file [/media/mtk/soft/tmp/main/prod/i1047] word-count [100001]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1048] word-count [100034]
+pages processed so far 13780000, last page id 41263391
+Index written to file [/media/mtk/soft/tmp/main/prod/i1049] word-count [100009]
+pages processed so far 13800000, last page id 41323063
+Index written to file [/media/mtk/soft/tmp/main/prod/i1050] word-count [100001]
+pages processed so far 13820000, last page id 41383017
+Index written to file [/media/mtk/soft/tmp/main/prod/i1051] word-count [100001]
+pages processed so far 13840000, last page id 41439497
+Index written to file [/media/mtk/soft/tmp/main/prod/i1052] word-count [100003]
+pages processed so far 13860000, last page id 41504485
+Index written to file [/media/mtk/soft/tmp/main/prod/i1053] word-count [100001]
+pages processed so far 13880000, last page id 41558908
+Index written to file [/media/mtk/soft/tmp/main/prod/i1054] word-count [100001]
+pages processed so far 13900000, last page id 41615769
+Index written to file [/media/mtk/soft/tmp/main/prod/i1055] word-count [100014]
+pages processed so far 13920000, last page id 41675511
+Index written to file [/media/mtk/soft/tmp/main/prod/i1056] word-count [100074]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1057] word-count [100016]
+pages processed so far 13940000, last page id 41733942
+Index written to file [/media/mtk/soft/tmp/main/prod/i1058] word-count [100009]
+pages processed so far 13960000, last page id 41793329
+Index written to file [/media/mtk/soft/tmp/main/prod/i1059] word-count [100010]
+pages processed so far 13980000, last page id 41853756
+Index written to file [/media/mtk/soft/tmp/main/prod/i1060] word-count [100007]
+pages processed so far 14000000, last page id 41909228
+Index written to file [/media/mtk/soft/tmp/main/prod/i1061] word-count [100156]
+pages processed so far 14020000, last page id 41962823
+Index written to file [/media/mtk/soft/tmp/main/prod/i1062] word-count [100002]
+pages processed so far 14040000, last page id 42024302
+Index written to file [/media/mtk/soft/tmp/main/prod/i1063] word-count [100970]
+pages processed so far 14060000, last page id 42086597
+Index written to file [/media/mtk/soft/tmp/main/prod/i1064] word-count [100006]
+pages processed so far 14080000, last page id 42146562
+Index written to file [/media/mtk/soft/tmp/main/prod/i1065] word-count [100660]
+pages processed so far 14100000, last page id 42209535
+Index written to file [/media/mtk/soft/tmp/main/prod/i1066] word-count [100619]
+pages processed so far 14120000, last page id 42272412
+Index written to file [/media/mtk/soft/tmp/main/prod/i1067] word-count [100001]
+pages processed so far 14140000, last page id 42337493
+Index written to file [/media/mtk/soft/tmp/main/prod/i1068] word-count [100024]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1069] word-count [100026]
+pages processed so far 14160000, last page id 42402727
+Index written to file [/media/mtk/soft/tmp/main/prod/i1070] word-count [100001]
+pages processed so far 14180000, last page id 42466463
+Index written to file [/media/mtk/soft/tmp/main/prod/i1071] word-count [100003]
+pages processed so far 14200000, last page id 42526378
+Index written to file [/media/mtk/soft/tmp/main/prod/i1072] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1073] word-count [100015]
+pages processed so far 14220000, last page id 42584967
+Index written to file [/media/mtk/soft/tmp/main/prod/i1074] word-count [100015]
+pages processed so far 14240000, last page id 42646634
+Index written to file [/media/mtk/soft/tmp/main/prod/i1075] word-count [100006]
+pages processed so far 14260000, last page id 42709618
+Index written to file [/media/mtk/soft/tmp/main/prod/i1076] word-count [100003]
+pages processed so far 14280000, last page id 42776207
+Index written to file [/media/mtk/soft/tmp/main/prod/i1077] word-count [100003]
+pages processed so far 14300000, last page id 42838023
+Index written to file [/media/mtk/soft/tmp/main/prod/i1078] word-count [100014]
+pages processed so far 14320000, last page id 42900019
+Index written to file [/media/mtk/soft/tmp/main/prod/i1079] word-count [100008]
+pages processed so far 14340000, last page id 42957029
+Index written to file [/media/mtk/soft/tmp/main/prod/i1080] word-count [100009]
+pages processed so far 14360000, last page id 43017042
+Index written to file [/media/mtk/soft/tmp/main/prod/i1081] word-count [100040]
+pages processed so far 14380000, last page id 43077834
+Index written to file [/media/mtk/soft/tmp/main/prod/i1082] word-count [100010]
+pages processed so far 14400000, last page id 43134165
+Index written to file [/media/mtk/soft/tmp/main/prod/i1083] word-count [100099]
+pages processed so far 14420000, last page id 43186658
+Index written to file [/media/mtk/soft/tmp/main/prod/i1084] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1085] word-count [100023]
+pages processed so far 14440000, last page id 43241329
+Index written to file [/media/mtk/soft/tmp/main/prod/i1086] word-count [100004]
+pages processed so far 14460000, last page id 43296903
+pages processed so far 14480000, last page id 43342729
+Index written to file [/media/mtk/soft/tmp/main/prod/i1087] word-count [100071]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1088] word-count [100374]
+pages processed so far 14500000, last page id 43394417
+Index written to file [/media/mtk/soft/tmp/main/prod/i1089] word-count [100190]
+pages processed so far 14520000, last page id 43449182
+Index written to file [/media/mtk/soft/tmp/main/prod/i1090] word-count [100004]
+pages processed so far 14540000, last page id 43508800
+Index written to file [/media/mtk/soft/tmp/main/prod/i1091] word-count [100068]
+pages processed so far 14560000, last page id 43571230
+Index written to file [/media/mtk/soft/tmp/main/prod/i1092] word-count [100189]
+pages processed so far 14580000, last page id 43625858
+Index written to file [/media/mtk/soft/tmp/main/prod/i1093] word-count [100002]
+pages processed so far 14600000, last page id 43686692
+Index written to file [/media/mtk/soft/tmp/main/prod/i1094] word-count [100101]
+pages processed so far 14620000, last page id 43740203
+Index written to file [/media/mtk/soft/tmp/main/prod/i1095] word-count [100002]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1096] word-count [100692]
+pages processed so far 14640000, last page id 43799531
+Index written to file [/media/mtk/soft/tmp/main/prod/i1097] word-count [100011]
+pages processed so far 14660000, last page id 43856598
+pages processed so far 14680000, last page id 43887370
+Index written to file [/media/mtk/soft/tmp/main/prod/i1098] word-count [100001]
+pages processed so far 14700000, last page id 43915701
+Index written to file [/media/mtk/soft/tmp/main/prod/i1099] word-count [100093]
+pages processed so far 14720000, last page id 43968185
+Index written to file [/media/mtk/soft/tmp/main/prod/i1100] word-count [100271]
+pages processed so far 14740000, last page id 44027739
+Index written to file [/media/mtk/soft/tmp/main/prod/i1101] word-count [100252]
+pages processed so far 14760000, last page id 44088843
+Index written to file [/media/mtk/soft/tmp/main/prod/i1102] word-count [100087]
+pages processed so far 14780000, last page id 44152222
+Index written to file [/media/mtk/soft/tmp/main/prod/i1103] word-count [100003]
+pages processed so far 14800000, last page id 44214379
+Index written to file [/media/mtk/soft/tmp/main/prod/i1104] word-count [100002]
+pages processed so far 14820000, last page id 44275024
+Index written to file [/media/mtk/soft/tmp/main/prod/i1105] word-count [100403]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1106] word-count [100001]
+pages processed so far 14840000, last page id 44341188
+Index written to file [/media/mtk/soft/tmp/main/prod/i1107] word-count [100754]
+pages processed so far 14860000, last page id 44408554
+Index written to file [/media/mtk/soft/tmp/main/prod/i1108] word-count [100053]
+pages processed so far 14880000, last page id 44470496
+Index written to file [/media/mtk/soft/tmp/main/prod/i1109] word-count [100018]
+pages processed so far 14900000, last page id 44531048
+Index written to file [/media/mtk/soft/tmp/main/prod/i1110] word-count [100004]
+pages processed so far 14920000, last page id 44587406
+Index written to file [/media/mtk/soft/tmp/main/prod/i1111] word-count [100004]
+pages processed so far 14940000, last page id 44655667
+Index written to file [/media/mtk/soft/tmp/main/prod/i1112] word-count [100031]
+pages processed so far 14960000, last page id 44742851
+Index written to file [/media/mtk/soft/tmp/main/prod/i1113] word-count [100387]
+pages processed so far 14980000, last page id 44819138
+Index written to file [/media/mtk/soft/tmp/main/prod/i1114] word-count [100009]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1115] word-count [100014]
+pages processed so far 15000000, last page id 44900876
+Index written to file [/media/mtk/soft/tmp/main/prod/i1116] word-count [100030]
+pages processed so far 15020000, last page id 44961042
+Index written to file [/media/mtk/soft/tmp/main/prod/i1117] word-count [100001]
+pages processed so far 15040000, last page id 45027582
+Index written to file [/media/mtk/soft/tmp/main/prod/i1118] word-count [100014]
+pages processed so far 15060000, last page id 45113652
+Index written to file [/media/mtk/soft/tmp/main/prod/i1119] word-count [100058]
+pages processed so far 15080000, last page id 45215338
+Index written to file [/media/mtk/soft/tmp/main/prod/i1120] word-count [100004]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1121] word-count [107917]
+pages processed so far 15100000, last page id 45278513
+Index written to file [/media/mtk/soft/tmp/main/prod/i1122] word-count [100001]
+pages processed so far 15120000, last page id 45341357
+Index written to file [/media/mtk/soft/tmp/main/prod/i1123] word-count [100006]
+pages processed so far 15140000, last page id 45404998
+Index written to file [/media/mtk/soft/tmp/main/prod/i1124] word-count [100010]
+pages processed so far 15160000, last page id 45462083
+Index written to file [/media/mtk/soft/tmp/main/prod/i1125] word-count [100004]
+pages processed so far 15180000, last page id 45526195
+Index written to file [/media/mtk/soft/tmp/main/prod/i1126] word-count [100021]
+pages processed so far 15200000, last page id 45588405
+Index written to file [/media/mtk/soft/tmp/main/prod/i1127] word-count [100015]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1128] word-count [100001]
+pages processed so far 15220000, last page id 45649391
+Index written to file [/media/mtk/soft/tmp/main/prod/i1129] word-count [100002]
+pages processed so far 15240000, last page id 45705522
+Index written to file [/media/mtk/soft/tmp/main/prod/i1130] word-count [100006]
+pages processed so far 15260000, last page id 46213707
+Index written to file [/media/mtk/soft/tmp/main/prod/i1131] word-count [100016]
+pages processed so far 15280000, last page id 46270702
+Index written to file [/media/mtk/soft/tmp/main/prod/i1132] word-count [100006]
+pages processed so far 15300000, last page id 46328059
+Index written to file [/media/mtk/soft/tmp/main/prod/i1133] word-count [100003]
+pages processed so far 15320000, last page id 46386526
+Index written to file [/media/mtk/soft/tmp/main/prod/i1134] word-count [100002]
+pages processed so far 15340000, last page id 46446005
+Index written to file [/media/mtk/soft/tmp/main/prod/i1135] word-count [100003]
+pages processed so far 15360000, last page id 46513672
+Index written to file [/media/mtk/soft/tmp/main/prod/i1136] word-count [100001]
+pages processed so far 15380000, last page id 46575556
+Index written to file [/media/mtk/soft/tmp/main/prod/i1137] word-count [100051]
+pages processed so far 15400000, last page id 46637675
+Index written to file [/media/mtk/soft/tmp/main/prod/i1138] word-count [100013]
+pages processed so far 15420000, last page id 46703009
+Index written to file [/media/mtk/soft/tmp/main/prod/i1139] word-count [100014]
+pages processed so far 15440000, last page id 46760429
+Index written to file [/media/mtk/soft/tmp/main/prod/i1140] word-count [100006]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1141] word-count [100531]
+pages processed so far 15460000, last page id 46812351
+pages processed so far 15480000, last page id 46861329
+Index written to file [/media/mtk/soft/tmp/main/prod/i1142] word-count [100034]
+pages processed so far 15500000, last page id 46915293
+Index written to file [/media/mtk/soft/tmp/main/prod/i1143] word-count [100008]
+pages processed so far 15520000, last page id 46970855
+Index written to file [/media/mtk/soft/tmp/main/prod/i1144] word-count [100001]
+pages processed so far 15540000, last page id 47021025
+Index written to file [/media/mtk/soft/tmp/main/prod/i1145] word-count [100002]
+pages processed so far 15560000, last page id 47071244
+Index written to file [/media/mtk/soft/tmp/main/prod/i1146] word-count [100026]
+pages processed so far 15580000, last page id 47120966
+Index written to file [/media/mtk/soft/tmp/main/prod/i1147] word-count [100041]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1148] word-count [100016]
+pages processed so far 15600000, last page id 47168875
+Index written to file [/media/mtk/soft/tmp/main/prod/i1149] word-count [100008]
+pages processed so far 15620000, last page id 47219547
+Index written to file [/media/mtk/soft/tmp/main/prod/i1150] word-count [101831]
+pages processed so far 15640000, last page id 47268989
+Index written to file [/media/mtk/soft/tmp/main/prod/i1151] word-count [100005]
+pages processed so far 15660000, last page id 47317123
+Index written to file [/media/mtk/soft/tmp/main/prod/i1152] word-count [100077]
+pages processed so far 15680000, last page id 47364062
+Index written to file [/media/mtk/soft/tmp/main/prod/i1153] word-count [100003]
+pages processed so far 15700000, last page id 47413294
+Index written to file [/media/mtk/soft/tmp/main/prod/i1154] word-count [100003]
+pages processed so far 15720000, last page id 47462668
+Index written to file [/media/mtk/soft/tmp/main/prod/i1155] word-count [100001]
+pages processed so far 15740000, last page id 47519686
+Index written to file [/media/mtk/soft/tmp/main/prod/i1156] word-count [100002]
+pages processed so far 15760000, last page id 47571236
+Index written to file [/media/mtk/soft/tmp/main/prod/i1157] word-count [100002]
+pages processed so far 15780000, last page id 47622042
+Index written to file [/media/mtk/soft/tmp/main/prod/i1158] word-count [100004]
+pages processed so far 15800000, last page id 47676653
+Index written to file [/media/mtk/soft/tmp/main/prod/i1159] word-count [100018]
+pages processed so far 15820000, last page id 47736037
+Index written to file [/media/mtk/soft/tmp/main/prod/i1160] word-count [100121]
+pages processed so far 15840000, last page id 47794668
+Index written to file [/media/mtk/soft/tmp/main/prod/i1161] word-count [100116]
+pages processed so far 15860000, last page id 47869148
+Index written to file [/media/mtk/soft/tmp/main/prod/i1162] word-count [100001]
+pages processed so far 15880000, last page id 47929470
+Index written to file [/media/mtk/soft/tmp/main/prod/i1163] word-count [100053]
+pages processed so far 15900000, last page id 48011009
+Index written to file [/media/mtk/soft/tmp/main/prod/i1164] word-count [100216]
+pages processed so far 15920000, last page id 48131795
+Index written to file [/media/mtk/soft/tmp/main/prod/i1165] word-count [100072]
+pages processed so far 15940000, last page id 48234287
+Index written to file [/media/mtk/soft/tmp/main/prod/i1166] word-count [100001]
+pages processed so far 15960000, last page id 48315200
+Index written to file [/media/mtk/soft/tmp/main/prod/i1167] word-count [100003]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1168] word-count [100021]
+pages processed so far 15980000, last page id 48399512
+Index written to file [/media/mtk/soft/tmp/main/prod/i1169] word-count [104908]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1170] word-count [100597]
+pages processed so far 16000000, last page id 48459875
+Index written to file [/media/mtk/soft/tmp/main/prod/i1171] word-count [100001]
+pages processed so far 16020000, last page id 48520747
+Index written to file [/media/mtk/soft/tmp/main/prod/i1172] word-count [100001]
+pages processed so far 16040000, last page id 48575603
+Index written to file [/media/mtk/soft/tmp/main/prod/i1173] word-count [100247]
+pages processed so far 16060000, last page id 48635013
+Index written to file [/media/mtk/soft/tmp/main/prod/i1174] word-count [100057]
+pages processed so far 16080000, last page id 48692410
+Index written to file [/media/mtk/soft/tmp/main/prod/i1175] word-count [100001]
+pages processed so far 16100000, last page id 48751197
+Index written to file [/media/mtk/soft/tmp/main/prod/i1176] word-count [100003]
+pages processed so far 16120000, last page id 48809439
+Index written to file [/media/mtk/soft/tmp/main/prod/i1177] word-count [100014]
+pages processed so far 16140000, last page id 48866166
+Index written to file [/media/mtk/soft/tmp/main/prod/i1178] word-count [100005]
+Index written to file [/media/mtk/soft/tmp/main/prod/i1179] word-count [100010]
+pages processed so far 16160000, last page id 48923845
+pages processed so far 16180000, last page id 48972276
+Index written to file [/media/mtk/soft/tmp/main/prod/i1180] word-count [100133]
+pages processed so far 16200000, last page id 49022766
+Index written to file [/media/mtk/soft/tmp/main/prod/i1181] word-count [100033]
+pages processed so far 16220000, last page id 49076244
+Index written to file [/media/mtk/soft/tmp/main/prod/i1182] word-count [100013]
+pages processed so far 16240000, last page id 49142806
+Index written to file [/media/mtk/soft/tmp/main/prod/i1183] word-count [100001]
+pages processed so far 16260000, last page id 49205422
+Index written to file [/media/mtk/soft/tmp/main/prod/i1184] word-count [100001]
+pages processed so far 16280000, last page id 49264773
+Index written to file [/media/mtk/soft/tmp/main/prod/i1185] word-count [101300]
+Total Pages 16299475
+combined stats of page parts (in secs)
+Time for stripping_1: 1212
+Time for stripping_2: 1321
+Time for stripping_3: 7209
+Time for category   : 128
+Time for extLinks   : 557
+Time for replaceAll : 5551
+Time for title_ref  : 1101
+Time for infobox    : 2676
+Time for body_1     : 2486
+Time for body_2     : 14566
+Index written to file [/media/mtk/soft/tmp/main/prod/i1186] word-count [72865]
+Runtime 44693s
+App End time : Fri Feb 12 02:31:51 IST 2016
+
+Application RunTime 44693685
