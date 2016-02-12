@@ -124,7 +124,7 @@ public class PageProcessor {
 	static BufferedWriter titles = null;
 	static {
 		try {
-			titles = new BufferedWriter(new FileWriter(INFO.TITLES_FILE));
+			titles = new BufferedWriter(new FileWriter(INFO.TITLES_FILE_DEV));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -21,11 +21,11 @@ public class WikiDumpIndexer {
 			}*/
 			if (argv.length == 0) {
 				argv = new String[2];
-//				argv[0] = INFO.MINI_100MB_FILE; // mini-wiki.xml
-//				argv[1] = INFO.TEMP_INDEX_FILES_DIR; 
+				argv[0] = INFO.MINI_100MB_FILE; // mini-wiki.xml
+				argv[1] = INFO.TEMP_INDEX_FILES_DIR; 
 				
-				argv[0] = INFO.MAIN_DUMP; // 56 gb dump
-				argv[1] = INFO.MAIN_INDEX_FILES_DIR;
+//				argv[0] = INFO.MAIN_DUMP; // 56 gb dump
+//				argv[1] = INFO.MAIN_INDEX_FILES_DIR;
 			}
 			indexInFile = argv[0];
 			indexOutfile = argv[1];
