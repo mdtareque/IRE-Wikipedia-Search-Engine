@@ -515,61 +515,6 @@ public class QueryProcessor {
 	}
 
 	static List<Page> wikiSearch(String s) throws Exception {
-		ArrayList<Page> tmp= null, singleDocIds = null;
-		s = s.replaceAll("\"", " ").replaceAll("\\s+", " ").toLowerCase();
-		String pos = "";
-		int i=0;
-		String[] words = s.split(" ");
-		for(String w: words) {
-			if(w.indexOf(":") == 1 && w.length()>2) {
-				pos = getPostingList(w.split(":")[1]);
-			} else  {
-				pos = getPostingList(w);
-			}
-			postingLists.add(pos);
-			// get posting list, by some formula
-			if(i==0) {
-				singleDocIds = (ArrayList<Page>) stemmedAndPlainSingleWordQueryProcessor(w, pos);
-			} else {
-				tmp = (ArrayList<Page>) stemmedAndPlainSingleWordQueryProcessor(w, pos);
-			}
-			if(i>0) {
-				singleDocIds = union(singleDocIds, tmp); 
-			}
-			i++;
-		}
-		
-		// duplicate removal
-		Set<Page> commonDocsHash = new HashSet<Page>();
-		commonDocsHash.addAll(singleDocIds);
-		singleDocIds.clear();
-		singleDocIds.addAll(commonDocsHash);
-		// commondocs
-		Collections.sort(singleDocIds, tfIdSorter);
-		ArrayList<Page> outputDocs = new ArrayList<Page>();
-		double score=0;
-		for(i=0; i<singleDocIds.size(); i++) {
-			if(i>100) break;
-			score =0;
-			for(int j=0; j<words.length; j++) {
-//				Page wdTuple = hm.get(new WordDocTuple(words[j], commonDocs.get(i).did ));
-				pos =postingLists.get(j);
-//				System.out.println(words[j] + " " + commonDocs.get(i).did );
-//				System.out.println(wdTuple);
-				score += getTfIdf(pos, words[j]);;
-			}
-			singleDocIds.get(i).score = score;
-			outputDocs.add(singleDocIds.get(i));
-		}
-//		System.out.println("After score");
-		Collections.sort(outputDocs, tfIdfSorter);
-		numOfResults = outputDocs.size();
-//		int limit = commonDocs.size();
-//		if(limit > 10) limit = 10;
-		return outputDocs; //.subList(0, limit);
-	}
-	
-	static List<Page> wikiSearch0(String s) throws Exception {
 		s=s.trim();
 		ArrayList<Page> out = null;
 		if (s.split(" ").length == 1) { // single word query
@@ -626,6 +571,7 @@ public class QueryProcessor {
 		
 		if(s.indexOf(":") == 1) {
 			try {
+				
 				out = (ArrayList<Page>) fieldQueryProcessor(s, false, pos);
 				if(out != null  && out.size() > 0) return out;
 				pos = getPostingList(getStem(s.split(":")[1]));
@@ -666,6 +612,7 @@ public class QueryProcessor {
 				System.out.print("query> ");
 				s = br.readLine();
 				if(s.length() == 0) continue;
+				s=s.toLowerCase();
 				if ("q".equals(s))
 					break;
 				startClock();

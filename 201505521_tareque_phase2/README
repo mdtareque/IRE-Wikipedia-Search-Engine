@@ -1,0 +1,7 @@
+Main Class for query engine : com.mtk.ire.QueryProcessor 
+Implemented:
+1. Single word queries
+2. Multi word queries
+3. Field queries
+4. Phrase queries partially
+5. Additional little summary snippet (work in progress)
