@@ -326,7 +326,7 @@ public class TitleIndexer {
 			secIndex.put(id, seekPos);
 			i++;
 		}
-		System.out.println("SecIndex size " + secIndex.size());
+//		System.out.println("SecIndex size " + secIndex.size());
 		return secIndex;
 	}
 	static void create2ndIndexOnTitles() throws Exception {	
@@ -365,19 +365,46 @@ public class TitleIndexer {
 		return priIndex;
 	}
 	
-	static void readTitleBySeek(long id, TreeMap<Long, Long> secIndex) throws Exception {
+	static String readTitleBySeek(long id, TreeMap<Long, Long> secIndex) throws Exception {
 		Long firstSeekPos = secIndex.floorEntry(id).getValue(), nextSeekPos;
-		System.out.println("firstSeekPos " + firstSeekPos);
+//		System.out.println("firstSeekPos " + firstSeekPos);
 		String primIndexFile = "/home/mtk/Downloads/dc/primaryIndex2.txt";
 		RandomAccessFile raf = new RandomAccessFile(primIndexFile, "r");
 		raf.seek(firstSeekPos);
 		String tmp;
+		String output="";
 		while(true) {
 			tmp = raf.readLine();
-			System.out.println(tmp);
+//			System.out.println(tmp);
 			if( Long.parseLong(tmp.split("-")[0]) == id ) {
 				nextSeekPos = Long.parseLong(tmp.split("-")[1]);
-				System.out.println("Got " + nextSeekPos + " nextSeekPos from secondary index");
+//				System.out.println("Got " + nextSeekPos + " nextSeekPos from secondary index");
+				break;
+			}
+		}
+		
+		String titles = "/home/mtk/Downloads/dc/justTitles2.txt";
+		raf = new RandomAccessFile(titles, "r");
+		raf.seek(nextSeekPos);
+		tmp = raf.readLine();
+		return tmp;
+	}
+
+
+	static String readTitleBySeek0(long id, TreeMap<Long, Long> secIndex) throws Exception {
+		Long firstSeekPos = secIndex.floorEntry(id).getValue(), nextSeekPos;
+//		System.out.println("firstSeekPos " + firstSeekPos);
+		String primIndexFile = "/home/mtk/Downloads/dc/primaryIndex2.txt";
+		RandomAccessFile raf = new RandomAccessFile(primIndexFile, "r");
+		raf.seek(firstSeekPos);
+		String tmp;
+		String output="";
+		while(true) {
+			tmp = raf.readLine();
+//			System.out.println(tmp);
+			if( Long.parseLong(tmp.split("-")[0]) == id ) {
+				nextSeekPos = Long.parseLong(tmp.split("-")[1]);
+//				System.out.println("Got " + nextSeekPos + " nextSeekPos from secondary index");
 				break;
 			}
 		}
@@ -397,11 +424,13 @@ public class TitleIndexer {
 			String res = ans.toString();
 			buff.clear();
 //			System.out.println("res is " + res + ".");
-			System.out.println(res.substring(0, res.indexOf('\n')));
+			output = res.substring(0, res.indexOf('\n'));
+//			System.out.println(output);
 		
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
+		return output;
 	}
 
 	static void createPrimaryIndex() throws Exception {

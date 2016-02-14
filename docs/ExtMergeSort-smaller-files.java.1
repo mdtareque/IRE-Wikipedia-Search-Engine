@@ -336,7 +336,7 @@ public class ExtMergeSort {
 					break;
 			} while( true );
 			if(sb.length() > longestPostingList) { 
-				longestPostingList = sb.toString().getBytes().length ; // + (df + "").length();
+				longestPostingList = sb.length() ; // + (df + "").length();
 				longestPostingWord = word;
 				Log.bw.flush();
 			}
