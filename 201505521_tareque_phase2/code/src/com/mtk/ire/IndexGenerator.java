@@ -25,9 +25,9 @@ public class IndexGenerator {
 	}
 
 	static void createPrimaryIndex(String part) throws Exception {
-		String inp = "/media/mtk/soft/tmp/main/merged-prod" + part ; //1-300";
-		String posList = "/home/mtk/ireIndex/merged-prod"+part+".justPostingList";
-		String terms = "/home/mtk/ireIndex/merged-prod"+part+".justTerms";
+		String inp = "/media/mtk/soft/tmp/main/merged-prod-" + part ; //1-300";
+		String posList = "/home/mtk/ireIndex/merged-prod-"+part+".justPostingList";
+		String terms = "/home/mtk/ireIndex/merged-prod-"+part+".justTerms";
 		BufferedWriter pibw = new BufferedWriter(new FileWriter(terms));
 		BufferedWriter posbw = new BufferedWriter(new FileWriter(posList));
 		BufferedReader br = new BufferedReader(new FileReader(inp));
@@ -57,8 +57,8 @@ public class IndexGenerator {
 	}
 	
 	static void createSecondaryIndex(String part) throws Exception {
-		String inp= "/home/mtk/ireIndex/merged-prod"+part+".justTerms";
-		String secOut = "/home/mtk/ireIndex/merged-prod"+part+".justTerms.2nd";
+		String inp= "/home/mtk/ireIndex/merged-prod-"+part+".justTerms";
+		String secOut = "/home/mtk/ireIndex/merged-prod-"+part+".justTerms.2nd";
 		BufferedWriter sibw = new BufferedWriter(new FileWriter(secOut)); // secondary index bw
 		BufferedReader br = new BufferedReader(new FileReader(inp));
 		Log.bw.write("Writing secondary index");
@@ -84,8 +84,8 @@ public class IndexGenerator {
 		sibw.close();
 	}
 	
-	static TreeMap<String,Long> readSecondaryIndex(String part) throws Exception {
-		String inp = "/home/mtk/ireIndex/merged-prod"+part+".justTerms.2nd";
+	static TreeMap<String, Long> readSecondaryIndex(String part) throws Exception {
+		String inp = "/home/mtk/ireIndex/merged-prod-"+part+".justTerms.2nd";
 		BufferedReader br = new BufferedReader(new FileReader(inp));
 		Log.bw.write("\nReading 2nd index in memory");
 		Log.bw.write("inp " + inp + "\n");
@@ -104,13 +104,40 @@ public class IndexGenerator {
 	}
 	public static void main(String[] args) throws Exception {
 		long start = System.currentTimeMillis();
-//		createPrimaryIndex();
-//		Log.bw.write("createPrimaryIndex time " + (System.currentTimeMillis() - start));
+/*		createPrimaryIndex("a-f");
+		Log.bw.write("createPrimaryIndex time " + (System.currentTimeMillis() - start));
 		
-//		createSecondaryIndex();
-//		Log.bw.write("createSecondaryIndex time " + (System.currentTimeMillis() - start));
+		createSecondaryIndex("a-f");
+		Log.bw.write("createSecondaryIndex time " + (System.currentTimeMillis() - start));
+
+		createPrimaryIndex("g-p");
+		Log.bw.write("createPrimaryIndex time " + (System.currentTimeMillis() - start));
 		
-		readSecondaryIndex("1-300");
+		createSecondaryIndex("g-p");
+		Log.bw.write("createSecondaryIndex time " + (System.currentTimeMillis() - start));
+
+		createPrimaryIndex("q-z");
+		Log.bw.write("createPrimaryIndex time " + (System.currentTimeMillis() - start));
+		
+		createSecondaryIndex("q-z");
+		Log.bw.write("createSecondaryIndex time " + (System.currentTimeMillis() - start));
+
+		createPrimaryIndex("numeric");
+		Log.bw.write("createPrimaryIndex time " + (System.currentTimeMillis() - start));
+		
+		createSecondaryIndex("numeric");
+		Log.bw.write("createSecondaryIndex time " + (System.currentTimeMillis() - start));
+*/
+
+		
+		
+		readSecondaryIndex("a-f");
+		Log.bw.write("readSecondaryIndex time " + (System.currentTimeMillis() - start));
+		readSecondaryIndex("g-p");
+		Log.bw.write("readSecondaryIndex time " + (System.currentTimeMillis() - start));
+		readSecondaryIndex("q-z");
+		Log.bw.write("readSecondaryIndex time " + (System.currentTimeMillis() - start));
+		readSecondaryIndex("numeric");
 		Log.bw.write("readSecondaryIndex time " + (System.currentTimeMillis() - start));
 		
 		Log.bw.close();

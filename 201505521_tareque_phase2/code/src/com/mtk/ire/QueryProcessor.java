@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 
+import com.mtk.ire.IndexGenerator.Log;
+
 public class QueryProcessor {
 	
 	static long N = 16299475L;
@@ -78,14 +80,21 @@ public class QueryProcessor {
 		}
 	}
 
-	static TreeMap<String, Long> secIndex = null;
+	static TreeMap<String, Long>[] secIndex= null;
 	static TreeMap<Long, Long> titleSecIndex = null;
 
 	static void initSearchEngine(String[] args) throws Exception {
 		// readTeriataryIndex of mainIndex
 		// readsecondaryIndex of titles
-		secIndex = IndexGenerator.readSecondaryIndex("1-300");
+//		secIndex[0] = IndexGenerator.readSecondaryIndex("1-300");
+		secIndex = new TreeMap[4];
+		secIndex[0] = IndexGenerator.readSecondaryIndex("a-f");
+		secIndex[1] = IndexGenerator.readSecondaryIndex("g-p");
+		secIndex[2] = IndexGenerator.readSecondaryIndex("q-z");
+		secIndex[3] = IndexGenerator.readSecondaryIndex("numeric");
+		
 		titleSecIndex = TitleIndexer.read2ndIndex();
+//		titleMainIndex = TitleIndexer.read2ndIndex();
 		Log.bw.write("init done");
 	}
 	
@@ -96,7 +105,7 @@ public class QueryProcessor {
 		long tf, idf;
 		
 		Double tf_idf, okapiValue, score;
-		int[] counts = new int[6]; // title, body, category, extLinks, references, infobox
+		long[] counts = new long[6]; // title, body, category, extLinks, references, infobox
 		
 		public Page(Long d, long idff, String list, String w) {
 			did = d;
@@ -116,16 +125,19 @@ public class QueryProcessor {
 			return this.did.equals(((Page)obj).did);
 		}
 		private void calculateTf() {
-			int num, j, i;
+			long num;
+			int j, i;
 //			if(did == 57570) System.out.println("calculateTf " +pos);
+//			System.out.println(pos);
 			for(i=0; i<pos.length();i++) {
 				if( Character.isLetter(pos.charAt(i)) ) {
 //					if(did == 57570)System.out.println(i + "  in if");
-					num =0;
+					num =0L;
 					j=i+1;
 					while( j< pos.length() && Character.isDigit(pos.charAt(j))  )
 						j++;
-					num = Integer.parseInt(pos.substring(i+1, j));
+					
+					num = Long.parseLong(pos.substring(i+1, j));
 //					if(did == 57570) System.out.println("calculateTf " +num + " j is " + j);
 //						num = num*10 + Character.getNumericValue(pos.charAt(j++));
 					switch(pos.charAt(i)) {
@@ -190,7 +202,7 @@ public class QueryProcessor {
 			int indexToSearch =-1;
 			switch(field) {
 				case 'b': indexToSearch=0; break;
-				case 'c': indexToSearch=1; break;
+				case 'c': indexToSearch=5; break;
 				case 'e': indexToSearch=2; break;
 				case 'i': indexToSearch=3; break;
 				case 'r': indexToSearch=4; break;
@@ -257,9 +269,38 @@ public class QueryProcessor {
 	static String getPostingList(String s) throws Exception {
 		if(s.indexOf(":") > 0) 
 			s= s.substring(s.indexOf(":")+1);
-		Long firstSeekPos = secIndex.floorEntry(s).getValue(), nextSeekPos;
+		Long firstSeekPos=0L, nextSeekPos;
+		TreeMap<String, Long> indexToSearch = null;
+		String primIndexFile = "";
+		String posList = "";
+		char c= s.charAt(0);
+		String indexName = "";
+		if(c>='a' && c<='f') {
+			indexName = "a-f";
+			indexToSearch = secIndex[0];
+			primIndexFile = "/home/mtk/ireIndex/merged-prod-a-f.justTerms";
+			posList = "/home/mtk/ireIndex/merged-prod-a-f.justPostingList";
+		} else if(c>='g' && c<='p') {
+			indexName = "g-p";
+			indexToSearch = secIndex[1];
+			primIndexFile = "/home/mtk/ireIndex/merged-prod-g-p.justTerms";
+			posList = "/home/mtk/ireIndex/merged-prod-g-p.justPostingList";
+		} else if(c>='q' && c<='z') {
+			indexName = "q-z";
+			indexToSearch = secIndex[2];
+			primIndexFile = "/home/mtk/ireIndex/merged-prod-q-z.justTerms";
+			posList = "/home/mtk/ireIndex/merged-prod-q-z.justPostingList";
+		} else {
+			indexName = "numeric";
+			indexToSearch = secIndex[3];
+			primIndexFile = "/home/mtk/ireIndex/merged-prod-numeric.justTerms";
+			posList = "/home/mtk/ireIndex/merged-prod-numeric.justPostingList";
+		}
+//		System.out.println("Getting value from " + indexName + " index");
+		firstSeekPos= indexToSearch.floorEntry(s).getValue();
 	//	System.out.println("firstSeekPos " + firstSeekPos);
-		String primIndexFile = "/home/mtk/ireIndex/merged-prod1-300.justTerms";
+//		String primIndexFile = "/home/mtk/ireIndex/merged-prod1-300.justTerms";
+		
 		RandomAccessFile raf = new RandomAccessFile(primIndexFile, "r");
 		raf.seek(firstSeekPos);
 		String tmp;
@@ -276,7 +317,7 @@ public class QueryProcessor {
 			}
 		}
 	
-		String posList = "/home/mtk/ireIndex/merged-prod1-300.justPostingList";
+//		String posList = "/home/mtk/ireIndex/merged-prod1-300.justPostingList";
 		raf = new RandomAccessFile(posList, "r");
 	//	System.out.println("nextSeekPos " + nextSeekPos);
 		raf.seek(nextSeekPos);
@@ -284,11 +325,11 @@ public class QueryProcessor {
 //		System.out.println(tmp);
 		return tmp;
 	}
-	static List<Page> singleWordQueryProcessor(String s, boolean rerun) {
+	static List<Page> singleWordQueryProcessor(String s, boolean rerun, String posList) {
 		// get posting list, by some formula
 		List<Page> dids = new ArrayList<Page>();
 		try {
-			String posList = getPostingList(s);
+//			String posList = getPostingList(s);
 			if(posList == null) return null;
 //				System.out.println(tmp);
 //				tmp = tmp.split("\\|")[1];
@@ -381,8 +422,8 @@ public class QueryProcessor {
 //		System.out.println(s + " len of Common docIds " + commonDocs.size() );
 //		if(commonDocs == null) commonDocs = new ArrayList<Page>();
 		String[] words = s.split(" ");
-		commonDocs = (ArrayList<Page>) multiWordQueryProcessor0(s.split(" "));
-		/*String[] toks = null;
+//		commonDocs = (ArrayList<Page>) multiWordQueryProcessor0(s.split(" "));
+		String[] toks = null;
 		int flag=0;
 		for(int i=words.length; i>1; i--) {
 			flag=0;
@@ -398,15 +439,16 @@ public class QueryProcessor {
 //				if(getElapsedTime() > 800) {flag= 1; break;}
 			}
 			if(flag == 1) break;
-		}			*/
+		}			
 		
 		if(commonDocs == null) commonDocs = new ArrayList<Page>();
 		if(commonDocs.size() == 0) {
 //			for(QueryWord q : qw) System.out.println(q);
 			Collections.sort(qw, idfSorter);
 //			for(QueryWord q : qw) System.out.println(q);
+			int i=0;
 			for (QueryWord q : qw) {
-				commonDocs.addAll( (ArrayList<Page>) singleWordQueryProcessor(q.w, true) );
+				commonDocs.addAll( (ArrayList<Page>) singleWordQueryProcessor(q.w, true, postingLists.get(i++)) );
 			}
 		}
 //		List<Page> al = new ArrayList<Page>();
@@ -444,8 +486,9 @@ public class QueryProcessor {
 	
 	
 	private static int calculateTf(String pos) {
-		int counts[] = new int[6];
-		int num, j, i;
+		long counts[] = new long[6];
+		long num;
+		int j, i;
 //		if(did == 57570) System.out.println("calculateTf " +pos);
 		for(i=0; i<pos.length();i++) {
 			if( Character.isLetter(pos.charAt(i)) ) {
@@ -454,7 +497,7 @@ public class QueryProcessor {
 				j=i+1;
 				while( j< pos.length() && Character.isDigit(pos.charAt(j))  )
 					j++;
-				num = Integer.parseInt(pos.substring(i+1, j));
+				num = Long.parseLong(pos.substring(i+1, j));
 //				if(did == 57570) System.out.println("calculateTf " +num + " j is " + j);
 //					num = num*10 + Character.getNumericValue(pos.charAt(j++));
 				switch(pos.charAt(i)) {
@@ -491,7 +534,9 @@ public class QueryProcessor {
 		ArrayList<Page> singleDocIds = null;
 		int i=0;
 		String pos = "";
+//		System.out.println(words.length);
 		for (String w : words) {
+//			System.out.println(w);
 			pos = getPostingList(w);
 			postingLists.add(pos);
 			// get posting list, by some formula
@@ -515,19 +560,102 @@ public class QueryProcessor {
 	}
 
 	static List<Page> wikiSearch(String s) throws Exception {
+		ArrayList<Page> tmp= null, singleDocIds = null;
+		s = s.replaceAll("\"", " ").replaceAll("\\s+", " ").toLowerCase();
+		String pos = "";
+		int i=0;
+		String[] words = s.split(" ");
+		
+		for(String w: words) {
+			if(w.indexOf(":") == 1 && w.length()>2) {
+				pos = getPostingList(w.split(":")[1]);
+			} else  {
+				pos = getPostingList(w);
+			}
+			postingLists.add(pos);
+			// get posting list, by some formula
+			if(i==0) {
+				singleDocIds = (ArrayList<Page>) stemmedAndPlainSingleWordQueryProcessor(w, pos);
+			} else {
+				tmp = (ArrayList<Page>) stemmedAndPlainSingleWordQueryProcessor(w, pos);
+			}
+			if(i>0) {
+				singleDocIds = union(singleDocIds, tmp); 
+			}
+			i++;
+		}
+		
+		/*
+		String[] toks = null;
+		int flag=0;
+		for(i=words.length; i>1; i--) {
+			flag=0;
+			for(int j=0; j<=words.length-i; j++) {
+				toks = new String[i];
+//				System.out.println(" creating tok list from " +j + " of window " + i);
+				for(int k=j; k<j+i; k++) {
+					toks[k-j] = words[k];
+//					System.out.println(toks[k-j]);
+				}
+				commonDocs= (ArrayList<Page>) multiWordQueryProcessor0(toks);
+				if(commonDocs != null && commonDocs.size() > 0 ) { flag=1; break;}
+//				if(getElapsedTime() > 800) {flag= 1; break;}
+			}
+			if(flag == 1) break;
+		}	*/
+		
+		
+/*			
+*/		
+		// duplicate removal
+		if(singleDocIds == null) singleDocIds = new ArrayList<Page>();
+		if(singleDocIds.size()>1) {
+		Set<Page> commonDocsHash = new HashSet<Page>();
+		commonDocsHash.addAll(singleDocIds);
+		singleDocIds.clear();
+		singleDocIds.addAll(commonDocsHash);
+		}
+		// commondocs
+		Collections.sort(singleDocIds, tfIdSorter);
+		ArrayList<Page> outputDocs = new ArrayList<Page>();
+		double score=0;
+		for(i=0; i<singleDocIds.size(); i++) {
+			if(i>100) break;
+			score =0;
+			for(int j=0; j<words.length; j++) {
+//				Page wdTuple = hm.get(new WordDocTuple(words[j], commonDocs.get(i).did ));
+				pos =postingLists.get(j);
+//				System.out.println(words[j] + " " + commonDocs.get(i).did );
+//				System.out.println(wdTuple);
+				score += getTfIdf(pos, words[j]);;
+			}
+			singleDocIds.get(i).score = score;
+			outputDocs.add(singleDocIds.get(i));
+		}
+//		System.out.println("After score");
+		Collections.sort(outputDocs, tfIdfSorter);
+		numOfResults = outputDocs.size();
+//		int limit = commonDocs.size();
+//		if(limit > 10) limit = 10;
+		return outputDocs; //.subList(0, limit);
+	}
+	
+	static List<Page> wikiSearch0(String s) throws Exception {
 		s=s.trim();
 		ArrayList<Page> out = null;
 		if (s.split(" ").length == 1) { // single word query
 //			return singleWordQueryProcessor(s, false);
 			String pos = getPostingList(s);
 			return stemmedAndPlainSingleWordQueryProcessor(s, pos);
-		} else if(s.indexOf("\"") >= 0){// phrase query, change to multiWord
+		} else if(s.indexOf("\"") >= 0){ // phrase query, change to multiWord
 			s=s.replaceAll("\"", " ").replaceAll("\\s+", " ");
 			preprocess(s);
 			out = (ArrayList<Page>) multiWordQueryProcessor(plainQ);
 		} else { // multi word query
 			preprocess(s);
-			out = (ArrayList<Page>) multiWordQueryProcessor(plainQ);
+//			System.out.println("plainQ" + plainQ);
+			return wikiSearch(s);
+//			out = (ArrayList<Page>) multiWordQueryProcessor(plainQ);
 		}
 		if(!fieldQ.equals("")) {
 			ArrayList<Page> commonDocs = new ArrayList<Page>();
@@ -571,10 +699,9 @@ public class QueryProcessor {
 		
 		if(s.indexOf(":") == 1) {
 			try {
-				
 				out = (ArrayList<Page>) fieldQueryProcessor(s, false, pos);
 				if(out != null  && out.size() > 0) return out;
-				pos = getPostingList(getStem(s.split(":")[1]));
+//				pos = getPostingList(getStem(s.split(":")[1]));
 				out = (ArrayList<Page>) fieldQueryProcessor(s, false, pos);
 			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("Invalid field query");
@@ -582,10 +709,10 @@ public class QueryProcessor {
 				e.printStackTrace();
 			}
 		} else  {
-			out = (ArrayList<Page>) singleWordQueryProcessor(s, false);
+			out = (ArrayList<Page>) singleWordQueryProcessor(s, false, pos);
 			if(out != null  && out.size() > 0) return out;
 			String stemmed = getStem(s);
-			out = (ArrayList<Page>) singleWordQueryProcessor(stemmed, false);
+			out = (ArrayList<Page>) singleWordQueryProcessor(stemmed, false, pos);
 		}
 		return out;
 	}
@@ -612,7 +739,6 @@ public class QueryProcessor {
 				System.out.print("query> ");
 				s = br.readLine();
 				if(s.length() == 0) continue;
-				s=s.toLowerCase();
 				if ("q".equals(s))
 					break;
 				startClock();
@@ -620,7 +746,7 @@ public class QueryProcessor {
 				endNprintTime();
 //				Collections.sort(dids, tfIdfSorter);
 				int i=0;
-				if(dids != null) {
+				if(dids != null && dids.size() > 0) {
 					for (Page l : dids) {
 						System.out.println(String.format("%-9d %s", l.did, TitleIndexer.readTitleBySeek(l.did, titleSecIndex)));
 						if(i == 10) break;
@@ -629,10 +755,18 @@ public class QueryProcessor {
 				}
 				Log.bw.flush();
 			}
+		} catch(NullPointerException e) {
+			
 		} finally {
 			br.close();
 			Log.bw.close();
 		}
+	}
+
+
+	private static List<Page> titleSearch(String s) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

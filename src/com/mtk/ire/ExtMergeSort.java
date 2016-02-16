@@ -178,9 +178,9 @@ public class ExtMergeSort {
 		List<Page> sortedByTf = getSortedByTfAndGetList(s);
 		List<Page>  pruned;
 		long oldSize = sortedByTf.size();
-		if(sortedByTf.size() > 2500) {
+		if(sortedByTf.size() > 3500) {
 //			Log.bw.write("Truncating for " + word + ", oldSize : " + sortedByTf.size() + "\n");
-			pruned = sortedByTf.subList(0, 2000); // reduction three
+			pruned = sortedByTf.subList(0, 3500); // reduction three
 		} else pruned = sortedByTf;
 		Collections.sort(pruned, didcmp);
 		StringBuilder sb = new StringBuilder();
@@ -200,22 +200,22 @@ public class ExtMergeSort {
 
 	static String customSort2(String s, String word, long df) throws IOException {
 		List<Page> sortedByTf = getSortedByTfAndGetList(s);
-		List<Page> pruned;
+//		List<Page> pruned;
 		long oldSize = df;
-		if(sortedByTf.size() > 2800) {
+		/*if(sortedByTf.size() > 2800) {
 //			Log.bw.write("Trunc " + word + ", oldSize : " + sortedByTf.size() + "\n");
 			pruned = sortedByTf.subList(0, 2800); // reduction three
 		}
 		else 
-			pruned = sortedByTf;
-		Collections.sort(pruned, didcmp);
+			pruned = sortedByTf;*/
+		Collections.sort(sortedByTf, didcmp);
 		StringBuilder sb = new StringBuilder();
 		sb.append(oldSize+"|");
 //		sb.append(pruned.get(0).did + pruned.get(0).pos + ";");
 //		long prevId = pruned.get(0).did ;
 //		for(int j=1; j<pruned.size(); j++){
 //			sb.append(page.did + "-" + page.pos+";"); // normal
-		for(Page page: pruned) {
+		for(Page page: sortedByTf) {
 //			Page page = pruned.get(j);
 //			sb.append((page.did - prevId) + page.pos+";"); // size reduced, more reduction
 			sb.append(page.did  +"-" +page.pos+";"); // size reduced
@@ -341,7 +341,6 @@ public class ExtMergeSort {
 						
 						// need more robust merge mechanism to inser the hacked titles index, LAST RUNn 
 						
-						
 //						sb.append(next.posting);
 						tmp = br[next.i].readLine();
 						if(tmp == null) {
@@ -363,7 +362,7 @@ public class ExtMergeSort {
 				Log.bw.flush();
 			}
 //			System.out.println(getSortedByDocId(sb.toString()));
-//			if(!isUselessWord(word))
+			if(!isUselessWord(word))
 			{
 				out = customSort2(sb.toString(), word, df);
 //				out = customSort(sb.toString(), word);
@@ -435,17 +434,17 @@ public class ExtMergeSort {
 	public static void main(String[] args) throws Exception{
 		long start = System.currentTimeMillis();
 		String[] inps = new String[300];
-/*		for(int i=0; i<300; i++) inps[i] = i+"";
+		/*
+		for(int i=0; i<300; i++) inps[i] = (i+1)+"";
 		externalMergeSort("/media/mtk/soft/tmp/main/prod/i", inps, "1-300");
 // 		externalMergeSort(1, 300);
 		Log.bw.write("1,300 merge took " + (System.currentTimeMillis() - start) + " ms\n"); 
 		Log.bw.flush();
-*/		
-		/*
+		
 		start = System.currentTimeMillis();
 //		externalMergeSort(301, 600);
-		inps = new String[800-300];
-		for(int i=300; i<800; i++) inps[i-300] = i+"";
+		inps = new String[800-301];
+		for(int i=301; i<800; i++) inps[i-301] = i+"";
 		externalMergeSort("/media/mtk/soft/tmp/main/prod/i", inps, "300-800");
 		Log.bw.write("301,800 merge took " + (System.currentTimeMillis() - start) + " ms\n");
 		Log.bw.flush();
@@ -457,10 +456,9 @@ public class ExtMergeSort {
 //		externalMergeSort(601, 900);
 		Log.bw.write("601,1186 merge took " + (System.currentTimeMillis() - start) + " ms\n");
 		Log.bw.flush();
-
-*/
+		*/
 		
-		start = System.currentTimeMillis();
+/*		start = System.currentTimeMillis();
 		inps = new String[3];
 		inps[0] = "merged-prod-a-f1-300";
 		inps[1] = "merged-prod-a-f300-800";
@@ -478,7 +476,9 @@ public class ExtMergeSort {
 		externalMergeSort("/media/mtk/soft/tmp/main/", inps, "final");
 		Log.bw.write("g-p merge took " + (System.currentTimeMillis() - start) + " ms\n");
 		Log.bw.flush();
-		
+		*/
+
+		/*
 		start = System.currentTimeMillis();
 		inps = new String[3];
 		inps[0] = "merged-prod-q-z1-300";
@@ -488,7 +488,7 @@ public class ExtMergeSort {
 		Log.bw.write("q-z merge took " + (System.currentTimeMillis() - start) + " ms\n");
 		Log.bw.flush();
 
-
+*/
 		start = System.currentTimeMillis();
 		inps = new String[3];
 		inps[0] = "merged-prod-numeric1-300";
@@ -497,8 +497,7 @@ public class ExtMergeSort {
 		externalMergeSort("/media/mtk/soft/tmp/main/", inps, "final");
 		Log.bw.write("q-z merge took " + (System.currentTimeMillis() - start) + " ms\n");
 		Log.bw.flush();
-		/*
-*/
+		/* */
 		
 //		externalMergeSort(0,0);
 		Log.bw.close();
