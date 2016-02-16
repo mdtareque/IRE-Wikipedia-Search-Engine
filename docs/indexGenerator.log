@@ -1,0 +1,101 @@
+Wiki index generator Sun Feb 14 07:07:54 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod1-300
+terms /home/mtk/ireIndex/merged-prod1-300.justTerms
+posList /home/mtk/ireIndex/merged-prod1-300.justPostingList
+createPrimaryIndex time 34809Wiki index generator Sun Feb 14 07:14:09 IST 2016
+Writing secondary indexinp /home/mtk/ireIndex/merged-prod1-300.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod1-300.justTerms.2nd
+createSecondaryIndex time 4035
+Wiki index generator Sun Feb 14 07:18:01 IST 2016
+
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod1-300.justTerms.2nd
+readSecondaryIndex time 489Wiki index generator Sun Feb 14 14:00:13 IST 2016
+
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod1-300.justTerms.2nd
+readSecondaryIndex time 347Wiki index generator Sun Feb 14 14:00:19 IST 2016
+
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod1-300.justTerms.2nd
+readSecondaryIndex time 344Wiki index generator Sun Feb 14 20:51:19 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-a-f
+terms /home/mtk/ireIndex/merged-prod-a-f.justTerms
+posList /home/mtk/ireIndex/merged-prod-a-f.justPostingList
+Wiki index generator Sun Feb 14 20:53:19 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-a-f
+terms /home/mtk/ireIndex/merged-prod-a-f.justTerms
+posList /home/mtk/ireIndex/merged-prod-a-f.justPostingList
+Wiki index generator Sun Feb 14 21:12:16 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-g-p
+terms /home/mtk/ireIndex/merged-prod-g-p.justTerms
+posList /home/mtk/ireIndex/merged-prod-g-p.justPostingList
+createPrimaryIndex time 116084Writing secondary indexinp /home/mtk/ireIndex/merged-prod-g-p.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-g-p.justTerms.2nd
+createSecondaryIndex time 123036inp /media/mtk/soft/tmp/main/merged-prod-q-z
+terms /home/mtk/ireIndex/merged-prod-q-z.justTerms
+posList /home/mtk/ireIndex/merged-prod-q-z.justPostingList
+createPrimaryIndex time 205925Writing secondary indexinp /home/mtk/ireIndex/merged-prod-q-z.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-q-z.justTerms.2nd
+createSecondaryIndex time 210458inp /media/mtk/soft/tmp/main/merged-prod-numeric
+terms /home/mtk/ireIndex/merged-prod-numeric.justTerms
+posList /home/mtk/ireIndex/merged-prod-numeric.justPostingList
+Wiki index generator Sun Feb 14 21:25:50 IST 2016
+
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-a-f.justTerms.2nd
+readSecondaryIndex time 300
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-g-p.justTerms.2nd
+readSecondaryIndex time 420
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-q-z.justTerms.2nd
+readSecondaryIndex time 470
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-numeric.justTerms.2nd
+readSecondaryIndex time 471Wiki index generator Mon Feb 15 19:23:18 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-a-f
+terms /home/mtk/ireIndex/merged-prod-a-f.justTerms
+posList /home/mtk/ireIndex/merged-prod-a-f.justPostingList
+createPrimaryIndex time 93036Writing secondary indexinp /home/mtk/ireIndex/merged-prod-a-f.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-a-f.justTerms.2nd
+createSecondaryIndex time 98673
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-a-f.justTerms.2nd
+readSecondaryIndex time 98746Wiki index generator Mon Feb 15 19:31:47 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-g-p
+terms /home/mtk/ireIndex/merged-prod-g-p.justTerms
+posList /home/mtk/ireIndex/merged-prod-g-p.justPostingList
+createPrimaryIndex time 113272Writing secondary indexinp /home/mtk/ireIndex/merged-prod-g-p.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-g-p.justTerms.2nd
+createSecondaryIndex time 119787
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-g-p.justTerms.2nd
+readSecondaryIndex time 119901Wiki index generator Mon Feb 15 19:43:28 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-a-f
+terms /home/mtk/ireIndex/merged-prod-a-f.justTerms
+posList /home/mtk/ireIndex/merged-prod-a-f.justPostingList
+createPrimaryIndex time 71291Writing secondary indexinp /home/mtk/ireIndex/merged-prod-a-f.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-a-f.justTerms.2nd
+createSecondaryIndex time 74856
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-a-f.justTerms.2nd
+readSecondaryIndex time 74962Wiki index generator Mon Feb 15 19:52:02 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-g-p
+terms /home/mtk/ireIndex/merged-prod-g-p.justTerms
+posList /home/mtk/ireIndex/merged-prod-g-p.justPostingList
+Wiki index generator Mon Feb 15 19:52:50 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-g-p
+terms /home/mtk/ireIndex/merged-prod-g-p.justTerms
+posList /home/mtk/ireIndex/merged-prod-g-p.justPostingList
+createPrimaryIndex time 86857Writing secondary indexinp /home/mtk/ireIndex/merged-prod-g-p.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-g-p.justTerms.2nd
+createSecondaryIndex time 91843
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-g-p.justTerms.2nd
+readSecondaryIndex time 91970Wiki index generator Mon Feb 15 20:06:39 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-q-z
+terms /home/mtk/ireIndex/merged-prod-q-z.justTerms
+posList /home/mtk/ireIndex/merged-prod-q-z.justPostingList
+createPrimaryIndex time 71078Writing secondary indexinp /home/mtk/ireIndex/merged-prod-q-z.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-q-z.justTerms.2nd
+createSecondaryIndex time 73488
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-q-z.justTerms.2nd
+readSecondaryIndex time 73545Wiki index generator Mon Feb 15 20:08:35 IST 2016
+inp /media/mtk/soft/tmp/main/merged-prod-numeric
+terms /home/mtk/ireIndex/merged-prod-numeric.justTerms
+posList /home/mtk/ireIndex/merged-prod-numeric.justPostingList
+createPrimaryIndex time 1961Writing secondary indexinp /home/mtk/ireIndex/merged-prod-numeric.justTerms
+secondaryIndex /home/mtk/ireIndex/merged-prod-numeric.justTerms.2nd
+createSecondaryIndex time 2076
+Reading 2nd index in memoryinp /home/mtk/ireIndex/merged-prod-numeric.justTerms.2nd
+readSecondaryIndex time 2085

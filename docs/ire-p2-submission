@@ -1,0 +1,6 @@
+Directory Structure:-
+<Roll_Number>_<Name>_phase2
+|
+---code/ (Folder containing all the codes (*.java, *.py, ...))
+
+---other files

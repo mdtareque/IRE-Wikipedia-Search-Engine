@@ -1,0 +1,3 @@
+print_block:20000
+index_split_block:100000
+free_mem_threshold:209715200:200MB
