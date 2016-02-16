@@ -1,0 +1,5 @@
+# Download 13 GB dump file (as of Feb 2016)
+wget https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2
+
+# extract. Output is 53 gb so make you sure have the space in disk
+bunzip2 -k -c https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2 > enwiki.extracted.xml
